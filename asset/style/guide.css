@@ -1,18 +1,20 @@
 @charset "utf-8";
 
 body {
-	background-color: #eef3fe;
+	background-color: #f0f5f9;
 }
 
 .layout-guide {
-	padding: 20px;
+	padding: 20px 0;
 }
 
 .layout-guide > .guide-title {
 	display: inline-block;
 	position: relative;
 	font-size: 20px;
-	margin: 35px 0 20px;		
+	margin: 35px 25px 20px;	
+	padding: 0;	
+	font-family: "malgun gothic", "sans-serif", "dotum";
 }
 
 .layout-guide > .guide-title:before {
@@ -30,20 +32,9 @@ body {
 	margin-top: 0;
 }
 
-.layout-guide .guide-ex {	
-	/* background-color: #fcfcfc;
-	border-radius: 10px;
-	border: 1px solid #e0e0e0;
-	padding: 10px; */
-}
-
-.layout-guide .guide-ex > *:first-child {
-	/* margin-top: 15px; */
-}
-
 
 .layout-guide .guide-ex + .guide-ex {
-	margin-top: 30px;
+	margin-top: 40px;
 }
 
 .layout-guide .guide-ex.ty-dark {	
@@ -59,20 +50,27 @@ body {
 .layout-guide .guide-ex .guide-grid-box {
 	display: flex;
 	flex-wrap: wrap;
+	padding: 20px;
+	background-color: #fff;
 }
+
+.layout-guide .guide-ex .guide-grid-box.bg-01 {	
+	background-color: #f4f6f8;	
+}
+
+.layout-guide .guide-ex .guide-grid-box.bg-02 {		
+	background-color: #0d141c;
+}
+
+
 
 .layout-guide .guide-ex .guide-grid-box + .guide-grid-box {
 	margin-top: 20px;
 }
 
-/* .layout-guide .guide-ex .guide-grid-box > .title {
-	font-size: 18px;
-	margin-bottom: 15px;
-} */
-
 .layout-guide .guide-ex .guide-grid-box > .item {
 	width: 25%;	
-	padding: 5px;
+	padding: 10px 5px;
 	box-sizing: border-box;
 }
 
@@ -90,19 +88,42 @@ body {
 	padding-right: 0;
 	font-size: 18px;
 	margin-bottom: 15px;
+	font-family: "malgun gothic", "sans-serif", "dotum";
 }
 
 .layout-guide .guide-ex .guide-grid-box > .item > .sub-title {
-	margin: 15px 0 10px;
-	
+	margin: 20px 0 10px;	
 	font-size: 14px;
 	color: #707070;
+	font-family: "malgun gothic", "sans-serif", "dotum";
 }
 
-@media (max-width: 760px) {
+.layout-guide .guide-ex .guide-grid-box.bg-02 > .item > .title {
+	color: #fff;
+}
+
+.layout-guide .guide-ex .guide-grid-box.bg-02 > .item > .sub-title {
+	color: #fff;
+}
+
+@media (max-width: 1250px) {
 	.layout-guide .guide-ex .guide-grid-box > .item {
-		width: 100%;	
-		padding: 5px;		
+		width: 50%;				
+	}
+
+	.layout-guide .guide-ex .guide-grid-box > .item:nth-child(2n) {
+		padding-right: 5px;
+	}
+
+	.layout-guide .guide-ex .guide-grid-box > .item:nth-child(1),
+	.layout-guide .guide-ex .guide-grid-box > .item:nth-child(2n+1) {
+		padding-left: 5px;
+	}	
+} 
+
+@media (max-width: 768px) {
+	.layout-guide .guide-ex .guide-grid-box > .item {
+		width: 100%;					
 	}
 	
 	.layout-guide .guide-ex .guide-grid-box > .item:nth-child(4n) {

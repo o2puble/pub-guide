@@ -467,6 +467,87 @@
 }
 
 
+/*
+	form set
+*/ 
+.form-set {
+	.form-tit {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-end;
+		margin-bottom: 12px;
+
+		[class^="o-h"] {
+			display: inline-block;
+		}
+
+		*.essential {
+			position: relative;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: -4.5px;
+				width: 4px;
+				height: 4px;
+				border-radius: 50%;
+				background-color: #ff6b6b;
+			}
+		}		
+	}   		
+    
+	& + .form-set {
+		margin-top: 40px;
+
+        &.spc-m {
+            margin-top: 20px;
+        }
+
+        &.spc-l {
+            margin-top: 30px;
+        }
+
+        &.spc-xl {
+            margin-top: 64px;
+        }
+	}   
+}
+
+
+
+/*
+	formgrid
+*/ 
+.form-grid {
+	display: flex;
+	align-items: center;
+	width: calc(100% + 9px);
+	margin: 0 -4.5px;
+
+	& > * {
+		margin: 0 4.5px;	
+		box-sizing: border-box;
+	}
+
+	& > .item {
+		width: 100%;				
+	}	
+
+	// 16 columns(.item-num)
+	@for $i from 1 through 16 { 
+		& > .item-#{$i} { width: 6.25% * $i } 
+	}	
+
+	& > .sign {
+		width: auto;
+		margin: 0;		
+		font-size: 15px;
+		color: #303030;		
+	}	
+}
+
+
 
 
 

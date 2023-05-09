@@ -389,3 +389,112 @@
   color: #fff;
   border: 1px solid #f53e50;
 }
+
+/*
+	form set
+*/
+.form-set .form-tit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-bottom: 12px;
+}
+.form-set .form-tit [class^=o-h] {
+  display: inline-block;
+}
+.form-set .form-tit *.essential {
+  position: relative;
+}
+.form-set .form-tit *.essential:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -4.5px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #ff6b6b;
+}
+.form-set + .form-set {
+  margin-top: 40px;
+}
+.form-set + .form-set.spc-m {
+  margin-top: 20px;
+}
+.form-set + .form-set.spc-l {
+  margin-top: 30px;
+}
+.form-set + .form-set.spc-xl {
+  margin-top: 64px;
+}
+
+/*
+	formgrid
+*/
+.form-grid {
+  display: flex;
+  align-items: center;
+  width: calc(100% + 9px);
+  margin: 0 -4.5px;
+}
+.form-grid > * {
+  margin: 0 4.5px;
+  box-sizing: border-box;
+}
+.form-grid > .item {
+  width: 100%;
+}
+.form-grid > .item-1 {
+  width: 6.25%;
+}
+.form-grid > .item-2 {
+  width: 12.5%;
+}
+.form-grid > .item-3 {
+  width: 18.75%;
+}
+.form-grid > .item-4 {
+  width: 25%;
+}
+.form-grid > .item-5 {
+  width: 31.25%;
+}
+.form-grid > .item-6 {
+  width: 37.5%;
+}
+.form-grid > .item-7 {
+  width: 43.75%;
+}
+.form-grid > .item-8 {
+  width: 50%;
+}
+.form-grid > .item-9 {
+  width: 56.25%;
+}
+.form-grid > .item-10 {
+  width: 62.5%;
+}
+.form-grid > .item-11 {
+  width: 68.75%;
+}
+.form-grid > .item-12 {
+  width: 75%;
+}
+.form-grid > .item-13 {
+  width: 81.25%;
+}
+.form-grid > .item-14 {
+  width: 87.5%;
+}
+.form-grid > .item-15 {
+  width: 93.75%;
+}
+.form-grid > .item-16 {
+  width: 100%;
+}
+.form-grid > .sign {
+  width: auto;
+  margin: 0;
+  font-size: 15px;
+  color: #303030;
+}
