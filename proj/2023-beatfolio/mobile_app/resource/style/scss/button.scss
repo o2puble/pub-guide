@@ -1,0 +1,22 @@
+/*
+    button
+*/
+// reset
+.o-btn {
+    display: block;
+    padding: 0;
+	appearance: none;
+	text-decoration: none;
+	border: none;
+	background-color: transparent;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.o-btn:disabled {
+	cursor: default;
+}
+
+

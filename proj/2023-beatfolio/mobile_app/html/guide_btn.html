@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="format-detection" content="telephone=no, email=no, address=no" />
+
+        <title>button guide</title>
+
+        <!-- Publishing CSS -->
+        <link rel="stylesheet" href="../../../resource/css/css/ui_style.css" />
+
+        <!-- Publishing JS -->
+        <script src="../../../resource/js/jquery-3.6.0.min.js"></script>
+        <script src="../../../resource/js/jquery-ui-1.12.1.min.js"></script>
+        <script src="../../../resource/js/ui_plugin.js"></script>
+        <script src="../../../resource/js/ui_front.js"></script>        
+
+        <!-- Guide CSS/JS(가이드에만 적용) -->
+        <link rel="stylesheet" href="../../../../publishing_guide/asset/css/guide.css" />
+        <script src="../../../../publishing_guide/asset/js/guide.js"></script>
+    </head>
+    <body>
+        <!-- layout -->
+        <div class="layout-guide">
+            <h2 class=""> Button </h2> 
+            <div class="guide-box">                               
+                
+                <div class="grid-box">
+                    <div class="item">
+                        <h3>Main Button</h3>
+                        <div class="ex">
+                            <button type="button" class="o-btn btn-main-l">Button</button> 
+                            <br>
+                            <button type="button" class="o-btn btn-main-l " disabled>Button Disable</button>
+                        </div>
+                    </div>
+        
+                    <div class="item">
+                        <h3>Main Button - Line</h3>
+                        <div class="ex">
+                            <button type="button" class="o-btn btn-main-l sty-line">Button</button> 
+                            <br>
+                            <button type="button" class="o-btn btn-main-l sty-line" disabled>Button Disable</button>
+                        </div>
+                    </div>
+        
+                    <div class="item">
+                        <h3>Sub Button</h3>
+                        <div class="ex">
+                            <button type="button" class="o-btn btn-sub">Button</button>
+                            <br>
+                            <button type="button" class="o-btn btn-sub" disabled>Button Disable</button>
+                        </div>
+                    </div>
+        
+                    <div class="item">
+                        <h3>Sub Button - Line</h3>
+                        <div class="ex">
+                            <button type="button" class="o-btn btn-sub sty-line">Button</button>
+                            <br>
+                            <button type="button" class="o-btn btn-sub sty-line" disabled>Button Disable</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-box">                   
+        
+                    <div class="item">
+                        <h3>Toggle Button</h3>
+                        <div class="ex">
+                            <div class="o-switch">
+                                <input type="checkbox" name="exsw01" id="sw01">
+                                <label for="sw01"><span class="text-hide">선택안됨</span></label>
+                            </div>
+                            <br><br>
+                            <button type="button" class="o-btn btn-follow">팔로잉</button>
+                            <br>
+                            <button type="button" class="o-btn btn-follow on">팔로우</button>
+                            <!-- <br><br>
+                            <div class="o-chk chk-like-md">
+                                <label for="chk-md-01" class="text-hide">좋아요 버튼</label>
+                                <input type="checkbox" name="chk-md-01" id="chk-md-01" class="form-field" checked="">
+                            </div>
+
+                            <br><br>
+                            <div class="o-chk chk-bookmark-md">
+                                <label for="chk-md-02" class="text-hide">즐겨찾기 버튼</label>
+                                <input type="checkbox" name="chk-md-02" id="chk-md-02" class="form-field" checked="">
+                            </div> -->
+                           
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <h2>Button - Dark Theme </h2>
+            <div class="guide-box ty-dark">                
+    
+                <div class="grid-box">
+                    <div class="item">
+                        <h3>Main Button - Gradient</h3>
+                        <div class="ex">
+                            <button type="button" class="o-btn btn-main-l sty-grad">Button</button>
+                            <br>
+                            <button type="button" class="o-btn btn-main-l sty-grad" disabled>Button Disable</button>
+                        </div>
+                    </div>
+        
+                    <div class="item">
+                        <h3>Main Button - Dark Line</h3>
+                        <div class="ex">
+                            <button type="button" class="o-btn btn-main-l sty-line-dark">Button</button>
+                            <br>
+                            <button type="button" class="o-btn btn-main-l sty-line-dark" disabled>Button Disable</button>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <h3>Main Button - Size M - Line</h3>
+                        <div class="ex">
+                            <button type="button" class="o-btn btn-main-m sty-line">Button</button>
+                            <br>
+                            <button type="button" class="o-btn btn-main-m sty-line" disabled>Button Disable</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="grid-box">                   
+        
+                    <div class="item">
+                        <h3>Toggle Button</h3>
+                        <div class="ex">                           
+                            <button type="button" class="o-btn btn-follow ty-dark-line">팔로잉</button>
+                            <button type="button" class="o-btn btn-follow ty-dark-line on">팔로우</button>
+                            <br>
+                            <button type="button" class="o-btn btn-follow ty-dark">팔로잉</button>
+                            <button type="button" class="o-btn btn-follow ty-dark on">팔로우</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <!-- // layout -->
+    </body>
+</html>

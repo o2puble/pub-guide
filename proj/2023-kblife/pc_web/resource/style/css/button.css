@@ -1,0 +1,21 @@
+/*
+    button
+*/
+.o-btn {
+  display: block;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.o-btn:disabled {
+  cursor: default;
+}

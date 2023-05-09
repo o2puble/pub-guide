@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+body {
+	background-color: #eef3fe;
+}
+
+.layout-guide {
+	padding: 20px;
+}
+
+.layout-guide > .guide-title {
+	display: inline-block;
+	position: relative;
+	font-size: 20px;
+	margin: 35px 0 20px;		
+}
+
+.layout-guide > .guide-title:before {
+	z-index: -1;
+	content: '';
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	width: 100%;
+	height: 5px;
+	background-color: gold;
+}
+
+.layout-guide > .guide-title:first-child {
+	margin-top: 0;
+}
+
+.layout-guide .guide-ex {	
+	/* background-color: #fcfcfc;
+	border-radius: 10px;
+	border: 1px solid #e0e0e0;
+	padding: 10px; */
+}
+
+.layout-guide .guide-ex > *:first-child {
+	/* margin-top: 15px; */
+}
+
+
+.layout-guide .guide-ex + .guide-ex {
+	margin-top: 30px;
+}
+
+.layout-guide .guide-ex.ty-dark {	
+	background-color: #0d141c;
+	color: #fff;
+	border: 1px solid #0d141c;
+}
+
+.layout-guide .guide-ex.ty-gray {
+	background-color: #f0f0f0;
+}
+
+.layout-guide .guide-ex .guide-grid-box {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.layout-guide .guide-ex .guide-grid-box + .guide-grid-box {
+	margin-top: 20px;
+}
+
+/* .layout-guide .guide-ex .guide-grid-box > .title {
+	font-size: 18px;
+	margin-bottom: 15px;
+} */
+
+.layout-guide .guide-ex .guide-grid-box > .item {
+	width: 25%;	
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.layout-guide .guide-ex .guide-grid-box > .item:nth-child(4n) {
+	padding-right: 0;
+}
+
+.layout-guide .guide-ex .guide-grid-box > .item:nth-child(1),
+.layout-guide .guide-ex .guide-grid-box > .item:nth-child(4n+1) {
+	padding-left: 0;
+}
+
+.layout-guide .guide-ex .guide-grid-box > .item > .title {
+	padding-left: 0;
+	padding-right: 0;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.layout-guide .guide-ex .guide-grid-box > .item > .sub-title {
+	margin: 15px 0 10px;
+	
+	font-size: 14px;
+	color: #707070;
+}
+
+@media (max-width: 760px) {
+	.layout-guide .guide-ex .guide-grid-box > .item {
+		width: 100%;	
+		padding: 5px;		
+	}
+	
+	.layout-guide .guide-ex .guide-grid-box > .item:nth-child(4n) {
+		padding-right: 5px;
+	}
+	
+	.layout-guide .guide-ex .guide-grid-box > .item:nth-child(1),
+	.layout-guide .guide-ex .guide-grid-box > .item:nth-child(4n+1) {
+		padding-left: 5px;
+	}
+} 
