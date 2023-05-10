@@ -14,7 +14,7 @@
 <div class="frame-layout">
     <div class="frame-header">
         <div class="info-wrap">                
-            <div class="info title">O2UX 퍼블리싱 가이드</div>            
+            <div class="info title"><a href="#" onClick="top.location='javascript:location.reload()'">O2UX 퍼블리싱 가이드</a></div>            
         </div>                   
     </div>    
     
@@ -60,9 +60,9 @@
                                     <li>
                                         <a href="proj/2023-beatfolio/mobile_app/html/tab.html" class="link" target="frameViewer">Tab</a>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         <a href="proj/2023-beatfolio/mobile_app/html/List.html" class="link" target="frameViewer">List</a>
-                                    </li>
+                                    </li> -->
                                 </ul>   
                                 <!-- // link -->                            
                             </li>
@@ -102,12 +102,12 @@
                                     <li>
                                         <a href="proj/2023-kblife/pc_web/html/table.html" class="link" target="frameViewer">Table</a>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         <a href="proj/2023-kblife/pc_web/html/list.html" class="link" target="frameViewer">List</a>
                                     </li>
                                     <li>
                                         <a href="proj/2023-kblife/pc_web/html/others.html" class="link" target="frameViewer">Others</a>
-                                    </li>
+                                    </li> -->
                                 </ul> 
                                 <!-- // link -->
                             </li>                           
@@ -129,7 +129,7 @@
 html,body { width: 100%; height: 100%; margin: 0; }
 ul, li { margin: 0; padding: 0; list-style: none; }
 a, a:active, a:visited, a:link { text-decoration: none; color: inherit; }
-a:hover { text-decoration: underline; color: inherit; }
+a:hover { text-decoration: none; color: inherit; }
 button { cursor: pointer; }
 .frame-layout { overflow: hidden; height: 100%; box-sizing: border-box; }
 .frame-layout .frame-header { position: fixed; top: 0; left: 0; width: 100%; height: 50px; padding: 0 20px; background: #1e2022; color: #fff; }
@@ -165,11 +165,12 @@ vertical-align: middle; }
 .frame-layout .frame-lnb ul.dep04 > li + li { margin-top: 10px; }
 .frame-layout .frame-lnb .link {  }
 .frame-layout .frame-lnb .link.on { font-weight: bold; color: #566270; text-decoration: underline; }
+.frame-layout .frame-lnb .link:hover { text-decoration: underline; }
 .frame-layout .frame-lnb .new-window { display: inline-block; margin-right: 5px; font-size: 11px; background-color: #f0f5f9; border: none; border-radius: 4px; }
 
 .frame-layout .frame-lnb .btn-toggle-arrow { width: 30px; height: 30px; background-image: url('asset/img/icon-arrow-down.png'); background-repeat: no-repeat; background-size: 16px; background-position: center center; border: none; background-color: transparent;}
-.frame-layout .frame-viewer { width: 100%; height: 100%; padding-top: 50px; padding-left: 300px; }
-.frame-layout .frame-viewer iframe { width: 100%; height: calc(100% - 1px); }
+.frame-layout .frame-viewer { width: 100%; height: 100%; padding-top: 50px; padding-left: 300px; background-color: #f0f5f9; }
+.frame-layout .frame-viewer iframe { width: 100%; height: calc(100% - 1px); background-image: url('asset/img/logo_wht.png'); background-repeat: no-repeat; background-position: center center; }
 
 /* mobile */
 .frame-layout.mobile .frame-lnb { width: 100%; }
