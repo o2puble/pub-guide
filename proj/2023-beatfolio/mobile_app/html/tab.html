@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no, email=no, address=no" />
+
+    <title>Tab guide</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../resource/style/css/style.css" />
+
+    <!-- js -->
+    <script src="../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../resource/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="../resource/js/ui_front.js"></script>
+
+    <!-- guide only -->
+    <link rel="stylesheet" href="../../../../asset/style/guide.css" />
+    <script src="../../../../asset/js/guide.js"></script>
+</head>
+
+<body>
+
+    <!-- layout -->
+    <div class="layout-guide">
+        <h2 class="guide-title">Tab</h2>
+
+        <div class="guide-ex">
+            <div class="guide-grid-box">
+
+                <div class="item">
+                    <h3 class="title">Default</h3>
+                    <h4 class="sub-title">Type 01</h4>
+                    <div class="ex">
+                        <!-- 예제 -->
+                        <!-- 기본 텍스트 Tab 레이아웃 -->
+                        <div class="tab-content ">
+                            <ul class="tab-btn-box" data-tab="on">
+                                <li class="tbb-items on">
+                                    <button type="button" class="o-btn btn-tab" title="선택됨" data-tabbtn="tabpanel-1">탭
+                                        메뉴1</button>
+                                </li>
+                                <li class="tbb-items">
+                                    <button type="button" class="o-btn btn-tab" data-tabbtn="tabpanel-2">탭 메뉴2</button>
+                                </li>
+                                <li class="tbb-items">
+                                    <button type="button" class="o-btn btn-tab" data-tabbtn="tabpanel-3">탭 메뉴3</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- // 기본 텍스트 Tab 레이아웃 -->
+                        <!-- // 예제 -->
+                    </div>
+                </div>
+
+                <div class="item">
+                    <h3 class="title">Tab body</h3>
+                    <h4 class="sub-title">Type 01</h4>
+
+                    <!-- 기본 텍스트 Tab tabbody 있는 case -->
+                    <div class="tab-content ">
+                        <ul class="tab-btn-box" data-tab="on">
+                            <li class="tbb-items on">
+                                <button type="button" class="o-btn btn-tab" title="선택됨" data-tabbtn="tabpanel-4">탭
+                                    메뉴1</button>
+                            </li>
+                            <li class="tbb-items">
+                                <button type="button" class="o-btn btn-tab" data-tabbtn="tabpanel-5">탭 메뉴2</button>
+                            </li>
+                            <li class="tbb-items">
+                                <button type="button" class="o-btn btn-tab" data-tabbtn="tabpanel-6">탭 메뉴3</button>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-con-area">
+                        <div class="tab-con-area" data-tabpanel="tabpanel-4">탭 1번 내용</div>
+                        <div class="tab-con-area" data-tabpanel="tabpanel-5" hidden="">탭 2번 내용</div>
+                        <div class="tab-con-area" data-tabpanel="tabpanel-6" hidden="">탭 3번 내용</div>
+                    </div>
+                    <!-- // 기본 텍스트 Tab tabbody 있는 case -->
+
+                    <!-- // 예제 -->
+                </div>
+
+                <div class="item">
+                    <h3 class="title">border</h3>
+                    <h4 class="sub-title">Type 01</h4>
+                    <div class="ex">
+                        <!-- 예제 -->
+
+                        <!-- 기본 텍스트 tab 하단 border 있는 case -->
+                        <div class="tab-content ty-border">
+                            <ul class="tab-btn-box" data-tab="on">
+                                <li class="tbb-items on">
+                                    <button type="button" class="o-btn btn-tab" title="선택됨" data-tabbtn="tabpanel-1">탭
+                                        메뉴1</button>
+                                </li>
+                                <li class="tbb-items">
+                                    <button type="button" class="o-btn btn-tab" data-tabbtn="tabpanel-2">탭 메뉴2</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- // 기본 텍스트 tab 하단 border 있는 case -->
+
+                        <!-- // 예제 -->
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="guide-grid-box bg-02">
+                <div class="item">
+                    <h3 class="title">Default</h3>
+                    <h4 class="sub-title">Type 02</h4>
+                    <div class="ex">
+                        <!-- 예제 -->
+
+                        <!-- 기본 텍스트 tab 다크모드 -->
+                        <div class="tab-content tab-dark ">
+                            <ul class="tab-btn-box" data-tab="on">
+                                <li class="tbb-items on">
+                                    <button type="button" class="o-btn btn-tab" title="선택됨" data-tabbtn="tabpanel-1">탭
+                                        메뉴1</button>
+                                </li>
+                                <li class="tbb-items">
+                                    <button type="button" class="o-btn btn-tab" data-tabbtn="tabpanel-2">탭 메뉴2</button>
+                                </li>
+                                <li class="tbb-items">
+                                    <button type="button" class="o-btn btn-tab" data-tabbtn="tabpanel-3">탭 메뉴3</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- // 기본 텍스트 tab 다크모드 -->
+
+                        <!-- // 예제 -->
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <h3 class="title">Tab body</h3>
+                    <h4 class="sub-title">Type 02</h4>
+                    <div class="ex">
+                        <!-- 예제 -->
+
+                        <!-- 기본 텍스트 Tab tabbody 있는 case -->
+                        <div class="tab-content tab-dark ">
+                            <ul class="tab-btn-box" data-tab="on">
+                                <li class="tbb-items on">
+                                    <button type="button" class="o-btn btn-tab" title="선택됨" data-tabbtn="tabpanel-4">탭
+                                        메뉴1</button>
+                                </li>
+                                <li class="tbb-items">
+                                    <button type="button" class="o-btn btn-tab" data-tabbtn="tabpanel-5">탭 메뉴2</button>
+                                </li>
+                                <li class="tbb-items">
+                                    <button type="button" class="o-btn btn-tab" data-tabbtn="tabpanel-6">탭 메뉴3</button>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="tab-con-area">
+                            <div class="tab-con-area" data-tabpanel="tabpanel-4" style="color: #fff;">탭 1번 내용</div>
+                            <div class="tab-con-area" data-tabpanel="tabpanel-5" hidden="" style="color: #fff;">탭 2번 내용
+                            </div>
+                            <div class="tab-con-area" data-tabpanel="tabpanel-6" hidden="" style="color: #fff;">탭 3번 내용
+                            </div>
+                        </div>
+                        <!-- // 기본 텍스트 Tab tabbody 있는 case -->
+
+                        <!-- // 예제 -->
+                    </div>
+                </div>
+
+                <div class="item">
+                    <h3 class="title">Tab body</h3>
+                    <h4 class="sub-title">Type 02</h4>
+                    <div class="ex">
+                        <!-- 예제 -->
+
+                        <!-- 기본 텍스트 tab 하단 border 있는 case -->
+                        <div class="tab-content tab-dark ty-border-white ">
+                            <ul class="tab-btn-box" data-tab="on">
+                                <li class="tbb-items on">
+                                    <button type="button" class="o-btn btn-tab" title="선택됨" data-tabbtn="tabpanel-1">탭
+                                        메뉴1</button>
+                                </li>
+                                <li class="tbb-items">
+                                    <button type="button" class="o-btn btn-tab" data-tabbtn="tabpanel-2">탭 메뉴2</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- // 기본 텍스트 tab 하단 border 있는 case -->
+
+                        <!-- // 예제 -->
+                    </div>
+                </div>
+
+                <div class="item">
+                    <h3 class="title">border</h3>
+                    <h4 class="sub-title">Type 02</h4>
+                    <div class="ex">
+                        <!-- 예제 -->
+
+                        <!-- 기본 텍스트 tab 하단 border 있는 case -->
+                        <div class="tab-content tab-dark ty-border ">
+                            <ul class="tab-btn-box" data-tab="on">
+                                <li class="tbb-items on">
+                                    <button type="button" class="o-btn btn-tab" title="선택됨" data-tabbtn="tabpanel-1">탭
+                                        메뉴1</button>
+                                </li>
+                                <li class="tbb-items">
+                                    <button type="button" class="o-btn btn-tab" data-tabbtn="tabpanel-2">탭 메뉴2</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- // 기본 텍스트 tab 하단 border 있는 case -->
+
+                        <!-- // 예제 -->
+                    </div>
+                </div>
+            </div>
+            <div class="guide-grid-box bg-03">
+                <div class="item">
+                    <h3 class="title">border</h3>
+                    <h4 class="sub-title">Type 01</h4>
+                    <div class="ex">
+                        <!-- 예제 -->
+
+                        <!-- 기본 텍스트 tab 하단 border 있는 case -->
+                        <div class="tab-content ty-border-black ">
+                            <ul class="tab-btn-box" data-tab="on">
+                                <li class="tbb-items on">
+                                    <button type="button" class="o-btn btn-tab" title="선택됨" data-tabbtn="tabpanel-1">탭
+                                        메뉴1</button>
+                                </li>
+                                <li class="tbb-items">
+                                    <button type="button" class="o-btn btn-tab" data-tabbtn="tabpanel-2">탭 메뉴2</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- // 기본 텍스트 tab 하단 border 있는 case -->
+
+                        <!-- // 예제 -->
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    </div>
+    <!-- // layout -->
+
+</body>
+
+</html>

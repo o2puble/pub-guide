@@ -61,6 +61,9 @@ body {
 .layout-guide .guide-ex .guide-grid-box.bg-02 {		
 	background-color: #0d141c;
 }
+.layout-guide .guide-ex .guide-grid-box.bg-03 {		
+	background: url(../img/gradient-bg.png) no-repeat center/ cover;
+}
 
 
 

@@ -1,0 +1,105 @@
+.tab-content .tab-btn-box {
+  display: flex;
+}
+.tab-content .tab-btn-box .tbb-items + .tbb-items {
+  margin-left: 16px;
+}
+.tab-content .tab-btn-box .tbb-items .btn-tab {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #999;
+}
+.tab-content .tab-btn-box .tbb-items.on .btn-tab {
+  color: #111;
+}
+.tab-content.tab-dark .tab-btn-box .tbb-items .btn-tab {
+  color: rgba(255, 255, 255, 0.4);
+}
+.tab-content.tab-dark .tab-btn-box .tbb-items.on .btn-tab {
+  color: #fff;
+}
+.tab-content.tab-dark.ty-border {
+  position: relative;
+  width: 100%;
+}
+.tab-content.tab-dark.ty-border::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -24px;
+  width: calc(100% + 48px);
+  height: 1px;
+  background-color: rgba(244, 246, 248, 0.05);
+}
+.tab-content.tab-dark.ty-border .tab-btn-box .tbb-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  border-bottom: 2px solid transparent;
+}
+.tab-content.tab-dark.ty-border .tab-btn-box .tbb-items + .tbb-items {
+  margin-left: 1px;
+}
+.tab-content.tab-dark.ty-border .tab-btn-box .tbb-items .btn-tab {
+  width: 100%;
+  color: rgba(244, 246, 248, 0.3);
+}
+.tab-content.tab-dark.ty-border .tab-btn-box .tbb-items.on {
+  border-bottom: 2px solid #fff;
+}
+.tab-content.tab-dark.ty-border .tab-btn-box .tbb-items.on .btn-tab {
+  color: #fff;
+}
+.tab-content.ty-border {
+  width: 100%;
+}
+.tab-content.ty-border .tab-btn-box {
+  width: 100%;
+}
+.tab-content.ty-border .tab-btn-box .tbb-items {
+  width: 100%;
+  border-bottom: 2px solid transparent;
+}
+.tab-content.ty-border .tab-btn-box .tbb-items + .tbb-items {
+  margin-left: 1px;
+}
+.tab-content.ty-border .tab-btn-box .tbb-items .btn-tab {
+  width: 100%;
+  color: #000;
+}
+.tab-content.ty-border .tab-btn-box .tbb-items.on {
+  border-bottom: 2px solid #7974ff;
+}
+.tab-content.ty-border .tab-btn-box .tbb-items.on .btn-tab {
+  color: #7974ff;
+}
+.tab-content.ty-border-black .tab-btn-box .tbb-items {
+  border-bottom: 2px solid transparent;
+}
+.tab-content.ty-border-black .tab-btn-box .tbb-items.on {
+  border-bottom: 2px solid #000;
+}
+.tab-content.ty-border-black .tab-btn-box .tbb-items.on .btn-tab {
+  color: #000;
+}
+.tab-content.ty-border-white .tab-btn-box .tbb-items {
+  border-bottom: 2px solid transparent;
+}
+.tab-content.ty-border-white .tab-btn-box .tbb-items.on {
+  border-bottom: 2px solid #fff;
+}
+.tab-content.ty-border-white .tab-btn-box .tbb-items.on .btn-tab {
+  color: #fff;
+}
+.tab-content.ty-fit {
+  width: auto;
+}
+.tab-content.ty-fit .tab-btn-box {
+  width: auto;
+}
+.tab-content.ty-fit .tab-btn-box .tbb-items {
+  width: auto;
+}
