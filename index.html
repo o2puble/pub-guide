@@ -161,10 +161,11 @@ vertical-align: middle; }
 .frame-layout .frame-lnb ul.dep03 > li > .title { display: flex; align-items: center; font-size: 14px; font-weight: bold; cursor: pointer; }
 .frame-layout .frame-lnb ul.dep03 > li > .title .btn-toggle-arrow { transform: rotate(180deg); margin-left: auto; }
 .frame-layout .frame-lnb ul.dep03 > li.off > .title .btn-toggle-arrow { transform: rotate(0deg); }
-.frame-layout .frame-lnb ul.dep04 { margin-top: 10px; padding: 0 0 0 10px; }
+.frame-layout .frame-lnb ul.dep04 { margin-top: 10px; _padding: 0 0 0 10px; }
 .frame-layout .frame-lnb ul.dep04 > li + li { margin-top: 10px; }
 .frame-layout .frame-lnb .link {  }
 .frame-layout .frame-lnb .link.on { font-weight: bold; color: #566270; text-decoration: underline; }
+.frame-layout .frame-lnb .new-window { display: inline-block; margin-right: 5px; font-size: 11px; background-color: #f0f5f9; border: none; border-radius: 4px; }
 
 .frame-layout .frame-lnb .btn-toggle-arrow { width: 30px; height: 30px; background-image: url('asset/img/icon-arrow-down.png'); background-repeat: no-repeat; background-size: 16px; background-position: center center; border: none; background-color: transparent;}
 .frame-layout .frame-viewer { width: 100%; height: 100%; padding-top: 50px; padding-left: 300px; }
@@ -176,7 +177,7 @@ vertical-align: middle; }
 </style>
 
 <script>   
-    var frameLayout = function(){
+    function frameLayout(){
         var winW = $(window).outerWidth();
 
         if( winW < 760 ){
@@ -185,8 +186,22 @@ vertical-align: middle; }
         }else {
             $('.frame-layout').removeClass('mobile');
             $('.frame-lnb .link').attr('target','frameViewer');
-        }                  
-    };    
+
+            newWindowBtn()
+        } 
+    }
+    
+    function newWindowBtn(){
+        $('.frame-lnb .link').each(function(){            
+            if($(this).siblings('.new-window').length) return   
+            
+
+            var link = +$(this).attr('href');
+
+            $(this).before('<button type="button" class="new-window">새창</button>');
+        })
+    }
+    
 
     $(document).on('click', '[data-toggle="on"]', function(){      
         if( $(this).closest('li').hasClass('off') ){
@@ -199,6 +214,11 @@ vertical-align: middle; }
     $(document).on('click', '.frame-lnb .link', function(){      
         $('.frame-lnb .link').removeClass('on');
         $(this).addClass('on')
+    });
+
+    $(document).on('click', '.frame-lnb .new-window', function(){      
+        var link = $(this).siblings('.link').attr('href');
+        window.open(link)
     });
 
     /* window */

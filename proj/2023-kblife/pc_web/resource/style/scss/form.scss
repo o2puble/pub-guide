@@ -374,6 +374,89 @@
 }
 
 
+/*
+	form set
+*/ 
+.form-set {
+	.form-tit {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-end;
+		margin-bottom: 12px;
+
+		[class^="o-h"] {
+			display: inline-block;
+		}	
+		
+		.o-h3 {
+			font-size: 18px;			
+			font-weight: 700;
+			color: #333;
+		}
+
+		.o-h4 {
+			font-size: 13px;
+			font-weight: 300;
+			color: #888;
+		}		
+	}  	  
+}
+
+/* ty-flex */ 
+.form-set.ty-flex {
+	display: flex;
+	align-items: center;
+
+	.form-tit {		  	
+		margin-bottom: 0;
+
+		.o-h4 {
+			min-width: 46px;  
+			margin-right: 14px;
+		}		
+	}
+
+	&.sz-s {
+		.o-h4 {
+			min-width: auto;  
+			margin-right: 0;
+		}
+	}
+}
+
+
+
+/*
+	formgrid
+*/ 
+.form-grid {
+	display: flex;
+	align-items: center;
+	width: calc(100% + 8px);
+	margin: 0 -4px;
+
+	& > * {
+		margin: 0 4px;	
+		box-sizing: border-box;
+	}
+
+	& > .item {
+		width: 100%;				
+	}	
+
+	// 10 columns(.item-num)
+	@for $i from 1 through 10 { 
+		& > .item-#{$i} { width: 10% * $i } 
+	}	
+
+	& > .sign {
+		width: auto;
+		margin: 0;		
+		font-size: 16px;			
+	}	
+}
+
+
 
 
 

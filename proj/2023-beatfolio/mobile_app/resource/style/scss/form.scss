@@ -495,23 +495,7 @@
 				background-color: #ff6b6b;
 			}
 		}		
-	}   		
-    
-	& + .form-set {
-		margin-top: 40px;
-
-        &.spc-m {
-            margin-top: 20px;
-        }
-
-        &.spc-l {
-            margin-top: 30px;
-        }
-
-        &.spc-xl {
-            margin-top: 64px;
-        }
-	}   
+	}   	  
 }
 
 
@@ -534,16 +518,9 @@
 		width: 100%;				
 	}	
 
-	// 16 columns(.item-num)
-	@for $i from 1 through 16 { 
-		& > .item-#{$i} { width: 6.25% * $i } 
-	}	
-
-	& > .sign {
-		width: auto;
-		margin: 0;		
-		font-size: 15px;
-		color: #303030;		
+	// 10 columns(.item-num)
+	@for $i from 1 through 10 { 
+		& > .item-#{$i} { width: 10% * $i } 
 	}	
 }
 

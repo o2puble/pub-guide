@@ -301,3 +301,95 @@
   background-color: #f6f7f7;
   color: #888;
 }
+
+/*
+	form set
+*/
+.form-set .form-tit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-bottom: 12px;
+}
+.form-set .form-tit [class^=o-h] {
+  display: inline-block;
+}
+.form-set .form-tit .o-h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+.form-set .form-tit .o-h4 {
+  font-size: 13px;
+  font-weight: 300;
+  color: #888;
+}
+
+/* ty-flex */
+.form-set.ty-flex {
+  display: flex;
+  align-items: center;
+}
+.form-set.ty-flex .form-tit {
+  margin-bottom: 0;
+}
+.form-set.ty-flex .form-tit .o-h4 {
+  min-width: 46px;
+  margin-right: 14px;
+}
+.form-set.ty-flex.sz-s .o-h4 {
+  min-width: auto;
+  margin-right: 0;
+}
+
+/*
+	formgrid
+*/
+.form-grid {
+  display: flex;
+  align-items: center;
+  width: calc(100% + 8px);
+  margin: 0 -4px;
+}
+.form-grid > * {
+  margin: 0 4px;
+  box-sizing: border-box;
+}
+.form-grid > .item {
+  width: 100%;
+}
+.form-grid > .item-1 {
+  width: 10%;
+}
+.form-grid > .item-2 {
+  width: 20%;
+}
+.form-grid > .item-3 {
+  width: 30%;
+}
+.form-grid > .item-4 {
+  width: 40%;
+}
+.form-grid > .item-5 {
+  width: 50%;
+}
+.form-grid > .item-6 {
+  width: 60%;
+}
+.form-grid > .item-7 {
+  width: 70%;
+}
+.form-grid > .item-8 {
+  width: 80%;
+}
+.form-grid > .item-9 {
+  width: 90%;
+}
+.form-grid > .item-10 {
+  width: 100%;
+}
+.form-grid > .sign {
+  width: auto;
+  margin: 0;
+  font-size: 16px;
+}
