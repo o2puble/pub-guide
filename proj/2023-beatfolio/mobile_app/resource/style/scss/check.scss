@@ -706,9 +706,36 @@
     }
 }
 
+.theme-01{
+    .o-chk.chk-like-sm{
+        .form-field{
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            background: url('../../../resource/img/component/icon-like-btn-sm-default-grey.png') no-repeat center/cover;
+        }
+    
+        input:checked{
+            background: url('../../../resource/img/component/icon-like-btn-sm-active.png') no-repeat center/cover;
+        }
+    
+        label{
+            font-size: 12px;
+            padding-right: 4px;
+            color: #999;
+            font-weight: 500;
+        }
+    }
+}
 
-
-
+.theme-02{
+    .form-title{
+        color: #fff;
+    }
+}
 
 /*---------------------------------------------
 	스위치
