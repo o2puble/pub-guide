@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no, email=no, address=no" />
+
+    <title>form guide</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../resource/style/css/style.css" />
+
+    <!-- js -->
+    <script src="../resource/js/jquery-3.6.0.min.js"></script>
+    <script src="../resource/js/jquery-ui-1.12.1.min.js"></script>  
+    <script src="../resource/js/ui_front.js"></script>      
+
+    <!-- guide only -->        
+    <link rel="stylesheet" href="../../../../asset/style/guide.css" />
+    <script src="../../../../asset/js/guide.js"></script>
+</head>
+<body>
+
+<!-- layout -->
+<div class="layout-guide">
+
+    <!-- 기본 체크박스 -->
+    <h2 class="guide-title">Checkbox</h2>
+    <div class="guide-ex">  
+
+        <!-- 기본 체크박스 -->
+        <div class="guide-grid-box">           
+
+            <div class="item">    
+                
+                <h3 class="title">Default</h3>     
+
+                <h4 class="sub-title">Type 01</h4>               
+                <div class="ex">
+<!-- 예제 -->
+<div class="o-chk ty-fill">
+    <input type="checkbox" id="o-chk-01-01" class="form-field" >
+    <label for="o-chk-01-01" class="form-title">Unchecked</label>
+</div>
+<!-- // 예제 -->                          
+                </div>
+
+                <!-- 이미지가 들어가는 체크박스 -->
+                <h4 class="sub-title">Type 02</h4>               
+                <div class="ex">
+<!-- 예제 -->
+<div class="o-chk ty-fill-chk">
+    <input type="checkbox" id="o-chk-03-01" class="form-field" >
+    <label for="o-chk-03-01" class="form-title">Unchecked</label>
+</div>
+<!-- // 예제 -->                          
+                </div>   
+
+                <!-- 서브 체크박스 -->
+                <h4 class="sub-title">Type 03</h4>               
+                <div class="ex">
+<!-- 예제 -->
+<div class="o-chk ty-sub ">
+    <input type="checkbox" id="o-chk-05-01" class="form-field" >
+    <label for="o-chk-05-01" class="form-title">Unchecked</label>
+</div>
+
+<!-- // 예제 -->                          
+                </div>
+
+                <!-- radius 서브 체크박스 -->
+                <h4 class="sub-title">Type 04</h4>
+                <div class="ex">
+<!-- 예제 -->
+<div class="o-chk ty-radius">
+    <input type="checkbox" id="o-chk-06-01" class="form-field"  >
+    <label for="o-chk-06-01" class="form-title">
+        <span class="form-img"></span>
+        <span class="form-txt">광고 기획</span>
+    </label>
+</div>
+
+<!-- // 예제 -->
+            </div>
+            </div>
+
+            <div class="item">  
+                
+                <h3 class="title">Checked</h3>  
+
+                <h4 class="sub-title">Type 01</h4>                    
+                <div class="ex">
+<!-- 예제 -->                       
+<div class="o-chk ty-fill">
+    <input type="checkbox" id="o-chk-01-02" class="form-field" checked >
+    <label for="o-chk-01-02" class="form-title">Checked</label>
+</div>
+<!-- // 예제 -->                         
+                </div>
+
+
+                <!-- 이미지가 들어가는 체크박스 -->
+                <h4 class="sub-title">Type 02</h4>                    
+                <div class="ex">
+<!-- 예제 -->                       
+<div class="o-chk ty-fill-chk">
+    <input type="checkbox" id="o-chk-03-02" class="form-field" checked >
+    <label for="o-chk-03-02" class="form-title">Checked</label>
+</div>
+<!-- // 예제 -->                         
+                </div>             
+
+                <!-- 서브 체크박스 -->
+                <h4 class="sub-title">Type 03</h4>                    
+                <div class="ex">
+<!-- 예제 -->                       
+<div class="o-chk ty-sub ">
+    <input type="checkbox" id="o-chk-05-02" class="form-field" checked >
+    <label for="o-chk-05-02" class="form-title">Checked</label>
+</div>
+
+<!-- // 예제 -->                         
+                </div>
+
+                <!-- radius 서브 체크박스 -->
+                <h4 class="sub-title">Type 04</h4>
+                <div class="ex">
+<!-- 예제 -->
+<div class="o-chk ty-radius">
+    <input type="checkbox" id="o-chk-06-02" class="form-field"  checked>
+    <label for="o-chk-06-02" class="form-title">
+        <span class="form-img"></span>
+        <span class="form-txt">광고 기획</span>
+    </label>
+</div>
+<!-- // 예제 -->                          
+                </div>
+
+
+            </div>
+
+            <div class="item">   
+                
+                <h3 class="title">Disabled</h3>
+
+                <h4 class="sub-title">Type 01</h4>
+                <div class="ex">
+<!-- 예제 -->
+<div class="o-chk ty-fill">
+    <input type="checkbox" id="o-chk-01-03" class="form-field" Checked>
+    <label for="o-chk-01-03" class="form-title" >Checked</label>
+</div>
+<!-- // 예제 -->
+                </div>      
+
+                <!-- 이미지가 들어가는 체크박스 -->
+                <h4 class="sub-title">Type 02</h4>
+                <div class="ex">
+<!-- 예제 -->
+<div class="o-chk ty-fill-chk">
+    <input type="checkbox" id="o-chk-03-03" class="form-field" disabled>
+    <label for="o-chk-03-03" class="form-title" >Disabled</label>
+</div>
+<!-- // 예제 -->
+                </div>              
+
+            </div>
+        </div>
+
+        <div class="guide-grid-box bg-02">           
+
+            <div class="item">    
+                
+                <h3 class="title">Default</h3>                  
+
+
+                <h4 class="sub-title">Type 01</h4>
+                <div class="ex">
+<!-- 예제 -->
+<div class="o-chk ty-fill ty-dark">
+    <input type="checkbox" id="o-chk-02-01" class="form-field" >
+    <label for="o-chk-02-01" class="form-title">Unchecked</label>
+</div>
+
+<!-- // 예제 -->                          
+                </div>
+
+                <!-- 이미지가 들어가는 체크박스 -->
+                <h4 class="sub-title">Type 02</h4>
+                <div class="ex">
+<!-- 예제 -->
+<div class="o-chk ty-fill-chk ty-dark">
+    <input type="checkbox" id="o-chk-04-01" class="form-field" >
+    <label for="o-chk-04-01" class="form-title">Unchecked</label>
+</div>
+
+<!-- // 예제 -->                          
+                </div>
+
+                <!-- 작은 텍스트가 들어가는 체크박스 -->
+                <h4 class="sub-title">Type 02 - sm title style</h4>
+                <div class="ex">
+<!-- 예제 -->
+<div class="o-chk ty-fill-chk ty-dark">
+    <input type="checkbox" id="o-chk-04-04" class="form-field" >
+    <label for="o-chk-04-04" class="form-title sty-sm">Unchecked</label>
+</div>
+
+<!-- // 예제 -->                          
+                </div>
+
+                <!--  -->
+            </div>
+
+            <div class="item">  
+                
+                <h3 class="title">Checked</h3>                 
+
+
+                <h4 class="sub-title">Type 01</h4>
+                <div class="ex">
+<!-- 예제 -->                       
+<div class="o-chk ty-fill ty-dark">
+    <input type="checkbox" id="o-chk-02-02" class="form-field" checked >
+    <label for="o-chk-02-02" class="form-title">Checked</label>
+</div>
+
+<!-- // 예제 -->                         
+                </div>
+
+                <!-- 이미지가 들어가는 체크박스 -->
+                <h4 class="sub-title">Type 02</h4>
+                <div class="ex">
+<!-- 예제 -->                       
+<div class="o-chk ty-fill-chk ty-dark">
+    <input type="checkbox" id="o-chk-04-02" class="form-field" checked >
+    <label for="o-chk-04-02" class="form-title">Checked</label>
+</div>
+
+<!-- // 예제 -->                         
+                </div>
+
+                <!-- 작은 텍스트가 들어가는 체크박스 -->
+                <h4 class="sub-title">Type 02 - sm title style</h4>
+                <div class="ex">
+<!-- 예제 -->                       
+<div class="o-chk ty-fill-chk ty-dark">
+    <input type="checkbox" id="o-chk-04-05" class="form-field" checked >
+    <label for="o-chk-04-05" class="form-title sty-sm">Checked</label>
+</div>
+
+<!-- // 예제 -->                         
+                </div>
+
+                <!--  -->
+            </div>
+
+            <div class="item">   
+                
+                <h3 class="title">Disabled</h3>                
+
+
+                <h4 class="sub-title">Type 01</h4>
+                <div class="ex"> 
+<!-- 예제 -->                           
+<div class="o-chk ty-fill ty-dark">
+    <input type="checkbox" id="o-chk-02-03" class="form-field" Checked>
+    <label for="o-chk-02-03" class="form-title" >Checked</label>
+</div>
+
+<!-- // 예제 -->
+                </div>
+
+                <!-- 이미지가 들어가는 체크박스 -->
+                <h4 class="sub-title">Type 02</h4>
+                <div class="ex"> 
+<!-- 예제 -->                           
+<div class="o-chk ty-fill-chk ty-dark">
+    <input type="checkbox" id="o-chk-04-03" class="form-field" disabled>
+    <label for="o-chk-04-03" class="form-title" >Disabled</label>
+</div>
+
+<!-- // 예제 -->
+                </div>
+
+                <!-- 작은 텍스트가 들어가는 체크박스 -->
+                <h4 class="sub-title">Type 02 - sm title style</h4>
+                <div class="ex"> 
+<!-- 예제 -->                           
+<div class="o-chk ty-fill-chk ty-dark">
+    <input type="checkbox" id="o-chk-04-06" class="form-field" disabled>
+    <label for="o-chk-04-06" class="form-title sty-sm" >Disabled</label>
+</div>
+
+<!-- // 예제 -->
+                </div>
+
+                <!--  -->
+            </div>
+        </div> 
+    </div>
+
+
+
+    <!-- 기본 라디오버튼 -->
+    <h2 class="guide-title">Radio</h2>
+    <div class="guide-ex">  
+                
+        <div class="guide-grid-box bg-01">            
+
+            <div class="item">    
+                
+                <h3 class="title">Default</h3>                 
+
+                <!-- 라벨과 인풋이 거꾸로 되어있는 라디오 -->
+                <h4 class="sub-title">Type 02</h4>
+                <div class="ex">
+<!-- 예제 -->
+<div class="o-radio ty-fill ty-dark sty-reverse">
+    <label for="o-radio-04-01" class="form-title">라벨이 인풋과 거꾸로 되어있는 타입(체크 되기 전)</label>
+    <input type="radio" name="o-radio-04" id="o-radio-04-01" class="form-field"  >
+</div>
+
+<!-- // 예제 -->                          
+                </div>
+                                <!-- 하트 모양의 체크박스 30px -->
+                <h4 class="sub-title">Type 05</h4>
+                <div class="ex">
+<div class="o-chk chk-like-md">
+    <label for="chk-md-01" class="text-hide">좋아요 버튼</label>
+    <input type="checkbox" name="chk-md-01" id="chk-md-01" class="form-field" >
+</div>
+                </div>
+
+                <!-- 하트 모양의 체크박스 24px -->
+                <h4 class="sub-title">Type 06</h4>
+                <div class="ex">
+<div class="o-chk chk-like-sm">
+    <label for="chk-md-01" class="text-hide">좋아요 버튼</label>
+    <input type="checkbox" name="chk-md-01" id="chk-md-01" class="form-field" >
+</div>                    
+                </div>
+
+                <!-- 별 모양의 체크박스 30px -->
+                <h4 class="sub-title">Type 07</h4>
+                <div class="ex">
+<div class="o-chk chk-bookmark-md">
+    <label for="chk-md-01" class="text-hide">좋아요 버튼</label>
+    <input type="checkbox" name="chk-md-01" id="chk-md-01" class="form-field" >
+</div>
+                </div>
+            </div>
+
+            <div class="item">  
+                
+                <h3 class="title">Checked</h3>                  
+
+                <!-- 라벨과 인풋이 거꾸로 되어있는 라디오 -->
+                <h4 class="sub-title">Type 02</h4>
+                <div class="ex">
+<!-- 예제 -->   
+<div class="o-radio ty-fill ty-dark sty-reverse">
+    <label for="o-radio-04-02" class="form-title">라벨이 인풋과 거꾸로 되어있는 타입(체크 되기 후)</label>
+    <input type="radio" name="o-radio-04" id="o-radio-04-02" class="form-field" checked >
+</div>
+<!-- // 예제 -->                         
+                </div>
+                                <!-- 하트 모양의 체크박스 30px -->
+                <h4 class="sub-title">Type 05</h4>
+                <div class="ex">
+<div class="o-chk chk-like-md">
+    <label for="chk-md-01" class="text-hide">좋아요 버튼</label>
+    <input type="checkbox" name="chk-md-01" id="chk-md-01" class="form-field" checked="">
+</div>
+                </div>
+
+                <!-- 하트 모양의 체크박스 24px -->
+                <h4 class="sub-title">Type 06</h4>
+                <div class="ex">
+<div class="o-chk chk-like-sm">
+    <label for="chk-md-01" class="text-hide">좋아요 버튼</label>
+    <input type="checkbox" name="chk-md-01" id="chk-md-01" class="form-field" checked="">
+</div>                    
+                </div>
+
+                <!-- 별 모양의 체크박스 30px -->
+                <h4 class="sub-title">Type 07</h4>
+                <div class="ex">
+<div class="o-chk chk-bookmark-md">
+    <label for="chk-md-01" class="text-hide">좋아요 버튼</label>
+    <input type="checkbox" name="chk-md-01" id="chk-md-01" class="form-field" checked="">
+</div>
+                </div>
+            </div>
+
+            <div class="item">   
+                
+                <h3 class="title">Disabled</h3>               
+
+                <!-- 라벨과 인풋이 거꾸로 되어있는 라디오 -->
+                <h4 class="sub-title">Type 02</h4>
+                <div class="ex">
+<!-- 예제 -->
+<div class="o-radio ty-fill ty-dark sty-reverse">
+    <label for="o-radio-04-03" class="form-title">아직 디자인 없음(disabled)</label>
+    <input type="radio" name="o-radio-04" id="o-radio-04-03" class="form-field" disabled>
+</div>
+
+<!-- // 예제 -->
+                </div>
+            </div>
+        </div> 
+
+        <div class="guide-grid-box bg-02">            
+
+            <div class="item">    
+                
+                <h3 class="title">Default</h3>
+
+                <!-- 라벨과 인풋이 붙어있는 라디오버튼 -->
+                <h4 class="sub-title">Type 01</h4>
+                <div class="ex">
+<!-- 예제 -->
+<div class="o-radio ty-fill ty-dark">
+    <input type="radio" name="o-radio-03" id="o-radio-03-01" class="form-field"  >
+    <label for="o-radio-03-01" class="form-title">라벨이 인풋과 붙어있는 상태(체크 되기 전)</label>
+</div>
+
+<!-- // 예제 -->                          
+                </div>
+
+                <!-- 한줄짜리 텍스트가 들어가는 라디오버튼 -->
+                <h4 class="sub-title">Type 03</h4>
+                <div class="ex">
+<!-- 예제 -->
+<div class="o-radio ty-cnt">
+    <input type="radio" id="o-radio-01-01" class="form-field" name="o-radio-01">
+    <label for="o-radio-01-01" class="form-title">별명</label>
+</div>
+<!-- // 예제 --> 
+                </div>
+
+                <!-- 타이틀과 텍스트가 들어가는 라디오버튼 -->
+                <h4 class="sub-title">Type 04</h4>
+                <div class="ex">
+<!-- 예제 -->
+<div class="o-radio ty-cnt-box">
+    <input type="radio" id="o-radio-02-01" class="form-field" name="o-radio-02">
+    <label for="o-radio-02-01" class="form-title">
+        <span class="form-tit">공개</span>
+        <span class="form-txt">모든 사람이<br>
+            참여 할 수 있어요.</span>
+    </label>
+</div>
+<!-- // 예제 --> 
+                </div>
+
+                <!-- 하트 모양의 체크박스 30px -->
+                <h4 class="sub-title">Type 05</h4>
+                <div class="ex">
+<div class="o-chk chk-like-md">
+    <label for="chk-md-01" class="text-hide">좋아요 버튼</label>
+    <input type="checkbox" name="chk-md-01" id="chk-md-01" class="form-field" >
+</div>
+                </div>
+
+                <!-- 하트 모양의 체크박스 24px -->
+                <h4 class="sub-title">Type 06</h4>
+                <div class="ex">
+<div class="o-chk chk-like-sm">
+    <label for="chk-md-01" class="text-hide">좋아요 버튼</label>
+    <input type="checkbox" name="chk-md-01" id="chk-md-01" class="form-field" >
+</div>                    
+                </div>
+
+                <!-- 별 모양의 체크박스 30px -->
+                <h4 class="sub-title">Type 07</h4>
+                <div class="ex">
+<div class="o-chk chk-bookmark-md">
+    <label for="chk-md-01" class="text-hide">좋아요 버튼</label>
+    <input type="checkbox" name="chk-md-01" id="chk-md-01" class="form-field" >
+</div>
+                </div>
+            </div>
+            
+            <div class="item">  
+                
+                <h3 class="title">Checked</h3>                  
+                <!-- 라벨과 인풋이 붙어있는 라디오버튼 -->
+                <h4 class="sub-title">Type 01</h4>
+                <div class="ex">
+<!-- 예제 -->   
+<div class="o-radio ty-fill ty-dark">
+    <input type="radio" name="o-radio-03" id="o-radio-03-02" class="form-field" checked >
+    <label for="o-radio-03-02" class="form-title">라벨이 인풋과 붙어있는 상태(체크 되기 후)</label>
+</div>
+<!-- // 예제 -->                         
+                </div>
+
+                <!-- 한줄짜리 텍스트가 들어가는 라디오버튼 -->
+                <h4 class="sub-title">Type 03</h4>
+                <div class="ex">
+<!-- 예제 -->
+<div class="o-radio ty-cnt">
+    <input type="radio" id="o-radio-01-02" class="form-field" name="o-radio-01" checked="">
+    <label for="o-radio-01-02" class="form-title">실명</label>
+</div>
+<!-- // 예제 --> 
+                </div>
+
+                <!-- 타이틀과 텍스트가 들어가는 라디오버튼 -->
+                <h4 class="sub-title">Type 04</h4>
+                <div class="ex">
+<!-- 예제 -->
+<div class="o-radio ty-cnt-box">
+    <input type="radio" id="o-radio-02-02" class="form-field" name="o-radio-02" checked="">
+    <label for="o-radio-02-02" class="form-title">
+        <span class="form-tit">비공개</span>
+        <span class="form-txt">
+            비밀번호를 아는 사람만<br>
+    참여 할 수 있어요.
+        </span>
+    </label>
+</div>
+<!-- // 예제 --> 
+                </div>
+
+                <!-- 하트 모양의 체크박스 30px -->
+                <h4 class="sub-title">Type 05</h4>
+                <div class="ex">
+<div class="o-chk chk-like-md">
+    <label for="chk-md-01" class="text-hide">좋아요 버튼</label>
+    <input type="checkbox" name="chk-md-01" id="chk-md-01" class="form-field" checked="">
+</div>
+                </div>
+
+                <!-- 하트 모양의 체크박스 24px -->
+                <h4 class="sub-title">Type 06</h4>
+                <div class="ex">
+<div class="o-chk chk-like-sm">
+    <label for="chk-md-01" class="text-hide">좋아요 버튼</label>
+    <input type="checkbox" name="chk-md-01" id="chk-md-01" class="form-field" checked="">
+</div>                    
+                </div>
+
+                <!-- 별 모양의 체크박스 30px -->
+                <h4 class="sub-title">Type 07</h4>
+                <div class="ex">
+<div class="o-chk chk-bookmark-md">
+    <label for="chk-md-01" class="text-hide">좋아요 버튼</label>
+    <input type="checkbox" name="chk-md-01" id="chk-md-01" class="form-field" checked="">
+</div>
+                </div>
+            </div>
+            
+            <div class="item">   
+                
+                <h3 class="title">Disabled</h3>               
+                <!-- 라벨과 인풋이 붙어있는 라디오버튼 -->
+                <h4 class="sub-title">Type 01</h4>
+                <div class="ex">
+<!-- 예제 -->
+<div class="o-radio ty-fill ty-dark">
+    <input type="radio" name="o-radio-03" id="o-radio-03-03" class="form-field" disabled>
+    <label for="o-radio-03-03" class="form-title">아직 디자인 없음(disabled)</label>
+</div>
+
+<!-- // 예제 -->
+                </div>
+
+                <!-- 한줄짜리 텍스트가 들어가는 라디오버튼 -->
+                <h4 class="sub-title"></h4>
+
+                <!-- 타이틀과 텍스트가 들어가는 라디오버튼 -->
+                <h4 class="sub-title"></h4>
+                
+            </div>
+        </div> 
+    </div>
+
+
+</div>
+<!-- // layout -->
+
+</body>
+</html>

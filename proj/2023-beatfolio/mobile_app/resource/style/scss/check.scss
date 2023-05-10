@@ -1,0 +1,769 @@
+
+
+/*---------------------------------------------
+	체크박스
+---------------------------------------------*/
+/*
+	reset
+*/ 
+.o-chk { display: inline-block; box-sizing: border-box; }
+.o-chk input { appearance: none; box-sizing: border-box; border: none; cursor: pointer; }
+.o-chk input::-ms-check { visibility: hidden; }
+.o-chk label { display: inline-block; box-sizing: border-box; cursor: pointer; }
+.o-chk input:disabled, .o-chk input:disabled + label { cursor: default; }
+
+
+/* 
+    default
+*/
+[class^='o-chk']{
+    display: flex;
+    align-items: center;
+    
+    .form-field{
+        flex: 0 0 auto;
+    }
+}
+
+
+/*
+    ty-fill
+*/ 
+[class^='o-chk ty-fill']{
+    display: flex;
+    align-items: center;
+
+    .form-title{
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 500;
+    }
+
+    .form-field{
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;       
+        background: url('../../img/component/icon-chkbox-01-unchecked.png')no-repeat center / cover;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+}
+
+/*  폼 타입 기본 - 화이트 모드 */
+.o-chk.ty-fill{
+    .form-field{
+        &:checked{
+            background: url('../../img/component/icon-chkbox-checked.png')no-repeat center / cover;
+        }
+
+        &:disabled{
+            background: none;
+            background-color: #fff;
+            border: 1px solid #ccc;            
+
+            & + .form-title {
+                color: #cccccc;
+            }
+        }
+
+        &:checked:disabled {
+            background: url('../../img/component/icon-chkbox-01-disabled.png')no-repeat center / cover;                    
+        }
+
+        & + .form-title{
+            margin-left: 10px;
+                    
+            &.sty-sm{
+                font-size: 12px;
+                font-weight: 400;
+                color: #999;
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+/*  폼 타입 기본 - 다크 모드 */
+.o-chk.ty-fill.ty-dark{
+    .form-field{
+        background: url('../../img/component/icon-chkbox-03-unchecked.png')no-repeat center / cover;
+
+        &:checked{
+            background: url('../../img/component/icon-chkbox-checked.png')no-repeat center / cover;
+        }
+
+        &:disabled{
+            background: none;
+            border: 1px solid #555;           
+
+            & + .form-title {
+                color: #555555;
+            }
+        }
+
+        &:checked:disabled{
+            background: url('../../img/component/icon-chkbox-03-disabled.png')no-repeat center / cover;
+            object-fit: initial;    
+        }
+
+        & + .form-title{
+            margin-left: 10px;
+            color: #fff;
+        
+            &.sty-sm{
+                font-size: 12px;
+                font-weight: 400;
+                color: #999;
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+/*  폼 타입 체크이미지 - 화이트 모드 */
+.o-chk.ty-fill-chk{
+    .form-field{
+        background: url('../../img/component/icon-chkbox-02-unchecked.png')no-repeat center / cover;
+
+        &:checked{
+            background: url('../../img/component/icon-chkbox-checked.png')no-repeat center / cover;
+        }
+
+        &:disabled{
+            background: url('../../img/component/icon-chkbox-01-disabled.png')no-repeat center / cover;
+        }
+
+        & + .form-title{
+            margin-left: 10px;
+            
+            &.sty-sm{
+                font-size: 12px;
+                font-weight: 400;
+                color: #999;
+                margin-left: 8px;
+            }
+
+        }
+    }
+}
+
+/*  폼 타입 체크이미지 - 다크 모드 */
+.ty-fill-chk.ty-dark{    
+    .form-field{
+        &:disabled{
+            background: url('../../img/component/icon-chkbox-04-disabled.png')no-repeat center / cover;
+        }
+
+        & + .form-title{
+            margin-left: 10px;
+            color: #fff;
+                                
+            &.sty-sm{
+                font-size: 12px;
+                font-weight: 400;
+                color: #999;
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+
+/*  
+    ty-radius
+*/
+.o-chk.ty-radius{
+    .form-field{
+        display: none;
+    }
+
+    .form-title{
+        display: flex;
+        align-items: center;
+        padding: 6px 12px;
+        background: #fff;
+        border-radius: 14px;
+        border: 1px solid transparent;
+
+        .form-img{
+            width: 16px;
+            height: 16px;
+            background: url('../../img/component/icon-sub-chk-unchecked.png')no-repeat center / cover;
+        
+            & + .form-txt{
+                margin-left: 4px;
+            }
+        }
+
+        .form-txt{
+            font-size: 14px;
+            color: #111;
+            font-weight: 500;
+            line-height: 14px;
+        }
+    }
+
+    /* 체크 되었을 떄 */
+    .form-field:checked + .form-title{
+        border: 1px solid #7974ff;
+        box-shadow: 0 4px 6px 0 rgba(121, 116, 255, 0.1);
+        background-color: rgba(121, 116, 255, 0.1);
+
+        .form-img{
+            width: 16px;
+            height: 16px;
+            background: url('../../img/component/icon-sub-chk-checked.png')no-repeat center / cover;
+        
+            & + .form-txt{
+                margin-left: 4px;
+            }
+        }
+
+        .form-txt{
+            font-size: 14px;
+            color: #111;
+            font-weight: 500;
+            line-height: 14px;
+        }
+    }
+}
+
+
+
+/*  
+    ty-allbox
+*/
+
+.o-chk.ty-allbox{
+    width: 100%;
+    margin-top: 20px;
+
+    input{
+        display: none;
+        &:checked{
+            & + .form-box{
+                border: solid 1px #494870;
+                background-color: rgba(244, 246, 248, 0.05);
+                .form-field{
+                    background:url('../../../resource/img/component/icon-chkbox-checked.png') no-repeat center/ cover;
+                }
+                .chk-txt{
+                    color: #7974ff;
+                }
+            }
+        }
+    }
+    .form-box{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 8px 12px;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        background-color: #f4f6f8;
+        .form-field{
+            & + .chk-txt{
+                margin-left: 12px;
+            }
+        }
+        .chk-txt{
+            font-size: 14px;
+            font-weight: 500;
+            color: #777;
+        }
+    }
+
+}
+
+/*  
+    ty-text
+*/
+.o-chk.ty-text{
+    .form-field{
+        &:checked{
+            & + .form-title{
+                font-weight: 700;
+                color: #7974ff;
+            }
+        }
+    }
+    .form-title{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #000;
+    }
+}
+
+
+/*
+    ty-sub
+*/ 
+[class^='o-chk ty-sub']{
+    .form-field{
+        width: 16px;
+        height: 16px;
+        background: url('../../img/component/icon-sub-chk-unchecked.png')no-repeat center / cover;
+        
+        &:checked{
+            background: url('../../img/component/icon-sub-chk-checked.png')no-repeat center / cover;
+        }
+        & + .form-title{
+            margin-left: 12px;
+        }
+    }
+    .form-title{
+        font-size: 12px;
+        color: #111;
+        font-weight: 500;
+    }
+}
+
+
+/*
+    sty-reverse
+*/ 
+/* 라벨과 인풋의 위치가 바뀐 경우 // 라벨 + 인풋*/
+.o-chk.sty-reverse{
+	display: flex;
+	justify-content: space-between;
+        .form-title{
+        display: flex;
+        align-items: center;
+
+        //이미지가 들어가는 경우
+        .img{
+            margin-right: 6px;
+            width: 32px;
+            height: 32px;
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.o-radio.sty-reverse{
+    display: flex;
+	justify-content: space-between;
+        .form-title{
+        display: flex;
+        align-items: center;
+
+        //이미지가 들어가는 경우
+        .img{
+            margin-right: 6px;
+            width: 32px;
+            height: 32px;
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/*---------------------------------------------
+	라디오
+---------------------------------------------*/
+/*
+	reset
+*/ 
+.o-radio { display: inline-block; box-sizing: border-box; }
+.o-radio input { appearance: none; box-sizing: border-box; border: none; cursor: pointer; }
+.o-radio input::-ms-check { visibility: hidden; }
+.o-radio label { display: inline-block; box-sizing: border-box; cursor: pointer; }
+.o-radio input:disabled, .o-radio input:disabled + label { cursor: default; }
+
+
+/* 
+    default
+*/
+[class^='o-radio']{
+    display: flex;
+    align-items: center;
+
+    .form-field{
+        flex: 0 0 auto;
+    }
+}
+
+
+/*
+    ty-fill
+*/ 
+[class^='o-radio ty-fill']{
+    display: flex;
+    align-items: center;
+
+    .form-title{
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 500;
+    }
+
+    .form-field{
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        cursor: pointer;        
+        border: 1px solid transparent;
+    }
+}
+
+/*  폼 타입 기본 - 화이트 모드 */
+.o-radio.ty-fill{
+    .form-field{
+        border: 1px solid #ccc;
+        background-color: #fff;
+
+        &:checked{
+            background: url('../../img/component/icon-radio-checked.png')no-repeat center / cover;
+            border: 1px solid transparent;
+        }
+
+        &:disabled{
+            background: none;
+            background-color: #fff;
+            border: 1px solid #eeeeee;
+            
+
+            & + .form-title {
+                color: #cccccc;
+            }
+        }
+
+        &:checked:disabled {
+            // background: url('../../img/component/icon-chkbox-01-disabled.png')no-repeat center / cover;  
+                  
+        }
+
+        & + .form-title{
+            margin-left: 10px;
+                    
+            &.sty-sm{
+                font-size: 12px;
+                font-weight: 400;
+                color: #999;
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+/*  폼 타입 기본 - 다크 모드 */
+.o-radio.ty-fill.ty-dark{
+    .form-field{
+        background: url('../../img/component/icon-chkbox-03-unchecked.png')no-repeat center / cover;
+        border: 1px solid transparent;
+
+        &:checked{
+            background: url('../../img/component/icon-radio-checked.png')no-repeat center / cover;
+            border: 1px solid transparent;
+        }
+
+        &:disabled{
+            background: none;
+            border: 1px solid #555;           
+
+            & + .form-title {
+                color: #555555;
+            }
+        }
+
+        &:checked:disabled{
+            background: url('../../img/component/icon-chkbox-03-disabled.png')no-repeat center / cover;           
+        }
+
+        & + .form-title{
+            margin-left: 10px;
+            color: #fff;
+        
+            &.sty-sm{
+                font-size: 12px;
+                font-weight: 400;
+                color: #999;
+                margin-left: 8px;
+            }
+        }
+    }
+}
+
+
+/*
+    ty-cnt
+*/ 
+[class^='o-radio ty-cnt']{
+    width: 100%;
+
+    .form-field{
+        display: none;
+    }
+
+    .form-title{
+        width: 100%;
+        // height: 40px;
+        padding: 10px 16px;
+        border-radius: 4px;
+        background-color: #24282e;
+        font-size: 14px;
+        line-height: 18px;
+        color: #777;
+        border: 1px solid transparent;
+        text-align: center;
+    }
+
+    .form-field:checked + .form-title{
+        border: 1px solid #494870;
+        color: #7974ff;
+        background-color: rgba(244, 246, 248, 0.05);
+    }
+}
+
+
+/*
+    ty-cnt-box
+*/
+.o-radio.ty-cnt-box{
+    .form-title{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+
+        .form-tit{
+            font-size: 14px;
+
+            & + .form-txt{
+            margin-top: 5px;
+            }
+        }
+
+        .form-txt{
+            font-size: 12px;
+        }
+    }
+}
+
+
+// 라디오 버튼 박스 화이트
+.o-radio.ty-cnt.sty-white{
+    .form-title{
+        border-radius: 4px;
+        background-color: #f4f6f8;
+        font-size: 12px;
+        font-weight: 500;
+        color: #000;
+    }
+    .form-field:checked + .form-title{
+        border-radius: 8px;
+        border: solid 1px rgba(121, 116, 255, 0.2);
+        background-color: rgba(228, 227, 255, 0.7);
+        font-weight: 700;
+    }
+}
+
+
+
+
+
+/*
+    sty-reverse
+*/ 
+/* 라벨과 인풋의 위치가 바뀐 경우 // 라벨 + 인풋*/
+.o-chk.sty-reverse{
+	display: flex;
+	justify-content: space-between;
+        .form-title{
+        display: flex;
+        align-items: center;
+
+        //이미지가 들어가는 경우
+        .img{
+            margin-right: 6px;
+            width: 32px;
+            height: 32px;
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.o-radio.sty-reverse{
+    display: flex;
+	justify-content: space-between;
+        .form-title{
+        display: flex;
+        align-items: center;
+
+        //이미지가 들어가는 경우
+        .img{
+            margin-right: 6px;
+            width: 32px;
+            height: 32px;
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+
+
+
+
+/*
+    etc
+*/
+
+/*
+    좋아요 버튼
+*/
+
+
+.o-chk.chk-like{
+    .form-field{
+        appearance: none;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        background: url('../../../resource/img/component/icon-portfolio-like-default.png') no-repeat center /cover ;
+        &:checked{
+            background: url('../../../resource/img/component/icon-portfolio-like-active.png') no-repeat center /cover;
+        }
+    }
+}
+
+
+/* 좋아요 체크박스  30px */
+.o-chk.chk-like-md{
+    .form-field{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url('../../../resource/img/component/icon-like-btn-md-default.png') no-repeat center/cover;
+    }
+
+    input:checked{
+        background: url('../../../resource/img/component/icon-like-btn-md-active.png') no-repeat center/cover;
+    }
+}
+
+/* 북마크 체크박스  30px */
+.o-chk.chk-bookmark-md{
+    .form-field{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: url('../../../resource/img/component/icon-bookmark-btn-md-default.png') no-repeat center/cover;        
+    
+        &:checked{
+            background: url('../../../resource/img/component/icon-bookmark-btn-md-active.png') no-repeat center/cover;
+        }
+    }
+}
+
+
+/* 좋아요 체크박스  16px */
+.o-chk.chk-like-sm{
+    .form-field{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        background: url('../../../resource/img/component/icon-like-btn-sm-default.png') no-repeat center/cover;
+    }
+
+    input:checked{
+        background: url('../../../resource/img/component/icon-like-btn-sm-active.png') no-repeat center/cover;
+    }
+
+    label{
+        font-size: 12px;
+        padding-right: 4px;
+        color: #999;
+        font-weight: 500;
+    }
+}
+
+
+
+
+
+/*---------------------------------------------
+	스위치
+---------------------------------------------*/
+/*
+	reset 
+*/
+.o-switch {
+	input[type="checkbox"] {
+		appearance: none;
+		border: none;
+	}
+}
+
+
+/*
+	default
+*/
+.o-switch {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 44px;
+	height: 24px;
+
+	input[type="checkbox"] {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 16px;
+		background-color: #E6E6E6;
+		transition: 200ms;
+		cursor: pointer;
+
+		&:checked {
+			background-color: #7974ff;
+
+			& + label {
+				left: 22px;
+			}
+		}
+	}
+
+	label {
+		position: absolute;
+		left: 2px;
+		top: 2px;
+		width: 20px;
+		height: 20px;
+		border-radius: 100%;
+		background-color: #FFFFFF;
+		transition: 200ms;
+		cursor: pointer;
+	}
+}
+
