@@ -133,6 +133,21 @@
             // }
         }
     }
+    &.ty-border-blue {
+        .tab-btn-box {
+            .tbb-items {
+                border-bottom: 2px solid transparent;
+                &.on {
+                    border-bottom: 2px solid #7974ff;
+                    .btn-tab {
+                        color: #7974ff;
+                    }
+                }
+            }
+            // .tab-body {
+            // }
+        }
+    }
     &.ty-fit{
         width: auto;
         .tab-btn-box{
