@@ -1,4 +1,4 @@
-.table-cpnt {
+.table-content {
     position: relative;
     overflow: hidden;
     border: 1px solid #dce0ec;
@@ -8,7 +8,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
-    & + .table-cpnt {
+    & + .table-content {
         margin-top: -1px;
     }
 
@@ -26,7 +26,7 @@
         table-layout: fixed;
         margin: 0 -1px -1px;
         text-align: center;
-
+        border-spacing: 0;
         th,
         td {
             height: 28px;
@@ -105,7 +105,7 @@
                 padding: 0;
                 background-color: transparent;
                 text-align: center;
-                background: url(../../asset/img/table-toggle-arrow-bk.png) transparent no-repeat center / 11px;
+                background: url(../../img/component/table-toggle-arr.png) transparent no-repeat center / 11px;
             }
 
             &.active {
@@ -116,7 +116,7 @@
                 .toggle-table-btn {
                     border-left: 1px solid #c4c4c4;
                     border-right: 1px solid #c4c4c4;
-                    background-image: url(../../asset/img/table-toggle-arrow-bk-open.png);
+                    background-image: url(../../img/component/table-toggle-arr-open.png);
                 }
             }
         }
@@ -269,4 +269,13 @@
 // flex-box
 .flex-box {
     display: flex;
+}
+
+
+.underline-txt {
+    color: #333;
+    font-weight: 300;
+    line-height: 17px;
+    text-decoration: underline;
+    margin: 0 auto;
 }

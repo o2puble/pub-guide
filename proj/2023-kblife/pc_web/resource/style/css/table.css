@@ -1,4 +1,4 @@
-.table-cpnt {
+.table-content {
   position: relative;
   overflow: hidden;
   border: 1px solid #dce0ec;
@@ -6,10 +6,10 @@
   border-width: 1px 0;
   box-sizing: border-box;
 }
-.table-cpnt + .table-cpnt {
+.table-content + .table-content {
   margin-top: -1px;
 }
-.table-cpnt caption {
+.table-content caption {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -18,14 +18,15 @@
           clip-path: inset(50%);
   overflow: hidden;
 }
-.table-cpnt .tb-main {
+.table-content .tb-main {
   width: calc(100% + 2px);
   table-layout: fixed;
   margin: 0 -1px -1px;
   text-align: center;
+  border-spacing: 0;
 }
-.table-cpnt .tb-main th,
-.table-cpnt .tb-main td {
+.table-content .tb-main th,
+.table-content .tb-main td {
   height: 28px;
   padding: 4px;
   border-left: 1px solid #eff3fe;
@@ -33,80 +34,80 @@
   vertical-align: middle;
   word-break: keep-all;
 }
-.table-cpnt .tb-main th .view-detial,
-.table-cpnt .tb-main td .view-detial {
+.table-content .tb-main th .view-detial,
+.table-content .tb-main td .view-detial {
   flex: 0 0 auto;
   margin-left: auto;
 }
-.table-cpnt .tb-main th.required-items {
+.table-content .tb-main th.required-items {
   background-color: #fff9f9;
 }
-.table-cpnt .tb-main thead tr th {
+.table-content .tb-main thead tr th {
   background-color: #f9fbfe;
   font-size: 13px;
   color: #555;
   font-weight: 300;
 }
-.table-cpnt .tb-main thead tr:not(:first-child) th {
+.table-content .tb-main thead tr:not(:first-child) th {
   border-top: 1px solid #eff3fe;
 }
-.table-cpnt .tb-main thead + tbody tr:first-child th,
-.table-cpnt .tb-main thead + tbody tr:first-child td {
+.table-content .tb-main thead + tbody tr:first-child th,
+.table-content .tb-main thead + tbody tr:first-child td {
   border-top: 1px solid #eff3fe;
 }
-.table-cpnt .tb-main tbody tr th {
+.table-content .tb-main tbody tr th {
   background-color: #f9fbfe;
   font-size: 13px;
   color: #555;
   font-weight: 300;
 }
-.table-cpnt .tb-main tbody tr td {
+.table-content .tb-main tbody tr td {
   color: #333;
   font-size: 13px;
   font-weight: 300;
   background-color: #fff;
 }
-.table-cpnt .tb-main tbody tr:not(:first-child) th,
-.table-cpnt .tb-main tbody tr:not(:first-child) td {
+.table-content .tb-main tbody tr:not(:first-child) th,
+.table-content .tb-main tbody tr:not(:first-child) td {
   border-top: 1px solid #eff3fe;
 }
-.table-cpnt .tb-main .toggle-table-td {
+.table-content .tb-main .toggle-table-td {
   padding: 0;
 }
-.table-cpnt .tb-main .toggle-table-td .toggle-table-btn {
+.table-content .tb-main .toggle-table-td .toggle-table-btn {
   display: block;
   width: calc(100% - 1px);
   height: 100%;
   padding: 0;
   background-color: transparent;
   text-align: center;
-  background: url(../../asset/img/table-toggle-arrow-bk.png) transparent no-repeat center/11px;
+  background: url(../../img/component/table-toggle-arr.png) transparent no-repeat center/11px;
 }
-.table-cpnt .tb-main .toggle-table-td.active {
+.table-content .tb-main .toggle-table-td.active {
   background-color: #f9f9f9;
   border-color: #c4c4c4;
   border-left: none;
 }
-.table-cpnt .tb-main .toggle-table-td.active .toggle-table-btn {
+.table-content .tb-main .toggle-table-td.active .toggle-table-btn {
   border-left: 1px solid #c4c4c4;
   border-right: 1px solid #c4c4c4;
-  background-image: url(../../asset/img/table-toggle-arrow-bk-open.png);
+  background-image: url(../../img/component/table-toggle-arr-open.png);
 }
-.table-cpnt .tb-main .toggle-table-tr {
+.table-content .tb-main .toggle-table-tr {
   display: none;
 }
-.table-cpnt .tb-main .toggle-table-tr.active {
+.table-content .tb-main .toggle-table-tr.active {
   display: table-row;
 }
-.table-cpnt .tb-main .toggle-table-tr > td {
+.table-content .tb-main .toggle-table-tr > td {
   padding: 0;
   padding-bottom: 1px;
   border-top: none !important;
 }
-.table-cpnt .txt-algn-center {
+.table-content .txt-algn-center {
   text-align: center;
 }
-.table-cpnt .txt-algn-right {
+.table-content .txt-algn-right {
   text-align: right;
 }
 
@@ -205,4 +206,12 @@
 
 .flex-box {
   display: flex;
+}
+
+.underline-txt {
+  color: #333;
+  font-weight: 300;
+  line-height: 17px;
+  text-decoration: underline;
+  margin: 0 auto;
 }
