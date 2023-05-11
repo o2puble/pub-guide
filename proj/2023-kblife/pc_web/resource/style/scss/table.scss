@@ -1,4 +1,4 @@
-.table-content {
+.o-table {
     position: relative;
     overflow: hidden;
     border: 1px solid #dce0ec;
@@ -8,6 +8,17 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
+    &.ty-scroll-x{
+        overflow-x: auto;
+        overflow-y: hidden;
+        .tb-main{
+            width: max-content;
+        }
+    }
+    &.ty-scroll-y{
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
     & + .table-content {
         margin-top: -1px;
     }
@@ -30,7 +41,7 @@
         th,
         td {
             height: 28px;
-            padding: 4px;
+            padding: 6px 4px 5px;
             border-left: 1px solid #eff3fe;
             line-height: 17px;
             vertical-align: middle;
@@ -85,6 +96,9 @@
                     font-size: 13px;
                     font-weight: 300;
                     background-color: #fff;
+                    &.td-form{
+                        padding: 3px;
+                    }
                 }
                 &:not(:first-child) {
                     th,

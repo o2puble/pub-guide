@@ -111,7 +111,7 @@ function tabCtrl(mySelf) {
     $cstTabItem.addClass('on').siblings('.tbb-items').removeClass('on');
     $cstTabItem.siblings('.tbb-items').find('.btn-tab').removeAttr('title');
     mySelf.attr('title', '활성화');
-    $(`[data-tabpanel="${$getPanelAttr}"]`).removeAttr('hidden').siblings('.tab-con-area').attr('hidden', '');
+    $(`[data-tabpanel="${$getPanelAttr}"]`).removeAttr('hidden').siblings('[data-tabpanel]').attr('hidden', '');
 }
 $(document).on('click', '[data-tab="on"] .btn-tab', function () {
     tabCtrl($(this));

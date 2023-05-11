@@ -1,19 +1,21 @@
-.o-tab.tab-content .tab-btn-box {
+.o-tab .tab-btn-box {
   display: flex;
 }
-.o-tab.tab-content .tab-btn-box .tbb-items .btn-tab {
+.o-tab .tab-btn-box .tbb-items .btn-tab {
+  display: block;
+}
+.o-tab.ty-main .tab-btn-box .tbb-items .btn-tab {
   font-size: 16px;
   font-weight: 300;
   line-height: 21px;
   color: #555;
 }
-.o-tab.tab-content .tab-btn-box .tbb-items.on .btn-tab {
+.o-tab.ty-main .tab-btn-box .tbb-items.on .btn-tab {
   position: relative;
-  display: block;
   font-weight: 700;
   color: #333;
 }
-.o-tab.tab-content .tab-btn-box .tbb-items.on .btn-tab::after {
+.o-tab.ty-main .tab-btn-box .tbb-items.on .btn-tab::after {
   content: "";
   position: absolute;
   bottom: -6px;
@@ -23,16 +25,16 @@
   height: 1px;
   background-color: #333;
 }
-.o-tab.tab-content .tab-btn-box .tbb-items + .tbb-items {
+.o-tab.ty-main .tab-btn-box .tbb-items + .tbb-items {
   margin-left: 18px;
 }
 
-.o-tab.tab-content.ty-box-row .tab-btn-box .tbb-items {
+.o-tab.ty-box-row .tab-btn-box .tbb-items {
   width: 100%;
   height: 47px;
   overflow: hidden;
 }
-.o-tab.tab-content.ty-box-row .tab-btn-box .tbb-items .btn-tab {
+.o-tab.ty-box-row .tab-btn-box .tbb-items .btn-tab {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,7 +46,7 @@
   font-weight: 700;
   color: #333;
 }
-.o-tab.tab-content.ty-box-row .tab-btn-box .tbb-items .btn-tab .num {
+.o-tab.ty-box-row .tab-btn-box .tbb-items .btn-tab .num {
   margin-left: 6px;
   padding: 2px 6px 1px;
   min-width: 37px;
@@ -54,45 +56,39 @@
   border-radius: 10.5px;
   background-color: rgba(155, 168, 197, 0.5);
 }
-.o-tab.tab-content.ty-box-row .tab-btn-box .tbb-items.on .btn-tab {
+.o-tab.ty-box-row .tab-btn-box .tbb-items.on .btn-tab {
   border: solid 1px #aaa;
   border-bottom: unset;
   border-radius: 4px 4px 0 0;
   background-color: #fff;
 }
-.o-tab.tab-content.ty-box-row .tab-btn-box .tbb-items.on .btn-tab::after {
-  display: none;
-}
-.o-tab.tab-content.ty-box-row .tab-btn-box .tbb-items.on .btn-tab .num {
+.o-tab.ty-box-row .tab-btn-box .tbb-items.on .btn-tab .num {
   background-color: #555;
 }
-.o-tab.tab-content.ty-box-row .tab-btn-box .tbb-items + .tbb-items {
-  margin-left: 0;
-}
-.o-tab.tab-content.ty-box-row .tab-btn-box .tbb-items:first-child .btn-tab {
+.o-tab.ty-box-row .tab-btn-box .tbb-items:first-child .btn-tab {
   border-radius: 4px 0 0 0;
 }
-.o-tab.tab-content.ty-box-row .tab-btn-box .tbb-items:first-child.on .btn-tab {
+.o-tab.ty-box-row .tab-btn-box .tbb-items:first-child.on .btn-tab {
   border-radius: 4px 4px 0 0;
 }
-.o-tab.tab-content.ty-box-row .tab-btn-box .tbb-items:last-child .btn-tab {
+.o-tab.ty-box-row .tab-btn-box .tbb-items:last-child .btn-tab {
   border-radius: 0 4px 0 0;
 }
-.o-tab.tab-content.ty-box-row .tab-btn-box .tbb-items:last-child.on .btn-tab {
+.o-tab.ty-box-row .tab-btn-box .tbb-items:last-child.on .btn-tab {
   border-radius: 4px 4px 0 0;
 }
 
-.o-tab.tab-content.ty-box-row02 .tab-btn-box {
+.o-tab.ty-box-row02 .tab-btn-box {
   height: 36px;
   padding: 3px 0;
   border: solid 1px #ecf1fc;
   background-color: #f5f8ff;
 }
-.o-tab.tab-content.ty-box-row02 .tab-btn-box .tbb-items {
+.o-tab.ty-box-row02 .tab-btn-box .tbb-items {
   width: 100%;
   height: 100%;
 }
-.o-tab.tab-content.ty-box-row02 .tab-btn-box .tbb-items .btn-tab {
+.o-tab.ty-box-row02 .tab-btn-box .tbb-items .btn-tab {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,25 +98,19 @@
   font-weight: 500;
   color: #888;
 }
-.o-tab.tab-content.ty-box-row02 .tab-btn-box .tbb-items .btn-tab .num {
+.o-tab.ty-box-row02 .tab-btn-box .tbb-items .btn-tab .num {
   display: block;
   margin-left: 6px;
   color: #333;
 }
-.o-tab.tab-content.ty-box-row02 .tab-btn-box .tbb-items.on .btn-tab {
+.o-tab.ty-box-row02 .tab-btn-box .tbb-items.on .btn-tab {
   border-radius: 4px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
   border: solid 1px #c2ccdf;
   background-color: #fff;
 }
-.o-tab.tab-content.ty-box-row02 .tab-btn-box .tbb-items.on .btn-tab::after {
-  display: none;
-}
-.o-tab.tab-content.ty-box-row02 .tab-btn-box .tbb-items + .tbb-items {
-  margin-left: 0px;
-}
 
-.o-tab.tab-content.ty-box-row03 .tab-btn-box .tbb-items .btn-tab {
+.o-tab.ty-box-row03 .tab-btn-box .tbb-items .btn-tab {
   width: 147px;
   height: 38px;
   font-size: 14px;
@@ -130,22 +120,19 @@
   border-radius: 4px;
   border: 1px solid transparent;
 }
-.o-tab.tab-content.ty-box-row03 .tab-btn-box .tbb-items.on .btn-tab {
+.o-tab.ty-box-row03 .tab-btn-box .tbb-items.on .btn-tab {
   font-weight: 500;
   background: #fff;
   border: solid 1px #7a91ed;
 }
-.o-tab.tab-content.ty-box-row03 .tab-btn-box .tbb-items.on .btn-tab::after {
-  display: none;
-}
-.o-tab.tab-content.ty-box-row03 .tab-btn-box .tbb-items + .tbb-items {
+.o-tab.ty-box-row03 .tab-btn-box .tbb-items + .tbb-items {
   margin-left: 8px;
 }
 
-.o-tab.tab-content.ty-box-icon .tab-btn-box .tbb-items {
+.o-tab.ty-box-icon .tab-btn-box .tbb-items {
   width: 100%;
 }
-.o-tab.tab-content.ty-box-icon .tab-btn-box .tbb-items .btn-tab {
+.o-tab.ty-box-icon .tab-btn-box .tbb-items .btn-tab {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -155,14 +142,14 @@
   border-radius: 4px;
   background-color: #f6f8ff;
 }
-.o-tab.tab-content.ty-box-icon .tab-btn-box .tbb-items .btn-tab .icon {
+.o-tab.ty-box-icon .tab-btn-box .tbb-items .btn-tab .icon {
   position: relative;
   display: block;
   width: 24px;
   height: 24px;
-  background-color: red;
+  background: url(../../img/component/icon-human-search-default-24-px.png) no-repeat center/cover;
 }
-.o-tab.tab-content.ty-box-icon .tab-btn-box .tbb-items .btn-tab .icon .num {
+.o-tab.ty-box-icon .tab-btn-box .tbb-items .btn-tab .icon .num {
   display: block;
   position: absolute;
   top: -6px;
@@ -177,44 +164,44 @@
   color: #333;
   text-align: center;
 }
-.o-tab.tab-content.ty-box-icon .tab-btn-box .tbb-items .btn-tab .icon + .tit {
+.o-tab.ty-box-icon .tab-btn-box .tbb-items .btn-tab .icon + .tit {
   margin-top: 3px;
 }
-.o-tab.tab-content.ty-box-icon .tab-btn-box .tbb-items .btn-tab .tit {
+.o-tab.ty-box-icon .tab-btn-box .tbb-items .btn-tab .tit {
   display: block;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
   color: #333;
 }
-.o-tab.tab-content.ty-box-icon .tab-btn-box .tbb-items.on .btn-tab {
+.o-tab.ty-box-icon .tab-btn-box .tbb-items.on .btn-tab {
   background-color: #fff;
   border: solid 1px #7a91ed;
 }
-.o-tab.tab-content.ty-box-icon .tab-btn-box .tbb-items.on .btn-tab .icon .num {
+.o-tab.ty-box-icon .tab-btn-box .tbb-items.on .btn-tab .icon {
+  background: url(../../img/component/icon-human-search-active-24-px.png) no-repeat center/cover;
+}
+.o-tab.ty-box-icon .tab-btn-box .tbb-items.on .btn-tab .icon .num {
   background-color: #4366f8;
   color: #fff;
 }
-.o-tab.tab-content.ty-box-icon .tab-btn-box .tbb-items.on .btn-tab .tit {
+.o-tab.ty-box-icon .tab-btn-box .tbb-items.on .btn-tab .tit {
   color: #4366f8;
 }
-.o-tab.tab-content.ty-box-icon .tab-btn-box .tbb-items.on .btn-tab::after {
-  display: none;
-}
-.o-tab.tab-content.ty-box-icon .tab-btn-box .tbb-items + .tbb-items {
+.o-tab.ty-box-icon .tab-btn-box .tbb-items + .tbb-items {
   margin-left: 8px;
 }
-.o-tab.tab-content.ty-box-icon.ty-fit .tab-btn-box .tbb-items {
+.o-tab.ty-box-icon.ty-fit .tab-btn-box .tbb-items {
   width: 112px;
 }
 
-.o-tab.tab-content.ty-box-col .tab-btn-box {
+.o-tab.ty-box-col .tab-btn-box {
   flex-direction: column;
 }
-.o-tab.tab-content.ty-box-col .tab-btn-box .tbb-items {
+.o-tab.ty-box-col .tab-btn-box .tbb-items {
   width: 100%;
 }
-.o-tab.tab-content.ty-box-col .tab-btn-box .tbb-items .btn-tab {
+.o-tab.ty-box-col .tab-btn-box .tbb-items .btn-tab {
   width: 100%;
   height: 58px;
   padding: 8px 12px;
@@ -226,15 +213,12 @@
   color: #777;
   text-align: left;
 }
-.o-tab.tab-content.ty-box-col .tab-btn-box .tbb-items.on .btn-tab {
+.o-tab.ty-box-col .tab-btn-box .tbb-items.on .btn-tab {
   border: solid 1px #7a91ed;
   font-weight: 500;
   color: #4366f8;
   background-color: #fff;
 }
-.o-tab.tab-content.ty-box-col .tab-btn-box .tbb-items.on .btn-tab::after {
-  display: none;
-}
-.o-tab.tab-content.ty-box-col .tab-btn-box .tbb-items + .tbb-items {
+.o-tab.ty-box-col .tab-btn-box .tbb-items + .tbb-items {
   margin: 8px 0 0 0;
 }
