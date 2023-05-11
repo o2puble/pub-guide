@@ -109,7 +109,7 @@ body {
 
 .layout-guide .guide-ex .guide-grid-box > .item > .ex {
 	padding: 10px 0 20px;
-	border-bottom: 1px solid #e0e0e0;
+	border-bottom: 1px dashed #e0e0e0;
 }
 
 
@@ -119,7 +119,7 @@ body {
 
 .layout-guide .guide-ex .guide-grid-box > .item > .source-wrap {
 	display: flex;	
-	margin: 10px 0 0;	
+	margin: 15px 0 0;	
 }
 
 .layout-guide .guide-ex .guide-grid-box > .item > .source-wrap > .btn-source {
@@ -231,6 +231,7 @@ body {
 	border: none; 	
 	border-top: 1px solid #e0e0e0;
 	outline: none;
+	font-size: 16px;
 }
 
 .source-window textarea.source-view::-webkit-scrollbar {
