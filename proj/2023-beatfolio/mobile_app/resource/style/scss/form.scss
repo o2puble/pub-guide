@@ -1,7 +1,7 @@
 /*
     input
 */
-// reset
+/* reset */ 
 .o-input {
     display: inline-block;
     width: 100%;
@@ -26,7 +26,7 @@
     appearance: none; 
 }
 
-// default
+/* default */ 
 .o-input {
     position: relative;
 
@@ -134,7 +134,7 @@
 	}
 }
 
-// ty-sub
+/* ty-sub */ 
 .o-input.ty-sub {
 	input {
 		background-color: #ffffff;
@@ -153,7 +153,7 @@
 	}
 }
 
-// ty-dark 
+/* ty-dark */ 
 .o-input.ty-dark {
 	input {
 		background-color: #181e26;
@@ -206,7 +206,7 @@
 /*
     dropbox
 */
-// reset
+/* reset */ 
 .o-select { 
     display: inline-block;
     width: 100%;     
@@ -233,7 +233,7 @@
     cursor: default; 
 }
 
-// default
+/* default */ 
 .o-select {
 	select {
 		height: 40px;
@@ -282,14 +282,14 @@
 	}
 }
 
-// ty-sub
+/* ty-sub */ 
 .o-select.ty-sub {
 	select {
 		background-color: #fff;		
 	}	
 }
 
-// ty-dark 
+/* ty-dark */  
 .o-select.ty-dark {
 	select {		
 		background-color: #181e26;
@@ -333,7 +333,7 @@
 /*
     textarea
 */ 
-// reset
+/* reset */ 
 .o-textarea { 
     display: inline-block; 
     width: 100%;
@@ -352,7 +352,7 @@
     border: none; 
 }
 
-// default
+/* default */ 
 .o-textarea {
 	display: block;
 	font-size: 0;
@@ -414,14 +414,14 @@
 	}   
 }
 
-// ty-sub
+/* ty-sub */ 
 .o-textarea.ty-sub {	
 	textarea {		
 		background-color: #fff;		
 	}	
 }
 
-// ty-dark
+/* ty-dark */ 
 .o-textarea.ty-dark {
 	textarea {
 		background-color: #181e26;

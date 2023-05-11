@@ -1,6 +1,7 @@
 /*
     input
 */
+/* reset */
 .o-input {
   display: inline-block;
   width: 100%;
@@ -28,6 +29,7 @@
           appearance: none;
 }
 
+/* default */
 .o-input {
   position: relative;
 }
@@ -125,6 +127,7 @@
   border: 1px solid #f53e50;
 }
 
+/* ty-sub */
 .o-input.ty-sub input {
   background-color: #ffffff;
 }
@@ -138,6 +141,7 @@
   color: #ccc;
 }
 
+/* ty-dark */
 .o-input.ty-dark input {
   background-color: #181e26;
   color: #fff;
@@ -178,6 +182,7 @@
 /*
     dropbox
 */
+/* reset */
 .o-select {
   display: inline-block;
   width: 100%;
@@ -206,6 +211,7 @@
   cursor: default;
 }
 
+/* default */
 .o-select select {
   height: 40px;
   padding: 10px 12px 9px;
@@ -239,10 +245,12 @@
   border: 1px solid #f53e50;
 }
 
+/* ty-sub */
 .o-select.ty-sub select {
   background-color: #fff;
 }
 
+/* ty-dark */
 .o-select.ty-dark select {
   background-color: #181e26;
   background-image: url("../../img/component/select_arrow_dark.png");
@@ -273,6 +281,7 @@
 /*
     textarea
 */
+/* reset */
 .o-textarea {
   display: inline-block;
   width: 100%;
@@ -293,6 +302,7 @@
   border: none;
 }
 
+/* default */
 .o-textarea {
   display: block;
   font-size: 0;
@@ -352,10 +362,12 @@
   border: 1px solid #f53e50;
 }
 
+/* ty-sub */
 .o-textarea.ty-sub textarea {
   background-color: #fff;
 }
 
+/* ty-dark */
 .o-textarea.ty-dark textarea {
   background-color: #181e26;
   color: #fff;

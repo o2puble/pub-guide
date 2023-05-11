@@ -19,7 +19,7 @@ function sourceBtnAppend(){
 
 var popupSource = function(){
     let $sourceDim = '<div class="source-dim"></div>',
-        $sourceWindow ='<div class="source-window"><div class="source-window-close">X</div><textarea class="source-view" rows="" cols="" readonly></textarea></div>';
+        $sourceWindow ='<div class="source-window"><div class="source-window-title">HTML View</div><div class="source-window-close"></div><textarea class="source-view" rows="" cols="" readonly></textarea></div>';
 
  	$(document).on('click','.btn-source', function(){
         var tempSource = $(this).closest('.source-wrap').next().html();

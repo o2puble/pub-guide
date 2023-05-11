@@ -1,6 +1,7 @@
 /*
     input
 */
+/* reset */
 .o-input {
   display: inline-block;
   width: 100%;
@@ -28,6 +29,7 @@
           appearance: none;
 }
 
+/* default */
 .o-input {
   position: relative;
 }
@@ -161,6 +163,7 @@
   height: 16px;
 }
 
+/* ty-round */
 .o-input.ty-round input {
   padding: 9px 18px 9px 18px;
   border-radius: 16px;
@@ -170,6 +173,7 @@
 /*
     dropbox
 */
+/* reset */
 .o-select {
   display: inline-block;
   width: 100%;
@@ -198,6 +202,7 @@
   cursor: default;
 }
 
+/* default */
 .o-select select {
   height: 32px;
   padding: 7px 30px 7px 12px;
@@ -242,6 +247,7 @@
 /*
     textarea
 */
+/* reset */
 .o-textarea {
   display: inline-block;
   width: 100%;
@@ -262,6 +268,7 @@
   border: none;
 }
 
+/* default */
 .o-textarea {
   display: block;
   font-size: 0;

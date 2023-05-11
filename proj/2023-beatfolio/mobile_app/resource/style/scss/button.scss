@@ -1,7 +1,7 @@
 /*
     button
 */
-// reset
+/* reset */ 
 .o-btn {
     display: block;
     padding: 0;
@@ -19,7 +19,7 @@
 	cursor: default;
 }
 
-// btn-main-l
+/* btn-main-l */ 
 .o-btn.btn-main-l {
     position: relative;
     width: 100%;
@@ -109,7 +109,7 @@
 	}
 }
 
-// btn-main-m
+/* btn-main-m */ 
 .o-btn.btn-main-m {
     width: 100%;
     height: 42px;
@@ -134,7 +134,7 @@
     }
 }
 
-// btn-sub
+/* btn-sub */ 
 .o-btn.btn-sub {
     // width: 51px;
     height: 28px;
@@ -167,7 +167,7 @@
 	}
 }
 
-// btn-follow
+/* btn-follow */ 
 .o-btn.btn-follow {
     border: 1px solid #000;
     background-color: transparent;
@@ -236,18 +236,30 @@
 	}
 }
 
-// btn-blue-txt
+/* btn-blue-txt */ 
 .o-btn.btn-blue-txt {
     font-size: 14px;
     font-weight: 500;
     color: #7974ff;
 }
 
+/* btn-right-arrow */ 
+.o-btn.btn-right-arrow{
+    width: 100%;
+    padding: 9px 14px;
+    background-color: #18202a;
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+    border-radius: 8px;
+    background: url('../../img/icon/icon-arrow-right-fff.png') no-repeat right 16px center/ 16px 16px #18202a;
+}
+
 
 /*
 	icon button
 */
-// btn-pic-util(이미지 편집 버튼)
+/* btn-pic-util(이미지 편집 버튼) */ 
 .o-btn.btn-pic-util {
     width: 44px;
     height: 44px;
@@ -260,7 +272,7 @@
     background-position: center center;
 }
 
-// btn-setting(옵션 버튼)
+/* btn-setting(옵션 버튼) */ 
 .o-btn.btn-setting{
     width: 24px;
     height: 24px;
@@ -272,7 +284,7 @@
     }
 }
 
-// btn-del-dark(삭제 버튼)
+/* btn-del-dark(삭제 버튼) */ 
 .o-btn.btn-del-dark {
     width: 20px;
     height: 20px;
@@ -282,7 +294,7 @@
     background-position: center center;
 }
 
-// btn-del-gry(삭제 버튼)
+/* btn-del-gry(삭제 버튼) */ 
 .o-btn.btn-del-gry {
     width: 16px;
     height: 16px;
@@ -292,36 +304,35 @@
     background-position: center center;
 }
 
-// btn-close-md-grey(닫기 버튼)
+/* btn-close-md-grey(닫기 버튼) */ 
 .o-btn.btn-close-md-grey {
     width: 16px;
     height: 16px;
     background: url('../../img/icon/icon-close-md-grey.png')no-repeat center / cover;
 }
 
-// btn-close-md(닫기 버튼)
+/* btn-close-md(닫기 버튼) */ 
 .o-btn.btn-close-md {
     width: 16px;
     height: 16px;
     background: url('../../img/icon/icon-clear-black-16.png') no-repeat center / cover;
 }
 
-// btn-close-sm(닫기 버튼)
+/* btn-close-sm(닫기 버튼) */ 
 .o-btn.btn-close-sm {
     width: 12px;
     height: 12px;
     background: url('../../img/icon/icon-clear-sm.png')no-repeat center / cover;
 }
 
-// refresh-btn(새로고침 버튼)
+/* refresh-btn(새로고침 버튼) */ 
 .o-btn.refresh-btn {
     width: 16px;
     height: 16px;
     background: url('../../img/icon/icon-refresh.png') no-repeat center/ cover;
 }
 
-// 여기부터..작업
-// reset 버튼
+/* btn-reset(리셋 버튼) */ 
 .o-btn.btn-reset{
     flex: 0 0 auto;
     display: flex;
@@ -333,57 +344,23 @@
     border-radius: 8px;
     border: 1px solid #888;
     background-color: #fff;
+
     .icon-reset{
         width: 17px;
         height: 18px;
-        background: url(../../../resource/img/icon/icon-navigationbars-cancle-black.png) no-repeat center/ cover;
+        background: url('../../img/icon/icon-navigationbars-cancle-black.png') no-repeat center/ cover;
     }
 }
 
+/* btn-more-dot(더보기 버튼)*/ 
+.o-btn.btn-more-dot{
+    width: 24px;
+    height: 24px;
+    background: url('../../img/icon/btn-more-dot-fff.png') no-repeat center / cover;
 
-
-
-
-
-
-// 텍스트 버튼
-.o-btn.purple-txt-btn{
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    color: #7974ff;
-}
-
-/* 
-컨텐츠 스타일의 버튼 (텍스트가 들어가는)
-*/
-
-
-// 상세페이지 컨텐츠 내부 다운로드 버튼
-.o-btn.btn-download{
-    width: 100%;
-    background-color: #090f15;
-    padding: 9px 12.5px;
-    color: #9198a5;
-    font-size: 14px;
-    text-align: left;
-    border-radius: 8px;
-    .icon{
-        // margin-right: 6.5px;
+    &.ty-black{
+        background: url('../../img/icon/btn-more-dot.png') no-repeat center / cover;
     }
 }
-
-// 상세페이지 컨텐츠 내부 문의사항 버튼
-.o-btn.btn-right-arrow{
-    width: 100%;
-    padding: 9px 14px;
-    background-color: #18202a;
-    color: #fff;
-    font-size: 16px;
-    text-align: left;
-    border-radius: 8px;
-    background: url('../../img/icon/icon-arrow-right-fff.png') no-repeat right 16px center/ 16px 16px #18202a;
-}
-
 
 
