@@ -1,0 +1,272 @@
+.table-cpnt {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #dce0ec;
+    border-bottom-color: #eff3fe;
+    border-width: 1px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    & + .table-cpnt {
+        margin-top: -1px;
+    }
+
+    caption {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: inset(50%);
+        overflow: hidden;
+    }
+
+    .tb-main {
+        width: calc(100% + 2px);
+        table-layout: fixed;
+        margin: 0 -1px -1px;
+        text-align: center;
+
+        th,
+        td {
+            height: 28px;
+            padding: 4px;
+            border-left: 1px solid #eff3fe;
+            line-height: 17px;
+            vertical-align: middle;
+            word-break: keep-all;
+
+            .view-detial {
+                flex: 0 0 auto;
+                margin-left: auto;
+            }
+        }
+
+        th.required-items {
+            background-color: #fff9f9;
+        }
+
+        thead {
+            tr {
+                th {
+                    background-color: #f9fbfe;
+                    font-size: 13px;
+                    color: #555;
+                    font-weight: 300;
+                }
+
+                &:not(:first-child) {
+                    th {
+                        border-top: 1px solid #eff3fe;
+                    }
+                }
+            }
+
+            & + tbody {
+                tr:first-child {
+                    th,
+                    td {
+                        border-top: 1px solid #eff3fe;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                th {
+                    background-color: #f9fbfe;
+                    font-size: 13px;
+                    color: #555;
+                    font-weight: 300;
+                }
+                td {
+                    color: #333;
+                    font-size: 13px;
+                    font-weight: 300;
+                    background-color: #fff;
+                }
+                &:not(:first-child) {
+                    th,
+                    td {
+                        border-top: 1px solid #eff3fe;
+                    }
+                }
+            }
+        }
+
+        .toggle-table-td {
+            padding: 0;
+
+            .toggle-table-btn {
+                display: block;
+                width: calc(100% - 1px);
+                height: 100%;
+                padding: 0;
+                background-color: transparent;
+                text-align: center;
+                background: url(../../asset/img/table-toggle-arrow-bk.png) transparent no-repeat center / 11px;
+            }
+
+            &.active {
+                background-color: #f9f9f9;
+                border-color: #c4c4c4;
+                border-left: none;
+
+                .toggle-table-btn {
+                    border-left: 1px solid #c4c4c4;
+                    border-right: 1px solid #c4c4c4;
+                    background-image: url(../../asset/img/table-toggle-arrow-bk-open.png);
+                }
+            }
+        }
+
+        // 테이블 내 토글 영역
+        .toggle-table-tr {
+            display: none;
+
+            &.active {
+                display: table-row;
+
+                // & + tr {
+                //     td {
+                //         border-top: none;
+                //     }
+                // }
+            }
+
+            & > td {
+                padding: 0;
+                padding-bottom: 1px;
+                border-top: none !important;
+            }
+        }
+    }
+
+    .txt-algn-center {
+        text-align: center;
+    }
+    .txt-algn-right {
+        text-align: right;
+    }
+}
+
+// 빨간 테두리 컨텐츠
+.red-border-cpnt {
+    border: 1px solid #ff8383;
+
+    border-radius: 8px;
+
+    .rbc-title {
+        display: flex;
+        align-items: center;
+        padding: 12px 15px 13px;
+
+        .tit {
+            color: #333;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 700;
+        }
+
+        .require-box {
+            & + .tit {
+                margin-left: 7px;
+            }
+        }
+
+        .option-box {
+            margin-left: auto;
+        }
+    }
+
+    // 제목 중앙 위아래 여백 있는 경우
+    &-v2 {
+        @extend .red-border-cpnt;
+        padding: 0 0 20px;
+        background-color: #fffcfc;
+
+        .rbc-title {
+            padding: 12px 16px 13px;
+        }
+    }
+}
+
+// 밑줄 버튼 혹은 텍스트
+.underline-txt {
+    color: #333;
+    font-weight: 300;
+    line-height: 17px;
+    text-decoration: underline;
+}
+
+// 필수 항목 글자색
+.required-items {
+    color: #da6767 !important;
+}
+
+// 필수 버튼형 텍스트
+.require-box {
+    padding: 1px 7px 2px;
+    background-color: #ff4444;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+}
+
+// 2줄 텍스트 말줄임
+.col2-cut-txt {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+}
+
+// 테이블 내 토클 테이블
+.toggle-inner-table-con {
+    position: relative;
+    width: calc(100% - 1px);
+    padding: 12px 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #c4c4c4;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 27.2px;
+        height: 1px;
+        background: #f9f9f9;
+        top: -1px;
+        right: -0.1px;
+    }
+
+    .tit-box {
+        display: flex;
+
+        .tit {
+            margin-right: auto;
+            color: #333;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 17px;
+        }
+    }
+
+    .con-box {
+        margin-top: 4px;
+
+        & + .tit-box {
+            margin-top: 10px;
+        }
+    }
+}
+
+// flex-box
+.flex-box {
+    display: flex;
+}
