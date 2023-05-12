@@ -30,6 +30,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	height: 100%;
 	max-width: 110px;
 	border-radius: 4px;
 	text-align: center;
@@ -46,6 +47,7 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
+	height: 100%;
 	max-width: 110px;
 	border-radius: 4px;
 	text-align: left;
@@ -58,10 +60,20 @@
 
 	&.clr-fff{
 		background: url('../../../resource/img/component/icon-arrow-up-333333-18-px@2x.png')no-repeat center right 8px / 18px 18px;
+		
+		&:disabled{
+			background: url('../../../resource/img/component/icon-arrow-up-333333-18-px@2x.png')no-repeat center right 8px / 18px 18px;
+			opacity: 0.5;
+
+		}
 	}
 	&.clr-blue-01{
 		background: url('../../../resource/img/component/icon-arrow-up-blue-03-18-px@2x.png') no-repeat center right 8px / 18px 18px #e3e9ff;
-
+		
+		&:disabled{
+			background: url('../../../resource/img/component/icon-arrow-up-blue-03-18-px@2x.png') no-repeat center right 8px / 18px 18px #e3e9ff;
+			opacity: 0.5;
+		}
 	}
 }
 
@@ -72,7 +84,8 @@
 // 메인버튼 컬러타입
 .o-btn.ty-main,
 .o-btn.ty-main-slt,
-.o-btn.ty-sub{
+.o-btn.ty-sub,
+.o-btn.ty-sub-02{
 
 	&.clr-fff{
 	background-color: #fff;
@@ -83,34 +96,93 @@
 	background-color: #e3e9ff;
 	color: #4366f8;
 	font-weight: 700;
+		&:hover{
+			background-color: #dde2f8;
+		}
+		&:disabled{
+			color: rgba(67, 102, 248, 0.5);
+			&:hover{
+				background-color: #e3e9ff;
+			}
+		}
 	}
 
 	&.clr-blue-02{
 	background-color: #4366f8;
 	color: #fff;
 	font-weight: 700;
+		&:hover{
+			background-color: #4163f1;
+		}
+		&:disabled{
+			background-color: rgba(67, 102, 248, 0.3);
+			color: #fff;
+		}
 	}
 
 	&.clr-fff{
 	background-color: #fff;
 	border: 1px solid #ddd;
+		&:hover{
+			background-color: rgba(0, 0, 0, 0.03);
+		}
+		&:disabled{
+			color: rgba(51, 51, 51, 0.5);
+			background-color: #fff;
+			// opacity: 0.5;
+			.o-icon{
+				opacity: 0.5;
+			}
+		}
 	}
 
 	&.clr-fff-02{
 	font-weight: 700;
 	background-color: #fff;
 	border: 1px solid #ddd;
+		&:hover{
+			background-color: rgba(0, 0, 0, 0.03);
+		}
+		&:disabled{
+			color: rgba(51, 51, 51, 0.5);
+			background-color: #fff;
+			border: 1px solid #ddd;
+			// opacity: 0.5;
+			.o-icon{
+				opacity: 0.5;
+			}
+		}
 	}
 
 	&.clr-ylw{
 	color: #333;
     background-color: #ffea93;
 	font-weight: 700;
+		&:hover{
+			background-color: #f7e38e;
+		}
+		&:disabled{
+			background-color: #fff8de;
+			color: rgba(51,51,51,0.5);
+			&:hover{
+				background-color: #fff8de;
+				color: rgba(51,51,51,0.5);
+			}
+		}
 	}
 
 	&.clr-grey{
 	background-color: #555;
 	color: #fff;
+		&:hover{
+			background-color: #525252;
+		}
+		&:disabled{
+			background-color: #cccccc;
+			&:hover{
+				background-color: #cccccc;
+			}
+		}
 	}
 
 	&.clr-red{
@@ -119,12 +191,29 @@
 	color: #ff0000;
 	border: 1px solid #ddd;
 	font-weight: 500;
+
+		&:hover{
+			background-color: rgba(0, 0, 0, 0.03);
+		}
 	}
 }
 
+// 예외처리 셀렉트 버튼
+.o-btn.ty-main-slt{
+	&.clr-fff{
+		&:disabled{
+			color: #333 ;
+		}
+	}
+}
 
-
-
+.o-btn.ty-main-slt{
+	&.clr-blue-01{
+		&:disabled{
+			color: #4366f8;
+		}
+	}
+}
 
 
 

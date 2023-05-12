@@ -27,6 +27,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100%;
   max-width: 110px;
   border-radius: 4px;
   text-align: center;
@@ -43,6 +44,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 100%;
   max-width: 110px;
   border-radius: 4px;
   text-align: left;
@@ -56,64 +58,202 @@
 .o-btn.ty-main-slt.clr-fff {
   background: url("../../../resource/img/component/icon-arrow-up-333333-18-px@2x.png") no-repeat center right 8px/18px 18px;
 }
+.o-btn.ty-main-slt.clr-fff:disabled {
+  background: url("../../../resource/img/component/icon-arrow-up-333333-18-px@2x.png") no-repeat center right 8px/18px 18px;
+  opacity: 0.5;
+}
 .o-btn.ty-main-slt.clr-blue-01 {
   background: url("../../../resource/img/component/icon-arrow-up-blue-03-18-px@2x.png") no-repeat center right 8px/18px 18px #e3e9ff;
+}
+.o-btn.ty-main-slt.clr-blue-01:disabled {
+  background: url("../../../resource/img/component/icon-arrow-up-blue-03-18-px@2x.png") no-repeat center right 8px/18px 18px #e3e9ff;
+  opacity: 0.5;
 }
 
 .o-btn.ty-main.clr-fff,
 .o-btn.ty-main-slt.clr-fff,
-.o-btn.ty-sub.clr-fff {
+.o-btn.ty-sub.clr-fff,
+.o-btn.ty-sub-02.clr-fff {
   background-color: #fff;
   border: 1px solid #ddd;
 }
 .o-btn.ty-main.clr-blue-01,
 .o-btn.ty-main-slt.clr-blue-01,
-.o-btn.ty-sub.clr-blue-01 {
+.o-btn.ty-sub.clr-blue-01,
+.o-btn.ty-sub-02.clr-blue-01 {
   background-color: #e3e9ff;
   color: #4366f8;
   font-weight: 700;
 }
+.o-btn.ty-main.clr-blue-01:hover,
+.o-btn.ty-main-slt.clr-blue-01:hover,
+.o-btn.ty-sub.clr-blue-01:hover,
+.o-btn.ty-sub-02.clr-blue-01:hover {
+  background-color: #dde2f8;
+}
+.o-btn.ty-main.clr-blue-01:disabled,
+.o-btn.ty-main-slt.clr-blue-01:disabled,
+.o-btn.ty-sub.clr-blue-01:disabled,
+.o-btn.ty-sub-02.clr-blue-01:disabled {
+  color: rgba(67, 102, 248, 0.5);
+}
+.o-btn.ty-main.clr-blue-01:disabled:hover,
+.o-btn.ty-main-slt.clr-blue-01:disabled:hover,
+.o-btn.ty-sub.clr-blue-01:disabled:hover,
+.o-btn.ty-sub-02.clr-blue-01:disabled:hover {
+  background-color: #e3e9ff;
+}
 .o-btn.ty-main.clr-blue-02,
 .o-btn.ty-main-slt.clr-blue-02,
-.o-btn.ty-sub.clr-blue-02 {
+.o-btn.ty-sub.clr-blue-02,
+.o-btn.ty-sub-02.clr-blue-02 {
   background-color: #4366f8;
   color: #fff;
   font-weight: 700;
 }
+.o-btn.ty-main.clr-blue-02:hover,
+.o-btn.ty-main-slt.clr-blue-02:hover,
+.o-btn.ty-sub.clr-blue-02:hover,
+.o-btn.ty-sub-02.clr-blue-02:hover {
+  background-color: #4163f1;
+}
+.o-btn.ty-main.clr-blue-02:disabled,
+.o-btn.ty-main-slt.clr-blue-02:disabled,
+.o-btn.ty-sub.clr-blue-02:disabled,
+.o-btn.ty-sub-02.clr-blue-02:disabled {
+  background-color: rgba(67, 102, 248, 0.3);
+  color: #fff;
+}
 .o-btn.ty-main.clr-fff,
 .o-btn.ty-main-slt.clr-fff,
-.o-btn.ty-sub.clr-fff {
+.o-btn.ty-sub.clr-fff,
+.o-btn.ty-sub-02.clr-fff {
   background-color: #fff;
   border: 1px solid #ddd;
 }
+.o-btn.ty-main.clr-fff:hover,
+.o-btn.ty-main-slt.clr-fff:hover,
+.o-btn.ty-sub.clr-fff:hover,
+.o-btn.ty-sub-02.clr-fff:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.o-btn.ty-main.clr-fff:disabled,
+.o-btn.ty-main-slt.clr-fff:disabled,
+.o-btn.ty-sub.clr-fff:disabled,
+.o-btn.ty-sub-02.clr-fff:disabled {
+  color: rgba(51, 51, 51, 0.5);
+  background-color: #fff;
+}
+.o-btn.ty-main.clr-fff:disabled .o-icon,
+.o-btn.ty-main-slt.clr-fff:disabled .o-icon,
+.o-btn.ty-sub.clr-fff:disabled .o-icon,
+.o-btn.ty-sub-02.clr-fff:disabled .o-icon {
+  opacity: 0.5;
+}
 .o-btn.ty-main.clr-fff-02,
 .o-btn.ty-main-slt.clr-fff-02,
-.o-btn.ty-sub.clr-fff-02 {
+.o-btn.ty-sub.clr-fff-02,
+.o-btn.ty-sub-02.clr-fff-02 {
   font-weight: 700;
   background-color: #fff;
   border: 1px solid #ddd;
 }
+.o-btn.ty-main.clr-fff-02:hover,
+.o-btn.ty-main-slt.clr-fff-02:hover,
+.o-btn.ty-sub.clr-fff-02:hover,
+.o-btn.ty-sub-02.clr-fff-02:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.o-btn.ty-main.clr-fff-02:disabled,
+.o-btn.ty-main-slt.clr-fff-02:disabled,
+.o-btn.ty-sub.clr-fff-02:disabled,
+.o-btn.ty-sub-02.clr-fff-02:disabled {
+  color: rgba(51, 51, 51, 0.5);
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.o-btn.ty-main.clr-fff-02:disabled .o-icon,
+.o-btn.ty-main-slt.clr-fff-02:disabled .o-icon,
+.o-btn.ty-sub.clr-fff-02:disabled .o-icon,
+.o-btn.ty-sub-02.clr-fff-02:disabled .o-icon {
+  opacity: 0.5;
+}
 .o-btn.ty-main.clr-ylw,
 .o-btn.ty-main-slt.clr-ylw,
-.o-btn.ty-sub.clr-ylw {
+.o-btn.ty-sub.clr-ylw,
+.o-btn.ty-sub-02.clr-ylw {
   color: #333;
   background-color: #ffea93;
   font-weight: 700;
 }
+.o-btn.ty-main.clr-ylw:hover,
+.o-btn.ty-main-slt.clr-ylw:hover,
+.o-btn.ty-sub.clr-ylw:hover,
+.o-btn.ty-sub-02.clr-ylw:hover {
+  background-color: #f7e38e;
+}
+.o-btn.ty-main.clr-ylw:disabled,
+.o-btn.ty-main-slt.clr-ylw:disabled,
+.o-btn.ty-sub.clr-ylw:disabled,
+.o-btn.ty-sub-02.clr-ylw:disabled {
+  background-color: #fff8de;
+  color: rgba(51, 51, 51, 0.5);
+}
+.o-btn.ty-main.clr-ylw:disabled:hover,
+.o-btn.ty-main-slt.clr-ylw:disabled:hover,
+.o-btn.ty-sub.clr-ylw:disabled:hover,
+.o-btn.ty-sub-02.clr-ylw:disabled:hover {
+  background-color: #fff8de;
+  color: rgba(51, 51, 51, 0.5);
+}
 .o-btn.ty-main.clr-grey,
 .o-btn.ty-main-slt.clr-grey,
-.o-btn.ty-sub.clr-grey {
+.o-btn.ty-sub.clr-grey,
+.o-btn.ty-sub-02.clr-grey {
   background-color: #555;
   color: #fff;
 }
+.o-btn.ty-main.clr-grey:hover,
+.o-btn.ty-main-slt.clr-grey:hover,
+.o-btn.ty-sub.clr-grey:hover,
+.o-btn.ty-sub-02.clr-grey:hover {
+  background-color: #525252;
+}
+.o-btn.ty-main.clr-grey:disabled,
+.o-btn.ty-main-slt.clr-grey:disabled,
+.o-btn.ty-sub.clr-grey:disabled,
+.o-btn.ty-sub-02.clr-grey:disabled {
+  background-color: #cccccc;
+}
+.o-btn.ty-main.clr-grey:disabled:hover,
+.o-btn.ty-main-slt.clr-grey:disabled:hover,
+.o-btn.ty-sub.clr-grey:disabled:hover,
+.o-btn.ty-sub-02.clr-grey:disabled:hover {
+  background-color: #cccccc;
+}
 .o-btn.ty-main.clr-red,
 .o-btn.ty-main-slt.clr-red,
-.o-btn.ty-sub.clr-red {
+.o-btn.ty-sub.clr-red,
+.o-btn.ty-sub-02.clr-red {
   padding: 7px 10px 7px 5px;
   background-color: #fff;
   color: #ff0000;
   border: 1px solid #ddd;
   font-weight: 500;
+}
+.o-btn.ty-main.clr-red:hover,
+.o-btn.ty-main-slt.clr-red:hover,
+.o-btn.ty-sub.clr-red:hover,
+.o-btn.ty-sub-02.clr-red:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.o-btn.ty-main-slt.clr-fff:disabled {
+  color: #333;
+}
+
+.o-btn.ty-main-slt.clr-blue-01:disabled {
+  color: #4366f8;
 }
 
 .o-btn.ty-sub {
