@@ -13,10 +13,185 @@
 	text-align: center;
 	vertical-align: middle;
 	cursor: pointer;
+
+	flex: 0 0 auto;
+    margin: 0;
+
 }
 
 .o-btn:disabled {
 	cursor: default;
 }
 
+
+// 메인버튼
+.o-btn.ty-main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 110px;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 7px 10px;
+	color: #333;
+	line-height: 18px;
+	border: 1px solid transparent;
+}
+
+.o-btn.ty-main-slt{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 110px;
+	border-radius: 4px;
+	text-align: left;
+	font-size: 14px;
+	font-weight: 700;
+	padding: 7px 10px;
+	color: #333;
+	line-height: 18px;
+	border: 1px solid transparent;
+
+	&.sty-fff{
+		background: url('../../../resource/img/component/icon-arrow-up-333333-18-px@2x.png')no-repeat center right 8px / 18px 18px;
+	}
+	&.sty-blue-01{
+		background: url('../../../resource/img/component/icon-arrow-up-blue-03-18-px@2x.png') no-repeat center right 8px / 18px 18px #e3e9ff;
+
+	}
+}
+
+// 서브 버튼
+.o-btn.ty-sub{
+	padding: 7px 20px;
+	border-radius: 4px;
+	line-height: 18px;
+	font-size: 14px;
+	font-weight: 700;
+	&-02{
+		padding: 5px 20px;
+		border-radius: 4px;
+		line-height: 18px;
+		font-size: 14px;
+		font-weight: 700;
+	}
+}
+
+
+
+// 테이블 내부 들어가는 버튼
+.o-btn.ty-table{
+	max-width: 82px;
+	padding: 4px 6px 3px 6px;
+    line-height: 15px;
+    font-size: 12px;
+	color: #111;
+	background-color: #dce0ec;
+	border-radius: 4px;
+	font-weight: 500;
+}
+
+
+// 테이블 상단 들어가는 버튼
+.o-btn.ty-table-02{
+	padding: 4px 8px 3px 8px;
+    line-height: 15px;
+    font-size: 12px;
+	color: #111;
+	background-color: #eceffe;
+	border-radius: 11px;
+	font-weight: 500;
+}
+
+
+
+
+
+
+
+
+// 버튼 컬러타입
+.o-btn.sty-fff{
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
+.o-btn.sty-blue-01{
+	background-color: #e3e9ff;
+	color: #4366f8;
+	font-weight: 700;
+}
+
+.o-btn.sty-blue-02{
+	background-color: #4366f8;
+	color: #fff;
+	font-weight: 700;
+}
+
+.o-btn.sty-fff{
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
+.o-btn.sty-fff-02{
+	font-weight: 700;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
+.o-btn.sty-ylw{
+	color: #333;
+    background-color: #ffea93;
+	font-weight: 700;
+}
+.o-btn.sty-grey{
+	background-color: #555;
+	color: #fff;
+}
+.o-btn.sty-red{
+	background-color: #fff;
+	color: #ff0000;
+	border: 1px solid #ddd;
+	font-weight: 500;
+    background: url('../../../resource/img/component/element-check-each-active-red-18-px@2x.png')no-repeat center left 6px / 18px 18px #fff;
+	padding-left: 24px;
+}
+
+
+// 이미지가 들어가는 버튼
+.o-btn.btn-reset{
+    background: url('../../../resource/img/component/icon-refresh-888888-12-px@2x.png')no-repeat center right 2px / 12px 12px #fff;
+	padding-right: 16px;
+	color: #888;
+	font-size: 13px;
+	line-height: 17px;
+}
+
+.o-btn.btn-setting{
+	background: url('../../../resource/img/component/icon-setting-333333-14-px@2x.png')no-repeat center left 2px / 12px 12px #fff;
+	padding-left: 18px;
+	color: #333;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+
+
+// 아이콘 버튼
+.o-icon.icon-refresh{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+    background: url('../../../resource/img/component/icon-refresh-333333-default-18-px@2x.png')no-repeat center /cover;
+}
+
+.o-btn{
+	.o-icon.icon-refresh{
+		margin-left: 4px;
+	}
+}
 
