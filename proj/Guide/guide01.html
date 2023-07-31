@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../asset/style/reset.css">
+    <link rel="stylesheet" href="../../asset/style/html-guide.css">
+
+    <link rel="stylesheet" href="../../asset/style/SyntaxHighlighter_MidnightCustom.css">
+    <script src="../../asset/js/SyntaxHighlighter-3.0.83.js"></script>
+    <script src="../../asset/js/SyntaxHighlighterCss-3.0.83.js"></script>
+    <script src="../../asset/js/SyntaxHighlighterJs-3.0.83.js"></script>
+    <script src="../../asset/js/SyntaxHighlighterXml-3.0.83.js"></script>
+
+</head>
+
+<body>
+    <script>
+        // SyntaxHighlighter 초기화
+        SyntaxHighlighter.all();
+    </script>
+
+    <div class="guide-contents">
+        <div class="gc-header">
+            <h2 class="g-h2">기본환경</h2>
+            <ul class="g-desc">
+                <li>O2UX 퍼블리싱팀의 기본 작업 환경입니다.</li>
+                <li>프로젝트에 맞게 작업 환경들이 변경 될 수 있습니다.</li>
+            </ul>
+        </div>
+
+        <div class="gc-body">
+
+
+            <section id="g-section2" class="g-section">
+                <div class="g-section-header">
+                    <h3 class="g-h3">파일 / 폴더 규칙</h3>
+                </div>
+                <div class="g-section-body">
+                    <!-- table 컴포넌트 -->
+                    <div class="table-cpnt">
+                        <table class="tb-main">
+                            <caption>
+                                파일, 폴더 구조
+                            </caption>
+                            <colgroup>
+                                <col style="width: 10%" />
+                                <col style="width: 10%" />
+                                <col style="width: 20%" />
+                                <col style="width: 30%" />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">분류폴더</th>
+                                    <th>서브폴더</th>
+                                    <th>파일이름</th>
+                                    <th>파일설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">html</td>
+                                    <td>프로젝트에 따라 상이(메뉴ID)</td>
+                                    <td>화면ID</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" colspan="2">asset</td>
+                                    <td>font</td>
+                                    <td></td>
+                                    <td>웹폰트</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        img/icon<br />
+                                        img/sample<br />
+                                        etc...
+                                    </td>
+                                    <td></td>
+                                    <td>img 파일</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="7">style</td>
+                                    <td rowspan="7">css</td>
+                                    <td></td>
+                                    <td>style.css</td>
+                                    <td>@import 파일</td>
+                                </tr>
+                                <tr>
+                                    <td>base</td>
+                                    <td>
+                                        reset.css<br />
+                                        nomalize.css<br />
+                                    </td>
+                                    <td>
+                                        초기화<br />
+                                        정규화
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>layout</td>
+                                    <td>
+                                        layout.css<br />
+                                        modal.css<br />
+                                        common.css<br />
+                                    </td>
+                                    <td>
+                                        레이아웃<br />
+                                        모달<br />
+                                        UI공통
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>components</td>
+                                    <td>
+                                        btn.css<br />
+                                        form.css<br />
+                                        tab.css<br />
+                                        table.css<br />
+                                        etc...
+                                    </td>
+                                    <td>각 모듈에 맞는 css 파일</td>
+                                </tr>
+                                <tr>
+                                    <td>pages</td>
+                                    <td></td>
+                                    <td>화면에 따라 생성 및 temporary 작업</td>
+                                </tr>
+                                <tr>
+                                    <td>vendor</td>
+                                    <td></td>
+                                    <td>외부 css 파일</td>
+                                </tr>
+                                <tr>
+                                    <td>mobile</td>
+                                    <td></td>
+                                    <td>필요시 생성</td>
+                                </tr>
+                                <tr>
+                                    <td>style</td>
+                                    <td>scss</td>
+                                    <td>css 폴더 구조 참조</td>
+                                    <td></td>
+                                    <td>scss를 사용하는 경우</td>
+                                </tr>
+
+                                <tr>
+                                    <td rowspan="2" colspan="2">js</td>
+                                    <td></td>
+                                    <td>front.js</td>
+                                    <td>퍼블리싱 공통 js</td>
+                                </tr>
+                                <tr>
+                                    <td>vendor</td>
+                                    <td></td>
+                                    <td>외부 js 파일</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--// table 컴포넌트 -->
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

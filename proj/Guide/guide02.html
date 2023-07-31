@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../asset/style/reset.css">
+    <link rel="stylesheet" href="../../asset/style/html-guide.css">
+
+    <link rel="stylesheet" href="../../asset/style/SyntaxHighlighter_MidnightCustom.css">
+    <script src="../../asset/js/SyntaxHighlighter-3.0.83.js"></script>
+    <script src="../../asset/js/SyntaxHighlighterCss-3.0.83.js"></script>
+    <script src="../../asset/js/SyntaxHighlighterJs-3.0.83.js"></script>
+    <script src="../../asset/js/SyntaxHighlighterXml-3.0.83.js"></script>
+
+</head>
+
+<body>
+    <script>
+        // SyntaxHighlighter 초기화
+        SyntaxHighlighter.all();
+    </script>
+
+    <div class="guide-contents">
+        <div class="gc-header">
+            <h2 class="g-h2">HTML 규칙</h2>
+        </div>
+
+        <div class="gc-body">
+            <section id="g-section1" class="g-section">
+                <div class="g-section-header">
+                    <h3 class="g-h3">HTML 필수 규칙</h3>
+                    <ul class="g-desc">
+                        <li>아래의 필수 규칙은 준수하지 않을 시 문서가 정상적으로 보이지 않을 수 있습니다.</li>
+                    </ul>
+                </div>
+                <div class="g-section-body">
+                    <!-- <h4 class="g-h4">모든 HTML 페이지 시작 지점에 공백없이 HTML5 문서타입을 선언합니다.</h4> -->
+
+                    <ul class="g-desc">
+                        <li>웹 표준 가이드를 준수하여 퍼블리싱하는 것을 기본으로 한다.</li>
+                        <li>모든 HTML 페이지 시작 지점에 공백없이 HTML5 문서타입을 선언한다.</li>
+                        <li>HTML 문서에 맞게 lang 값을 작성한다.</li>
+                        <li>HTML 태그 사용시 여는태그와 닫는태그는 필수로 작성한다.(닫는태그가 없는 태그는 제외)</li>
+                        <li>하나의 ID는 페이지에서 한번만 사용 한다.</li>
+                        <li>inline 태그 안에는 block 태그가 들어갈 수 없다.</li>
+                        <li>
+                            웹표준 검사는 <a href="http://validator.w3.org" target="_blank">http://validator.w3.org</a>에서
+                            확인하거나 또는 Chrome 확장
+                            프로그램을 설치하여 확인 한다.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="g-section2" class="g-section">
+                <div class="g-section-header">
+                    <h3 class="g-h3">마크업 유의사항</h3>
+                </div>
+                <div class="g-section-body">
+                    <ul class="g-desc">
+                        <li>HTML 속성(attr) 값은 큰 따옴표("")를 사용한다.</li>
+                        <li>들여쓰기는 공백문자 4개를 사용한다.</li>
+                        <li>
+                            html 문법상 <span class="tagBox">&lt;p&gt;</span> 태그 안에는 p, div , ul등의 block요소를 넣을 수 없다.
+                            (display:inline
+                            속성을 적용해도 사용불가)
+                        </li>
+                        <li><span class="tagBox">&lt;p&gt;</span> 태그를 페이지 레이아웃을 잡는데 사용하지 않는다.</li>
+                        <li><span class="tagBox">&lt;p&gt;</span> 태그는 최하위 레벨의 내용에만 사용한다.</li>
+                        <li>구조 작성 시 한눈에 파악 가능하도록 작업한다.</li>
+                        <li>
+                            img, input, label 등등의 태그들은 부모 태그(div,span 등등)를 한번 더 감싸서 수정사항이 있을 때 부모 요소로 컨트롤 할 수 있게
+                            한다.
+                        </li>
+                        <li>
+                            script는 <span class="tagBox">&lt;head&gt;&lt;/head&gt;</span> 내에 선언하는 것을 원칙으로하며 단, 성능상의 이슈가
+                            있으면
+                            개발 부서와 협의하여 선언 위치를 변경 할 수 있다.
+                        </li>
+                        <li>
+                            html 태그에 inline style은 사용하지 않는 것을 원칙으로 하지만 js로 스타일을 적용하거나 개발 환경에 따라 스타일이 변하는
+                            경우에 한해서 html에 inline style로 작성할 수 있다.
+                            <pre class="brush: html;">
+                                <!-- 오전 bg #fff, color #000 / 오후 bg #000, color #fff -->
+                                <div class="time" style="background-color: #000; color: #fff;">18:54</div>
+                            </pre>
+                        </li>
+                        <li>
+                            HTML5부터는 <span class="tagBox">&lt;table summary=""&gt;</span> 속성이 없어졌으므로
+                            <span class="tagBox">&lt;caption&gt;</span>에 제목과 요약 정보를 모두 제공한다.
+                        </li>
+                        <li>
+                            <span class="tagBox">&lt;table&gt;</span> 앞에 명확한 제목요소가 있는 경우는
+                            <span class="tagBox">&lt;caption&gt;</span> 생략 가능하다.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="g-section3" class="g-section">
+                <div class="g-section-header">
+                    <h3 class="g-h3">기능에 맞는 태그 사용</h3>
+                </div>
+                <div class="g-section-body">
+                    <h4 class="g-h4"><span class="tagBox">&lt;a&gt;</span> tag</h4>
+
+                    <ul class="g-desc">
+                        <li>
+                            내부 페이지 이동, 외부 사이트 이동은 <span class="tagBox">&lt;button&gt;</span> 태그가 아닌
+                            <span class="tagBox">&lt;a&gt;</span> 사용한다.
+                        </li>
+                        <li>빈 링크의 href 값은 #none;으로 통일한다.</li>
+                        <li>
+                            클릭시 링크 방지 처리 예시
+                            <pre class="brush: html;">
+                                <!-- ※  -->
+                                <a href="#" onclick="something();return false;"></a>
+                                <a href="javascript:something();"></a>
+                                <a href="javascript:void(0);" onclick="something();"></a>
+
+                                <script>
+                                    $('a.btn_close').click(function (e) {
+                                        e.preventDefault();
+                                        $('.layer_guide').hide();
+                                    });
+                                </script>
+                            </pre>
+                            But 페이지 이동이 필요 없는 경우 <span class="tagBox">&lt;a&gt;</span> 태그 보다
+                            <span class="tagBox">&lt;button&gt;</span> 태그 사용을 우선한다.
+                        </li>
+                        <li>GNB 로고에는 Home 화면으로 가는 링크를 제공한다.</li>
+                    </ul>
+                </div>
+
+                <div class="g-section-body">
+                    <h4 class="g-h4"><span class="tagBox">&lt;button&gt;</span> tag</h4>
+
+                    <ul class="g-desc">
+                        <li>
+                            페이지 내에서 동작하는 기능은 <span class="tagBox">&lt;button&gt;</span> 태그 사용하며,
+                            <span class="tagBox">&lt;a&gt;</span> 사용은 지양한다.
+                        </li>
+                        <li>button 태그에는 type을 반드시 선언 한다. (브라우저별로 기본값이 다름)</li>
+                        <li>모양은 button 이지만 기능이 링크 또는 label 인 경우에는 <span class="tagBox">&lt;button&gt;</span> 사용하지 않는다.
+                        </li>
+                        <li>사용 예시 : form 관련 버튼, toggle, tab, etc...</li>
+                    </ul>
+                </div>
+
+                <div class="g-section-body">
+                    <h4 class="g-h4"><span class="tagBox">&lt;input&gt;</span> tag</h4>
+
+                    <ul class="g-desc">
+                        <li>form값 전송을 위한 기능은 submit 타입의 input 또는 button 태그 사용한다.</li>
+                        <li>disabled, readonly chekced, value, placeholder 등의 속성들을 정확히 이해하고 사용한다.</li>
+                    </ul>
+                </div>
+
+                <div class="g-section-body">
+                    <h4 class="g-h4"><span class="tagBox">&lt;h1&gt;</span> ~ <span class="tagBox">&lt;h6&gt;</span> tag
+                    </h4>
+
+                    <ul class="g-desc">
+                        <li>
+                            헤딩요소에 스타일을 지정할때는 특정 요소가 아닌 클래스로 지정한다.<br />(SEO개선을 위해 헤딩요소가 변경되는 경우가 있음)
+                            <pre class="brush: css;">
+                                .box_header h2 {color:red;} (X)
+
+                                .box_header .heading {color:red;} (O)
+                            </pre>
+                        </li>
+                        <li>헤딩요소 사용시 h1 ~ h6 순서대로 작성한다.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="g-section4" class="g-section">
+                <div class="g-section-header">
+                    <h3 class="g-h3">주석</h3>
+                </div>
+                <div class="g-section-body">
+                    <h4 class="g-h4">영역주석</h4>
+                    <pre class="brush: html;">
+                        <!-- 영역명 -->
+                        <div>
+                            <p>시작과 끝이 있고, 마크업의 영역을 표시한다.</p>
+                        </div>
+                        <!-- //영역명 -->
+                    </pre>
+                </div>
+
+                <div class="g-section-body">
+                    <h4 class="g-h4">설명주석</h4>
+                    <pre class="brush: html;">
+                        <!-- 설명내용 -->
+                        <p>시작과 끝이 없고, 설명할 내용을 주석으로 표기한다. </p>
+                    </pre>
+                </div>
+
+                <div class="g-section-body">
+                    <h4 class="g-h4">조건주석</h4>
+                    <pre class="brush: html;">
+                        <!-- Case 로그인 -->
+                        <div>
+                            범위가 넓은 경우
+                        </div>
+                        <!-- //Case 로그인 -->
+
+                        <!-- Case 로그아웃 -->
+                        <div>
+                            범위가 넓은 경우
+                        </div>
+                        <!-- //Case 로그아웃 -->
+                    </pre>
+                </div>
+
+                <div class="g-section-body">
+                    <h4 class="g-h4">기록주석</h4>
+                    <pre class="brush: html;">
+                        <div>
+                            인라인 주석인 경우 <!-- 181130 이름 설명 수정/추가/삭제 -->
+                        </div>
+                         
+                        <!-- 181130 설명내용 수정/추가/삭제 -->
+                        <div>
+                            범위가 단순한 경우 닫기 생략
+                        </div>
+                         
+                        <!-- 181130 이름 설명 수정/추가/삭제 -->
+                        <div>
+                            범위가 넓은 경우 닫기 표기
+                        </div>
+                        <div>
+                            범위가 넓은 경우 닫기 표기
+                        </div>
+                        <!-- //181130 이름 설명 수정/추가/삭제 -->
+                    </pre>
+                </div>
+            </section>
+
+            <section id="g-section5" class="g-section">
+                <div class="g-section-header">
+                    <h3 class="g-h3">속성 선언순서</h3>
+                </div>
+                <div class="g-section-body">
+                    <!-- table 컴포넌트 -->
+                    <div class="table-cpnt">
+                        <table class="tb-main">
+                            <caption>
+                                html 속성 선언 순서
+                            </caption>
+                            <colgroup>
+                                <col style="width: 20%" />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>속성</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1. 기능</td>
+                                    <td>href, src, type, target</td>
+                                </tr>
+                                <tr>
+                                    <td>2. 이름</td>
+                                    <td>id, name</td>
+                                </tr>
+                                <tr>
+                                    <td>3. Class</td>
+                                    <td>class</td>
+                                </tr>
+                                <tr>
+                                    <td>4. 정보</td>
+                                    <td>value, placeholder, title, alt</td>
+                                </tr>
+                                <tr>
+                                    <td>5. 접근성</td>
+                                    <td>role, aria 관련</td>
+                                </tr>
+                                <tr>
+                                    <td>6. 상태</td>
+                                    <td>chekced, disabled, selected, required, readonly 등</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--// table 컴포넌트 -->
+
+                    <h4 class="g-h4" style="margin-top: 20px">속성 선언 예시</h4>
+                    <pre class="brush: html">
+                        <a href="#none;" target="_blank" id="link" class="link_logo" title="">로고</a>
+
+                        <img src="../asset/img/icon/icon@2x.png" alt="대체텍스트">
+
+                        <input type="checkbox" name="" id="check01" class="check_type01_v1" value="" title="" checked>
+
+                        <ul id="tab_box" class="tab_box" role="tablist">
+                            <li class="tab_items active" role="none">
+                                <button type="button" id="tab01" class="btn btn_tab" role="tab" aria-selected="true" aria-controls="tabpanel01">
+                                    텝메뉴1
+                                </button>
+                            </li>
+                            <li class="tab_items" role="none">
+                                <button type="button" id="tab02" class="btn btn_tab" role="tab" aria-selected="false" aria-controls="tabpanel02">
+                                    텝메뉴2
+                                </button>
+                            </li>
+                        </ul>
+                    </pre>
+                </div>
+            </section>
+
+            <section id="g-section6" class="g-section">
+                <div class="g-section-header">
+                    <h3 class="g-h3"><span class="tagBox">&lt;iframe&gt;</span> 요소</h3>
+                </div>
+                <div class="g-section-body">
+                    <ul class="g-desc">
+                        <li>iframe 사용은 페이지 성능에 영향을 주기 때문에 가급적 사용을 하지 않는다.</li>
+                        <li>title 속성은 반드시 제공되어야 하며 빈 값을 사용하지 않는다.</li>
+                        <li>
+                            iframe을 포함하는 페이지의 도메인과 iframe에서 불러오는 페이지의 도메인이 다르면, 크로스 도메인 설정을 위해 별도의 소스
+                            코드가 추가되어 성능의 영향을 줄 수 있다.
+                        </li>
+                        <li>
+                            iframe의 높이값이 iframe에서 불러오는 콘텐츠의 따라 유동적이어야 한다면 별도의 소스코드가 추가되어 성능에 영향을 줄 수 있다.
+                        </li>
+                        <li>iframe은 가장 마지막으로 로딩되기 때문에 페이지 로딩 초기에는 화면이 비어 보일 수 있다.</li>
+                    </ul>
+
+                    <h4 class="g-h4" style="margin-top: 20px">iframe 예시</h4>
+                    <pre class="brush: html">
+                      <iframe src="chart:blank" title="리벨런싱차트" width="100%" height="100%"></iframe>
+                    </pre>
+                </div>
+            </section>
+
+            <section id="g-section7" class="g-section">
+                <div class="g-section-header">
+                    <h3 class="g-h3"><span class="tagBox">&lt;img&gt;</span> 요소</h3>
+                </div>
+                <div class="g-section-body">
+                    <ul class="g-desc">
+                        <li>alt 속성은 반드시 제공되어야 하며 의미없는 이미지에 한하여 빈 값을 허용한다.</li>
+                        <li>대체 텍스트 사용으로 일부 브라우저에서 말 풍선이 나타나는 것을 막을 필요가 있는 경우 title 속성의 빈 값을 제공한다.</li>
+                        <li>벡터 이미지(svg 등)가 아닌 경우 2배수 이미지 사용을 원칙으로 한다.</li>
+                    </ul>
+
+                    <h4 class="g-h4" style="margin-top: 20px">img 예시</h4>
+                    <pre class="brush: html">
+                      <img src="../asset/img/bg@2x.png" alt="대체텍스트" title="" />
+                    </pre>
+                </div>
+            </section>
+
+            <section id="g-section8" class="g-section">
+                <div class="g-section-header">
+                    <h3 class="g-h3">종료 태그가 필요한 요소</h3>
+                </div>
+                <div class="g-section-body">
+                    <ul class="g-desc">
+                        <li>닫는 태그가 없는 경우 종료 태그(/)를 작성한다.</li>
+                    </ul>
+                    <!-- table 컴포넌트 -->
+                    <div class="table-cpnt">
+                        <table class="tb-main txt-algn-center">
+                            <caption>
+                                종료 태그가 필요한 요소
+                            </caption>
+                            <colgroup>
+                                <col style="width: 150px" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>Element Name</th>
+                                    <td><span class="tagBox">&lt;br /&gt;</span></td>
+                                    <td><span class="tagBox">&lt;col /&gt;</span></td>
+                                    <td><span class="tagBox">&lt;hr /&gt;</span></td>
+                                    <td><span class="tagBox">&lt;img /&gt;</span></td>
+                                    <td><span class="tagBox">&lt;input /&gt;</span></td>
+                                    <td><span class="tagBox">&lt;link /&gt;</span></td>
+                                    <td><span class="tagBox">&lt;meta /&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <th>설명</th>
+                                    <td>줄바꿈</td>
+                                    <td>table</td>
+                                    <td>구분선</td>
+                                    <td>이미지</td>
+                                    <td>서식</td>
+                                    <td>head link</td>
+                                    <td>head meta</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--// table 컴포넌트 -->
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

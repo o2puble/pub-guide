@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,228 +11,540 @@
     <script src="asset/js/jquery-3.6.0.min.js"></script>
     <script src="asset/js/jquery-ui-1.12.1.min.js"></script>
 </head>
+
 <body>
-<div class="frame-layout">
-    <div class="frame-header">
-        <div class="info-wrap">                
-            <div class="info title"><a href="#" onClick="top.location='javascript:location.reload()'">O2UX 퍼블리싱 가이드</a></div>            
-        </div>                   
-    </div>    
-    
-    <div class="frame-lnb">
-        
-        <ul class="dep01">
-            <li>
-                <div class="title">2023</div>
-                <ul class="dep02">
-                    <li>
-                        <div class="title">
-                            Beatfolio                            
-                            <!-- <button type="button" class="btn-toggle-arrow"></button> -->
-                        </div>
+    <div class="frame-layout">
+        <div class="frame-header">
+            <div class="info-wrap">
+                <div class="info title"><a href="#" onClick="top.location='javascript:location.reload()'">O2UX 퍼블리싱
+                        가이드</a></div>
+            </div>
+        </div>
 
-                        <ul class="dep03">
-                            <li>
-                                <div class="title" data-toggle="on">
-                                    PC
-                                    <button type="button" class="btn-toggle-arrow"></button>
-                                </div> 
-                            </li>
-                            <li>
-                                <div class="title" data-toggle="on">
-                                    Mobile
-                                    <button type="button" class="btn-toggle-arrow"></button>
-                                </div>
-                                
-                                <!-- link -->
-                                <ul class="dep04">
-                                    <li>
-                                        <a href="proj/2023-beatfolio/mobile_app/html/form.html" class="link" target="frameViewer">Form</a>
-                                    </li>
-                                    <li>
-                                        <a href="proj/2023-beatfolio/mobile_app/html/formset.html" class="link" target="frameViewer">Form Set</a>
-                                    </li>
-                                    <li>
-                                        <a href="proj/2023-beatfolio/mobile_app/html/check.html" class="link" target="frameViewer">Checkbox / Radio</a>
-                                    </li>
-                                    <li>
-                                        <a href="proj/2023-beatfolio/mobile_app/html/button.html" class="link" target="frameViewer">Button</a>
-                                    </li>
-                                    <li>
-                                        <a href="proj/2023-beatfolio/mobile_app/html/tab.html" class="link" target="frameViewer">Tab </a>
-                                    </li>
-                                    <!-- <li>
-                                        <a href="proj/2023-beatfolio/mobile_app/html/List.html" class="link" target="frameViewer">List</a>
-                                    </li> -->
-                                </ul>   
-                                <!-- // link -->                            
-                            </li>
-                        </ul>                        
-                    </li> 
+        <div class="frame-lnb">
+            <ul class="tab-btn-box" data-tab="on">
+                <li class="tbb-items on">
+                    <button type="button" class="o-btn btn-tab" title="선택됨" data-tabbtn="tabpanel-1">Guide</button>
+                </li>
+                <li class="tbb-items">
+                    <button type="button" class="o-btn btn-tab" data-tabbtn="tabpanel-2">Components</button>
+                </li>
 
-                    <li>
-                        <div class="title">
-                            KBLife                         
-                            <!-- <button type="button" class="btn-toggle-arrow"></button> -->
-                        </div>
+            </ul>
+            <div class="tab-con-area">
+                <div class="tab-con-area" data-tabpanel="tabpanel-1">
+                    <ul class="guide-list">
+                        <li>
+                            <a href="proj/Guide/guide01.html" class="link" target="frameViewer">기본
+                                환경</a>
+                        </li>
+                        <li>
+                            <a href="proj/Guide/guide02.html" class="link" target="frameViewer">HTML
+                                규칙</a>
+                        </li>
+                        <li>
+                            <a href="proj/Guide/guide03.html" class="link" target="frameViewer">CSS
+                                규칙</a>
+                        </li>
+                        <li>
+                            <a href="proj/Guide/guide04.html" class="link" target="frameViewer">네이밍
+                                규칙</a>
+                        </li>
+                        <li>
+                            <a href="proj/Guide/guide05.html" class="link" target="frameViewer">웹 표준</a>
+                        </li>
+                        <li>
+                            <a href="proj/Guide/guide06.html" class="link" target="frameViewer">웹
+                                접근성</a>
+                        </li>
+                        <li>
+                            <a href="proj/Guide/guide07.html" class="link" target="frameViewer">참고사항</a>
+                        </li>
 
-                        <ul class="dep03">
-                            <li>
-                                <div class="title" data-toggle="on">
-                                    PC
-                                    <button type="button" class="btn-toggle-arrow"></button>
-                                </div> 
+                    </ul>
+                </div>
+                <div class="tab-con-area" data-tabpanel="tabpanel-2" hidden="">
+                    <ul class="dep01">
+                        <li>
+                            <div class="title">2023</div>
+                            <ul class="dep02">
+                                <li>
+                                    <div class="title">
+                                        Beatfolio
+                                        <!-- <button type="button" class="btn-toggle-arrow"></button> -->
+                                    </div>
 
-                                <!-- link -->
-                                <ul class="dep04">
-                                    <li>
-                                        <a href="proj/2023-kblife/pc_web/html/form.html" class="link" target="frameViewer">Form</a>
-                                    </li>
-                                    <li>
-                                        <a href="proj/2023-kblife/pc_web/html/formset.html" class="link" target="frameViewer">Form Set</a>
-                                    </li>
-                                    <li>
-                                        <a href="proj/2023-kblife/pc_web/html/check.html" class="link" target="frameViewer">Checkbox / Radio </a>
-                                    </li>
-                                    <li>
-                                        <a href="proj/2023-kblife/pc_web/html/button.html" class="link" target="frameViewer">Button </a>
-                                    </li>
-                                    <li>
-                                        <a href="proj/2023-kblife/pc_web/html/tab.html" class="link" target="frameViewer">Tab</a>
-                                    </li>
-                                    <li>
-                                        <a href="proj/2023-kblife/pc_web/html/table.html" class="link" target="frameViewer">Table </a>
-                                    </li>
-                                    <!-- <li>
-                                        <a href="proj/2023-kblife/pc_web/html/list.html" class="link" target="frameViewer">List</a>
-                                    </li>
-                                    <li>
-                                        <a href="proj/2023-kblife/pc_web/html/others.html" class="link" target="frameViewer">Others</a>
-                                    </li> -->
-                                </ul> 
-                                <!-- // link -->
-                            </li>                           
-                        </ul>                        
-                    </li>                     
-                </ul>
-            </li>     
-                    
-        </ul>   
+                                    <ul class="dep03">
+                                        <li>
+                                            <div class="title" data-toggle="on">
+                                                PC
+                                                <button type="button" class="btn-toggle-arrow"></button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="title" data-toggle="on">
+                                                Mobile
+                                                <button type="button" class="btn-toggle-arrow"></button>
+                                            </div>
+
+                                            <!-- link -->
+                                            <ul class="dep04">
+                                                <li>
+                                                    <a href="proj/2023-beatfolio/mobile_app/html/form.html" class="link"
+                                                        target="frameViewer">Form</a>
+                                                </li>
+                                                <li>
+                                                    <a href="proj/2023-beatfolio/mobile_app/html/formset.html"
+                                                        class="link" target="frameViewer">Form Set</a>
+                                                </li>
+                                                <li>
+                                                    <a href="proj/2023-beatfolio/mobile_app/html/check.html"
+                                                        class="link" target="frameViewer">Checkbox / Radio</a>
+                                                </li>
+                                                <li>
+                                                    <a href="proj/2023-beatfolio/mobile_app/html/button.html"
+                                                        class="link" target="frameViewer">Button</a>
+                                                </li>
+                                                <li>
+                                                    <a href="proj/2023-beatfolio/mobile_app/html/tab.html" class="link"
+                                                        target="frameViewer">Tab </a>
+                                                </li>
+                                                <!-- <li>
+                                            <a href="proj/2023-beatfolio/mobile_app/html/List.html" class="link" target="frameViewer">List</a>
+                                        </li> -->
+                                            </ul>
+                                            <!-- // link -->
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <div class="title">
+                                        KBLife
+                                        <!-- <button type="button" class="btn-toggle-arrow"></button> -->
+                                    </div>
+
+                                    <ul class="dep03">
+                                        <li>
+                                            <div class="title" data-toggle="on">
+                                                PC
+                                                <button type="button" class="btn-toggle-arrow"></button>
+                                            </div>
+
+                                            <!-- link -->
+                                            <ul class="dep04">
+                                                <li>
+                                                    <a href="proj/2023-kblife/pc_web/html/form.html" class="link"
+                                                        target="frameViewer">Form</a>
+                                                </li>
+                                                <li>
+                                                    <a href="proj/2023-kblife/pc_web/html/formset.html" class="link"
+                                                        target="frameViewer">Form Set</a>
+                                                </li>
+                                                <li>
+                                                    <a href="proj/2023-kblife/pc_web/html/check.html" class="link"
+                                                        target="frameViewer">Checkbox / Radio </a>
+                                                </li>
+                                                <li>
+                                                    <a href="proj/2023-kblife/pc_web/html/button.html" class="link"
+                                                        target="frameViewer">Button </a>
+                                                </li>
+                                                <li>
+                                                    <a href="proj/2023-kblife/pc_web/html/tab.html" class="link"
+                                                        target="frameViewer">Tab</a>
+                                                </li>
+                                                <li>
+                                                    <a href="proj/2023-kblife/pc_web/html/table.html" class="link"
+                                                        target="frameViewer">Table </a>
+                                                </li>
+                                                <!-- <li>
+                                            <a href="proj/2023-kblife/pc_web/html/list.html" class="link" target="frameViewer">List</a>
+                                        </li>
+                                        <li>
+                                            <a href="proj/2023-kblife/pc_web/html/others.html" class="link" target="frameViewer">Others</a>
+                                        </li> -->
+                                            </ul>
+                                            <!-- // link -->
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="frame-viewer">
+            <iframe src="" name="frameViewer" id="frameViewer" title="frameViewer" frameborder="0"></iframe>
+        </div>
     </div>
 
-    <div class="frame-viewer">
-        <iframe src="" name="frameViewer" id="frameViewer" title="frameViewer" frameborder="0"></iframe>                
-    </div>      
-</div>
-
-<style>
-* { box-sizing: border-box; }
-html,body { width: 100%; height: 100%; margin: 0; }
-ul, li { margin: 0; padding: 0; list-style: none; }
-a, a:active, a:visited, a:link { text-decoration: none; color: inherit; }
-a:hover { text-decoration: none; color: inherit; }
-button { cursor: pointer; }
-.frame-layout { overflow: hidden; height: 100%; box-sizing: border-box; }
-.frame-layout .frame-header { position: fixed; top: 0; left: 0; width: 100%; height: 50px; padding: 0 20px; background: #1e2022; color: #fff; }
-.frame-layout .frame-header .info-wrap { display: flex; height: 100%; align-items: center;  } 
-.frame-layout .frame-header .info-wrap .info { margin-right: 10px; }
-.frame-layout .frame-header .info-wrap .info.title { font-size: 15px; font-weight: bold; }  
-    
-.frame-layout .frame-lnb { overflow-y: auto; position: fixed; top: 50px; left: 0; width: 300px; height: calc(100% - 50px); padding: 20px; background: #c9d6de; }
-.frame-layout .frame-lnb ul.dep01 {  }
-.frame-layout .frame-lnb ul.dep01 > li {  }
-.frame-layout .frame-lnb ul.dep01 > li + li { margin-top: 25px; }
-.frame-layout .frame-lnb ul.dep01 > li > .title { font-size: 14px; font-weight: bold; color: #707070; }
-
-.frame-layout .frame-lnb ul.dep02 { margin-top: 15px; }
-.frame-layout .frame-lnb ul.dep02 > li {  }
-.frame-layout .frame-lnb ul.dep02 > li + li { margin-top: 20px; }
-.frame-layout .frame-lnb ul.dep02 > li > .title { position: relative; display: flex; align-items: center; font-size: 16px; font-weight: bold; color: #262626; }
-.frame-layout .frame-lnb ul.dep02 > li > .title:before { content: ''; display: inline-block; margin-right: 6px; width: 3px; height: 16px; background-color: #52616a; 
-vertical-align: middle; }
-.frame-layout .frame-lnb ul.dep02 > li > .title .btn-toggle-arrow { transform: rotate(180deg); margin-left: auto; }
-.frame-layout .frame-lnb ul.dep02 > li ul.dep03 { display: block; }
-.frame-layout .frame-lnb ul.dep02 > li.off > .title .btn-toggle-arrow { transform: rotate(0deg); }
-.frame-layout .frame-lnb ul.dep02 > li.off ul.dep03 { display: none; }
-.frame-layout .frame-lnb ul.dep03 { margin-top: 10px; padding: 0 0 0 10px; }
-.frame-layout .frame-lnb ul.dep03 > li {  }
-.frame-layout .frame-lnb ul.dep03 > li ul.dep04 { display: block; }
-.frame-layout .frame-lnb ul.dep03 > li.off ul.dep04 { display: none; }
-.frame-layout .frame-lnb ul.dep03 > li + li { margin-top: 10px; }
-.frame-layout .frame-lnb ul.dep03 > li > .title { display: flex; align-items: center; font-size: 14px; font-weight: bold; cursor: pointer; }
-.frame-layout .frame-lnb ul.dep03 > li > .title .btn-toggle-arrow { transform: rotate(180deg); margin-left: auto; }
-.frame-layout .frame-lnb ul.dep03 > li.off > .title .btn-toggle-arrow { transform: rotate(0deg); }
-.frame-layout .frame-lnb ul.dep04 { margin-top: 10px; _padding: 0 0 0 10px; }
-.frame-layout .frame-lnb ul.dep04 > li + li { margin-top: 10px; }
-.frame-layout .frame-lnb .link {  }
-.frame-layout .frame-lnb .link.on { font-weight: bold; color: #566270; text-decoration: underline; }
-.frame-layout .frame-lnb .link:hover { text-decoration: underline; }
-.frame-layout .frame-lnb .new-window { display: inline-block; margin-right: 5px; font-size: 11px; background-color: #f0f5f9; border: none; border-radius: 4px; }
-
-.frame-layout .frame-lnb .btn-toggle-arrow { width: 30px; height: 30px; background-image: url('asset/img/icon-arrow-down.png'); background-repeat: no-repeat; background-size: 16px; background-position: center center; border: none; background-color: transparent;}
-.frame-layout .frame-viewer { width: 100%; height: 100%; padding-top: 50px; padding-left: 300px; background-color: #f0f5f9; }
-.frame-layout .frame-viewer iframe { width: 100%; height: calc(100% - 1px); background-image: url('asset/img/logo_wht.png'); background-repeat: no-repeat; background-position: center center; }
-.temp-badge { display: inline-block; padding: 2px 4px; border-radius: 4px; background-color: #e0e0e0; vertical-align: middle; font-size: 10px; }
-
-/* mobile */
-.frame-layout.mobile .frame-lnb { width: 100%; }
-.frame-layout.mobile .frame-viewer { display: none; }
-</style>
-
-<script>   
-    function frameLayout(){
-        var winW = $(window).outerWidth();
-
-        if( winW < 760 ){
-            $('.frame-layout').addClass('mobile');
-            $('.frame-lnb .link').attr('target','_blank');
-        }else {
-            $('.frame-layout').removeClass('mobile');
-            $('.frame-lnb .link').attr('target','frameViewer');
-
-            newWindowBtn()
-        } 
-    }
-    
-    function newWindowBtn(){
-        $('.frame-lnb .link').each(function(){            
-            if($(this).siblings('.new-window').length) return   
-            
-
-            var link = +$(this).attr('href');
-
-            $(this).before('<button type="button" class="new-window">새창</button>');
-        })
-    }
-    
-
-    $(document).on('click', '[data-toggle="on"]', function(){      
-        if( $(this).closest('li').hasClass('off') ){
-            $(this).closest('li').removeClass('off')
-        }else {
-            $(this).closest('li').addClass('off')
+    <style>
+        * {
+            box-sizing: border-box;
         }
-    });
 
-    $(document).on('click', '.frame-lnb .link', function(){      
-        $('.frame-lnb .link').removeClass('on');
-        $(this).addClass('on')
-    });
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
 
-    $(document).on('click', '.frame-lnb .new-window', function(){      
-        var link = $(this).siblings('.link').attr('href');
-        window.open(link)
-    });
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
 
-    /* window */
-    $(window).on('load', function(){
-        frameLayout();
-    });
+        a,
+        a:active,
+        a:visited,
+        a:link {
+            text-decoration: none;
+            color: inherit;
+        }
 
-    $(window).on('resize', function(){
-        frameLayout();
-    });
-</script>
-    
+        a:hover {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .frame-layout {
+            overflow: hidden;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .frame-layout .frame-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            padding: 0 20px;
+            background: #1e2022;
+            color: #fff;
+        }
+
+        .frame-layout .frame-header .info-wrap {
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
+
+        .frame-layout .frame-header .info-wrap .info {
+            margin-right: 10px;
+        }
+
+        .frame-layout .frame-header .info-wrap .info.title {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .frame-layout .frame-lnb {
+            overflow-y: auto;
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 300px;
+            height: calc(100% - 50px);
+            padding: 20px;
+            background: #c9d6de;
+        }
+
+        .frame-layout .frame-lnb .guide-list li {
+            margin-top: 16px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #111;
+        }
+
+
+
+        .frame-layout .frame-lnb .tab-btn-box {
+            display: flex;
+            align-content: center;
+            width: 100%;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            background-color: #fff;
+            overflow: hidden;
+
+        }
+
+        .frame-layout .frame-lnb .tab-btn-box .tbb-items {
+            width: 100%;
+            background-color: #fff;
+        }
+
+        .frame-layout .frame-lnb .tab-btn-box .tbb-items .btn-tab {
+            display: block;
+            width: 100%;
+            padding: 6px 12px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 21px;
+            text-align: center;
+            appearance: none;
+            border: none;
+            background: none;
+        }
+
+        .frame-layout .frame-lnb .tab-btn-box .tbb-items.on .btn-tab {
+            background-color: #000;
+            color: #fff;
+            border-radius: 12px;
+        }
+
+        .frame-layout .frame-lnb ul.dep01 {}
+
+        .frame-layout .frame-lnb ul.dep01>li {}
+
+        .frame-layout .frame-lnb ul.dep01>li+li {
+            margin-top: 25px;
+        }
+
+        .frame-layout .frame-lnb ul.dep01>li>.title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #707070;
+        }
+
+        .frame-layout .frame-lnb ul.dep02 {
+            margin-top: 15px;
+        }
+
+        .frame-layout .frame-lnb ul.dep02>li {}
+
+        .frame-layout .frame-lnb ul.dep02>li+li {
+            margin-top: 20px;
+        }
+
+        .frame-layout .frame-lnb ul.dep02>li>.title {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #262626;
+        }
+
+        .frame-layout .frame-lnb ul.dep02>li>.title:before {
+            content: '';
+            display: inline-block;
+            margin-right: 6px;
+            width: 3px;
+            height: 16px;
+            background-color: #52616a;
+            vertical-align: middle;
+        }
+
+        .frame-layout .frame-lnb ul.dep02>li>.title .btn-toggle-arrow {
+            transform: rotate(180deg);
+            margin-left: auto;
+        }
+
+        .frame-layout .frame-lnb ul.dep02>li ul.dep03 {
+            display: block;
+        }
+
+        .frame-layout .frame-lnb ul.dep02>li.off>.title .btn-toggle-arrow {
+            transform: rotate(0deg);
+        }
+
+        .frame-layout .frame-lnb ul.dep02>li.off ul.dep03 {
+            display: none;
+        }
+
+        .frame-layout .frame-lnb ul.dep03 {
+            margin-top: 10px;
+            padding: 0 0 0 10px;
+        }
+
+        .frame-layout .frame-lnb ul.dep03>li {}
+
+        .frame-layout .frame-lnb ul.dep03>li ul.dep04 {
+            display: block;
+        }
+
+        .frame-layout .frame-lnb ul.dep03>li.off ul.dep04 {
+            display: none;
+        }
+
+        .frame-layout .frame-lnb ul.dep03>li+li {
+            margin-top: 10px;
+        }
+
+        .frame-layout .frame-lnb ul.dep03>li>.title {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .frame-layout .frame-lnb ul.dep03>li>.title .btn-toggle-arrow {
+            transform: rotate(180deg);
+            margin-left: auto;
+        }
+
+        .frame-layout .frame-lnb ul.dep03>li.off>.title .btn-toggle-arrow {
+            transform: rotate(0deg);
+        }
+
+        .frame-layout .frame-lnb ul.dep04 {
+            margin-top: 10px;
+            _padding: 0 0 0 10px;
+        }
+
+        .frame-layout .frame-lnb ul.dep04>li+li {
+            margin-top: 10px;
+        }
+
+        .frame-layout .frame-lnb .link {}
+
+        .frame-layout .frame-lnb .link.on {
+            font-weight: bold;
+            color: #566270;
+            text-decoration: underline;
+        }
+
+        .frame-layout .frame-lnb .link:hover {
+            text-decoration: underline;
+        }
+
+        .frame-layout .frame-lnb .new-window {
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 11px;
+            background-color: #f0f5f9;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .frame-layout .frame-lnb .btn-toggle-arrow {
+            width: 30px;
+            height: 30px;
+            background-image: url('asset/img/icon-arrow-down.png');
+            background-repeat: no-repeat;
+            background-size: 16px;
+            background-position: center center;
+            border: none;
+            background-color: transparent;
+        }
+
+        .frame-layout .frame-viewer {
+            width: 100%;
+            height: 100%;
+            padding-top: 50px;
+            padding-left: 300px;
+            background-color: #f0f5f9;
+        }
+
+        .frame-layout .frame-viewer iframe {
+            width: 100%;
+            height: calc(100% - 1px);
+            background-image: url('asset/img/logo_wht.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .temp-badge {
+            display: inline-block;
+            padding: 2px 4px;
+            border-radius: 4px;
+            background-color: #e0e0e0;
+            vertical-align: middle;
+            font-size: 10px;
+        }
+
+        /* mobile */
+        .frame-layout.mobile .frame-lnb {
+            width: 100%;
+        }
+
+        .frame-layout.mobile .frame-viewer {
+            display: none;
+        }
+    </style>
+
+    <script>
+        function frameLayout() {
+            var winW = $(window).outerWidth();
+
+            if (winW < 760) {
+                $('.frame-layout').addClass('mobile');
+                $('.frame-lnb .link').attr('target', '_blank');
+            } else {
+                $('.frame-layout').removeClass('mobile');
+                $('.frame-lnb .link').attr('target', 'frameViewer');
+
+                newWindowBtn()
+            }
+        }
+
+        function newWindowBtn() {
+            $('.frame-lnb .link').each(function () {
+                if ($(this).siblings('.new-window').length) return
+
+
+                var link = +$(this).attr('href');
+
+                $(this).before('<button type="button" class="new-window">새창</button>');
+            })
+        }
+
+
+        $(document).on('click', '[data-toggle="on"]', function () {
+            if ($(this).closest('li').hasClass('off')) {
+                $(this).closest('li').removeClass('off')
+            } else {
+                $(this).closest('li').addClass('off')
+            }
+        });
+
+        $(document).on('click', '.frame-lnb .link', function () {
+            $('.frame-lnb .link').removeClass('on');
+            $(this).addClass('on')
+        });
+
+        $(document).on('click', '.frame-lnb .new-window', function () {
+            var link = $(this).siblings('.link').attr('href');
+            window.open(link)
+        });
+
+        /* window */
+        $(window).on('load', function () {
+            frameLayout();
+        });
+
+        $(window).on('resize', function () {
+            frameLayout();
+        });
+
+        function tabCtrl(mySelf) {
+            let $cstTabItem = mySelf.closest('.tbb-items');
+            let $getPanelAttr = mySelf.attr('data-tabbtn');
+
+            $cstTabItem.addClass('on').siblings('.tbb-items').removeClass('on');
+            $(`[data-tabpanel="${$getPanelAttr}"]`).removeAttr('hidden').siblings('.tab-con-area').attr('hidden', '');
+        }
+        $(document).on('click', '[data-tab="on"] .btn-tab', function () {
+            tabCtrl($(this));
+        });
+
+
+    </script>
+
 </body>
+
 </html>

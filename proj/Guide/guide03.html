@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../asset/style/reset.css">
+    <link rel="stylesheet" href="../../asset/style/html-guide.css">
+
+    <link rel="stylesheet" href="../../asset/style/SyntaxHighlighter_MidnightCustom.css">
+    <script src="../../asset/js/SyntaxHighlighter-3.0.83.js"></script>
+    <script src="../../asset/js/SyntaxHighlighterCss-3.0.83.js"></script>
+    <script src="../../asset/js/SyntaxHighlighterJs-3.0.83.js"></script>
+    <script src="../../asset/js/SyntaxHighlighterXml-3.0.83.js"></script>
+
+</head>
+
+<body>
+    <script>
+        // SyntaxHighlighter 초기화
+        SyntaxHighlighter.all();
+    </script>
+
+    <div class="guide-contents">
+        <div class="gc-header">
+            <h2 class="g-h2">CSS 규칙</h2>
+            <ul class="g-desc">
+                <li>아래의 규칙들로 CSS 마크업을 작성합니다.</li>
+            </ul>
+        </div>
+
+        <div class="gc-body">
+            <section id="g-section1" class="g-section">
+                <div class="g-section-header">
+                    <h3 class="g-h3">CSS 기본 규칙</h3>
+                </div>
+                <div class="g-section-body">
+                    <!-- <h4 class="g-h4">모든 HTML 페이지 시작 지점에 공백없이 HTML5 문서타입을 선언합니다.</h4> -->
+
+                    <ul class="g-desc">
+                        <li>CSS 속성은 expanded 방식을 사용합니다(SCSS 사용시 expanded 포맷으로 CSS 변환)</li>
+                        <li>마지막 선언된 속성에도 세미콜론(;)을 사용한다.</li>
+                        <li>공통 선택자 &rarr; '*' 공통 선택자는 웹 페이지의 성능을 저하를 가져오기 때문에 가급적 사용하지 않는다.</li>
+                        <li>폰트의 선언, 배경 url, filter, content, 타입선언 시에 작은 따옴표('')를 사용한다</li>
+                        <li>반응형 사이트인 경우 px대신 vw, %, em, rem 등을 사용하여 퍼블리싱 한다.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="g-section2" class="g-section">
+                <div class="g-section-header">
+                    <h3 class="g-h3">폰트 지정</h3>
+                </div>
+                <div class="g-section-body">
+                    <ul class="g-desc">
+                        <li>
+                            폰트 지정시 끝에 Sans-serif 를 추가할 것 미지정시 사용자 환경에 따라 명조체로 나올 수 있음
+                            <pre class="brush: css;">
+                            body{font-family: 'Malgun Gothic', Sans-serif;}
+                        </pre>
+                        </li>
+                    </ul>
+
+                    <h4 class="g-h4" style="margin-top: 20px">웹폰트</h4>
+                    <ul class="g-desc">
+                        <li>한글 웹폰트는 용량이 커서 초기 로딩속도 저하 이슈가 있음</li>
+                        <li>
+                            용량을 줄인 경량화 폰트는 일부 글자가 안나오는 이슈가 있음<br />
+                            예) 꽌, 궨, 쫒 ..
+                        </li>
+                        <li>웹폰트 사용에 대해서는 별도 협의</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="g-section3" class="g-section">
+                <div class="g-section-header">
+                    <h3 class="g-h3">속성(property) 선언 순서</h3>
+                </div>
+                <div class="g-section-body">
+                    <ul class="g-desc">
+                        <li>포지셔닝과 박스모델 관련 속성을 먼저 작성한다</li>
+                    </ul>
+
+                    <!-- table 컴포넌트 -->
+                    <div class="table-cpnt">
+                        <table class="tb-main">
+                            <caption>
+                                css 속성 선언 순서
+                            </caption>
+                            <colgroup>
+                                <col style="width: 20%" />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>속성</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1. 포지셔닝</td>
+                                    <td>position, top, left 등</td>
+                                </tr>
+                                <tr>
+                                    <td>2. display</td>
+                                    <td>display,justify-content, align-items(self) - flex 관련 스타일</td>
+                                </tr>
+                                <tr>
+                                    <td>3. 박스모델</td>
+                                    <td>(max/min)width, (max/min)height, margin, padding, border, background</td>
+                                </tr>
+                                <tr>
+                                    <td>4. 글자</td>
+                                    <td>font-size, color, text-align, white-space, word-break, text-indent</td>
+                                </tr>
+                                <tr>
+                                    <td>5. 기타</td>
+                                    <td>animation, transition</td>
+                                </tr>
+                                <tr>
+                                    <td>6. 넘침,흐름,투명도,표시여부,layer level</td>
+                                    <td>overflow, opacity, visibility, z-index</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--// table 컴포넌트 -->
+                </div>
+            </section>
+
+            <section id="g-section4" class="g-section">
+                <div class="g-section-header">
+                    <h3 class="g-h3">Media query</h3>
+                </div>
+                <div class="g-section-body">
+                    <ul class="g-desc">
+                        <li>미디어 특성은 출력 장치, 환경 등의 특징을 정의할 수 있습니다.</li>
+                        <li>미디어 특성 표현식을 사용하여 특성의 존재 여부와 값을 판별하여 조건을 정의할 수 있습니다.</li>
+                        <li>각각의 미디어 특성 표현식은 괄호로 감싸야 합니다.</li>
+                    </ul>
+                    <h4 class="g-h4" style="margin-top: 20px">미디어 타입의 종류</h4>
+                    <ul class="g-desc">
+                        <li>all : 모든 출력 장치*</li>
+                        <li>print : 인쇄*</li>
+                        <li>aural : 음성출력</li>
+                        <li>handheld : 포켓, 모바일</li>
+                        <li>braille : 점자 출력</li>
+                        <li>projection : 투사 장치</li>
+                    </ul>
+                </div>
+
+                <div class="g-section-body">
+                    <h4 class="g-h4">media IOS or Android &rarr; IOS or Android에 선택적 스타일 적용</h4>
+                    <pre class="brush: css">
+                    /* iOS devices */
+                    @supports (-webkit-overflow-scrolling: touch) {
+                    /* CSS specific to iOS devices */
+                    }
+
+                    /* Android devices */
+                    @supports not (-webkit-overflow-scrolling: touch) {
+                    /* CSS for other than iOS devices */
+                    }
+                </pre>
+                </div>
+
+                <div class="g-section-body">
+                    <h4 class="g-h4">media ie &rarr; IE 에서만 스타일 적용</h4>
+                    <pre class="brush: css">
+                    /* IE browser */
+                    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                        /* CSS for IE browser */
+                    }
+                </pre>
+                </div>
+
+                <div class="g-section-body">
+                    <h4 class="g-h4">media print &rarr;인쇄 페이지용 미디어 쿼리로, 인쇄 시 변경되는 부분을 명시</h4>
+                    <pre class="brush: css">
+                    /* default */
+                    @media print {}
+
+                    /* 페이지에서 숨겨야 하는 부분은 display를 통해 제어 */
+                    @media print {
+                        header, footer, .no-print { display:none }
+                    }
+                </pre>
+                </div>
+
+                <div class="g-section-body">
+                    <h4 class="g-h4">media screen</h4>
+                    <ul class="g-desc">
+                        <li>width : 스크롤바를 포함한 뷰포트 너비</li>
+                        <li>max-width : 뷰포트의 최대 가로너비</li>
+                        <li>min-width : 뷰포트의 최소 가로너비</li>
+                        <li>height : 뷰포트의 높이</li>
+                        <li>max-height : 뷰포트의 최대 높이</li>
+                        <li>min-height : 뷰포트의 최소 높이</li>
+                        <li>orientation : 뷰포트의 방향</li>
+                        <li>grid : 장치가 그리드와 비트맵 스크린 중 어느 것을 사용하는지</li>
+                        <li>hover : 사용자가 요소 위에 마우스를 올릴 수 있는 환경인지</li>
+                        <li></li>
+                    </ul>
+
+                    <pre class="brush: css">
+                    /* 뷰포트의 가로너비가 1025px 이상인 경우 적용 : 데스크탑 환경 */
+                    @media screen and (min-width: 1025px){ .. }
+
+                    /* 뷰포트의 가로너비가 769px 이상 1024px 이하 : 태블릿 환경 */
+                    @media screen and (min-width: 769px) and (max-width: 1024){ .. }
+
+                    /* 뷰포트의 가로너비가 768px 이하인 경우 적용 : 모바일 환경 */
+                    @media screen and (min-width: 768px){ .. }
+                </pre>
+
+                    <ul class="g-desc">
+                        <li>and : 다수의 미디어 특성을 조합하여 하나의 미디어 쿼리를 만들 때 사용(and 연산자와 같은 동작)</li>
+                        <li>
+                            not : 쿼리가 거짓일 때만 참을 반환, Level 3 모듈에서는 not 키워드 사용시 단일 미디어 쿼리에 not 연산은 불가능하며, 전체
+                            쿼리만 not 연산이 가능
+                        </li>
+                        <li>only : 전체 쿼리가 일치할 경우에만 스타일 적용</li>
+                        <li>
+                            ,(쉼표) : 다수의 미디어 쿼리를 하나의 규칙으로 조합할 때 사용, 단 하나의 쿼리만 참을 반환해도 규칙 전체가 참(or 연산자와
+                            같은 동작)
+                        </li>
+                    </ul>
+                    <pre class="brush: css">
+                    /* 논리곱 미디어 쿼리 */
+                    /* screen 유형 + (min-width: 400px) + (orientation: landscape) */
+                    /* 모두 참이어야 적용 */
+                    @media screen and (min-width: 400px) and (orientation: landscape){ .. }
+
+                    /* 논리합 미디어 쿼리 */
+                    /* screen and (min-width: 400px) 혹은 screen and (orientation: landscape) */
+                    /* 둘중 하나라도 참이면 적용 */
+                    @media screen and (min-width: 400px), screen and (orientation: landscape){ .. }
+
+                    /* 부정 논리 미디어 쿼리 */
+                    /* 보기 방향이 세로일 경우에만 적용 */
+                    @media not all and (orientation: landscape){ .. }
+                </pre>
+                </div>
+            </section>
+
+            <section id="g-section5" class="g-section">
+                <div class="g-section-header">
+                    <h3 class="g-h3">예약어</h3>
+                </div>
+                <div class="g-section-body">
+                    <ul class="g-desc">
+                        <li>이하의 클래스명은 사이트 전역에서 반복하여 사용되는 이름이므로 부모 요소 없이 단독으로 스타일을 선언하지 않는다.</li>
+                    </ul>
+
+                    <!-- table 컴포넌트 -->
+                    <div class="table-cpnt">
+                        <table class="tb-main">
+                            <caption>
+                                css 속성 선언 순서
+                            </caption>
+                            <colgroup>
+                                <col style="width: 30%" />
+                                <col style="width: 30%" />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>예약어</th>
+                                    <th>비고</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="6">레이아웃</td>
+                                    <td>skipnav</td>
+                                    <td>접근성 바로가기 링크</td>
+                                </tr>
+                                <tr>
+                                    <td>header</td>
+                                    <td>머리글 영역</td>
+                                </tr>
+                                <tr>
+                                    <td>gnb</td>
+                                    <td>공통 네비게이션</td>
+                                </tr>
+                                <tr>
+                                    <td>content</td>
+                                    <td>본문 영역</td>
+                                </tr>
+                                <tr>
+                                    <td>footer</td>
+                                    <td>바닥글 영역</td>
+                                </tr>
+                                <tr>
+                                    <td>modal</td>
+                                    <td>모달 영역</td>
+                                </tr>
+
+                                <tr>
+                                    <td rowspan="3">그룹핑</td>
+                                    <td>-wrap</td>
+                                    <td>전체 영역</td>
+                                </tr>
+                                <tr>
+                                    <td>-area</td>
+                                    <td>지역 영역</td>
+                                </tr>
+                                <tr>
+                                    <td>-group</td>
+                                    <td>특정 컨텐츠들의 집합</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">컴포넌트</td>
+                                    <td>-compnent</td>
+                                    <td>컴포넌트 영역</td>
+                                </tr>
+                                <tr>
+                                    <td>-box</td>
+                                    <td>컴포넌트보다 작은 컨텐츠</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="5">기타</td>
+                                    <td>open, on</td>
+                                    <td>열림, 선택됨</td>
+                                </tr>
+                                <tr>
+                                    <td>close, off</td>
+                                    <td>닫힘, 비활성</td>
+                                </tr>
+                                <tr>
+                                    <td>active</td>
+                                    <td>활성</td>
+                                </tr>
+                                <tr>
+                                    <td>default</td>
+                                    <td>기본 상태</td>
+                                </tr>
+                                <tr>
+                                    <td>show</td>
+                                    <td>숨겨진 상태에서 보여지는 상태로 전환</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--// table 컴포넌트 -->
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

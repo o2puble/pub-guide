@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../asset/style/reset.css">
+    <link rel="stylesheet" href="../../asset/style/html-guide.css">
+
+    <link rel="stylesheet" href="../../asset/style/SyntaxHighlighter_MidnightCustom.css">
+    <script src="../../asset/js/SyntaxHighlighter-3.0.83.js"></script>
+    <script src="../../asset/js/SyntaxHighlighterCss-3.0.83.js"></script>
+    <script src="../../asset/js/SyntaxHighlighterJs-3.0.83.js"></script>
+    <script src="../../asset/js/SyntaxHighlighterXml-3.0.83.js"></script>
+
+</head>
+
+<body>
+    <script>
+        // SyntaxHighlighter 초기화
+        SyntaxHighlighter.all();
+    </script>
+
+    <div class="guide-contents">
+        <div class="gc-header">
+            <h2 class="g-h2">웹 접근성</h2>
+            <ul class="g-desc">
+                <li>웹 접근성 프로젝트의 경우 일반 프로젝트 보다 더 많은 기간과 공수가 필요합니다.</li>
+                <li>기획부터 개발까지 모든 작업자가 접근성 항목에 대한 이해가 필요하고 그에 따른 긴밀한 협력이 필요합니다.</li>
+            </ul>
+        </div>
+        <div class="gc-body">
+            <section id="g-section1" class="g-section">
+                <div class="g-section-header">
+                    <h3 class="g-h3">웹 접근성</h3>
+                </div>
+                <div class="g-section-body">
+                    <h4 class="g-h4">웹 접근성이란?</h4>
+
+                    <ul class="g-desc">
+                        <li>
+                            웹에 접근하는 모든 사용자(신체적, 환경적 제한에 상관없이)에게 불편없이 웹을 사용할 수 있도록 하는 것이며 웹사이트에서
+                            제공하는 모든 정보를 차별 및 제한없이 동등하게 이용할 수 있도록 보장하는 것이다.
+                        </li>
+                        <li>
+                            한국웹접근성인증평가원에서는 22년 2월 이후로는 심사 기준 브라우저에서 IE가 제외 되어 Chrome 최신 버전에서 심사가 진행된다.
+                        </li>
+                        <li>웹접근성 자가 진단 툴 : <a href="https://accessibility.kr/">한국정보화진흥원에서 제공하는 진단툴</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="g-section2" class="g-section">
+                <div class="g-section-header">
+                    <h3 class="g-h3">웹 접근성 진단 기준</h3>
+                </div>
+                <div class="g-section-body">
+                    <h4 class="g-h4">진단 기준</h4>
+
+                    <div class="table-cpnt">
+                        <table class="tb-main">
+                            <caption>
+                                웹 접근성 진단 기준
+                            </caption>
+                            <colgroup>
+                                <col style="width: 10%" />
+                                <col style="width: 30%" />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>원칙</th>
+                                    <th>지침</th>
+                                    <th>검사항목</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="11">인식의 용이성 (Perceivable)</td>
+                                    <td>1. (대체텍스트) 텍스트가 아닌 콘텐츠는 대체 가능한 텍스트와 함께 제공되어야한다.</td>
+                                    <td>
+                                        1-1 텍스트가 아닌 콘텐츠에 대한 대체 텍스트는 그 의미나 기능을 동등한 수준으로 짧고 명확하게 제공 해야 한다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4">
+                                        2. (자막,수화등의 제공) 영상이나 음성 콘텐츠에는 동등한 내용의 자막,원고 또는 수화가 제공되어야 한다.
+                                    </td>
+                                    <td>
+                                        2-1 영상이나 음악 콘텐츠 내 제공되는 모든 음성정보는 동등한 내용의 자막,원고,수화 중 적어도 하나 이상을 제공해야
+                                        한다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        2-2 영상이나 음성 콘텐츠에서 화면에 문자 정보가 의미를 가지고 있는 경우 이를 설명하는 별도의 음성 콘텐츠나
+                                        원고를 제공해야 한다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        2-3 자막,원고 또는 수화는 재생되고 있는 영상이나 음성 콘텐츠와 동기화하여 제공한다. 단, 실시간으로 제공되는
+                                        영상이나 음성 콘텐츠의 경우는 실시간 자막 또는 수화로 제공 할 수 있다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        2-4 음성이나 문자 정보없이 제공되는 영상이나 음성 콘텐츠는 이를 설명하는 화면해설을 제공하는 것이 바람직하다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3. (색에 무관한 인식) 화면에 표시되는 모든 정보는 색에 관계없이 인식될 수 있어야 한다.</td>
+                                    <td>
+                                        3-1 콘텐츠에서 제공하는 모든 정보는 특정한 색을 구별할 수 없는 사용자, 흑백 디스플레이 사용자, 흑백 인쇄물을
+                                        보는 사용자 및 고대비 모드 사용자가 인식 할 수 있도록 제공해야 한다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        4. (명도대비) 화면에 표시되는 모든 사용자 인터페이스 컴포넌트와 텍스트는 전경색과 배경색이 구분 될 수 있도록
+                                        제공되어야 한다.
+                                    </td>
+                                    <td>
+                                        4-1 화면에 표시되는 모든 사용자 인터페이스 컴포넌트와 텍스트는 전경색과 배경색이 구분 될 수 있도록 명도대비를
+                                        3:1 이상으로 제공해야 한다.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td rowspan="2">
+                                        5. (명확한 지시사항) 지시사항은 모양,크기,위치,방향,색,소리 등에 관계없이 인색 될 수 있어야 한다.
+                                    </td>
+                                    <td>
+                                        5-1 화면에 표시되는 특정 사용자 인터페이스 컴포넌트를 가리키거나 지시사항을 전달 하는 경우 가리키고자 하는
+                                        사용자 인터페이스 컴포넌트의 실제 명칭이나 그 사용자 인터페이스 컴포넌트가 포함 하고있는 대체 텍스트를 사용해
+                                        지칭하거나, 하나의 감각에 의존하지 않고 여러감각을 이용하는 정보를 함께 제공해야 한다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        5-2 음성이나 음향을 사용해 지시사항을 전달 하는 경우 사용자가 소리를 들을 수 없더라도 지시사항을 인식 할 수
+                                        있어야 한다.
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td rowspan="2">6. (알림기능)알림 정보는 화면 표시,소리,진동 등 다양한 방법으로 제공 되어야 한다.</td>
+                                    <td>6-1 중요한 알림 정보는 시각,청각,촉각 등 다양한 감각으로 인식 될 수 있어야 한다.</td>
+                                </tr>
+                                <tr>
+                                    <td>6-2 알림 정보는 사용자가 자신에게 적합한 방법을 선택 할 수 있도록 제공하는 것이 바람직하다.</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="9">운용의 용이성 (Operable)</td>
+                                    <td rowspan="3">
+                                        7. (초점) 의미나 기능을 갖는 모든 사용자 인터페이스 컴포넌트에는 초점(focus)이 적용되고 초점은 논리적인 순서로
+                                        이동되어야 한다.
+                                    </td>
+                                    <td>7-1 초점은 사용자가 예측 할 수 있도록 논리적인 순서로 이동해야 한다.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        7-2 초점은 화면에서 보이지 않거나 논리적으로 의미를 갖지않는 사용자 인터페이스 컴포넌트로 이동하지 않도록 해야
+                                        한다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>7-3 표시되는 초점의 영역은 콘텐츠의 위치와 크기가 맞도록 제공 해야 한다.</td>
+                                </tr>
+                                <tr>
+                                    <td>8. (누르기동작지원) 터치(touch)기반 모바일 기기의 모든 컨트롤은 누르기 동작으로 제어 할 수 있어야 한다.</td>
+                                    <td>
+                                        8-1 두개 이상의 손가락을 동시에 이용해야 하는 다중 누르기(Multi-touch)동작,팬(Pan),끌기와놓기(Dragand drop)등의
+                                        복잡한 누르기 동작은 단순한 누르기 동작을 함께 제공해야 한다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">9. (응답시간조절) 시간제한이 있는 콘텐츠는 응답 시간을 조절 할 수 있어야 한다.</td>
+                                    <td>9-1 시간 제한이 있는 경우에는 제한 시간 연장 또는 이를 제어 할 수 있는 수단을 함께 제공해야 한다.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        9-2 불가피한 사유로의 기능을 제공 할 수 없는 경우에는 사용자에게 시간 제한이 있다는것을 미리 알려주고,
+                                        종료되었을 경우에도 이를 알려주어야 한다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10. (정지기능제공) 자동으로 변경되는 콘텐츠는 움직임을 제어 할 수 있어야 한다.</td>
+                                    <td>
+                                        10-1 자동으로 변경되는 콘텐츠에는 앞으로 이동, 뒤로 이동,일시정지,정지와 같이 이를 제어 할 수 있는 수단을
+                                        제공해야 한다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">11. (컨트롤의 크기와간격) 컨트롤은 충분한 크기와 간격으로 제공 되어야 한다.</td>
+                                    <td>11-1 컨트롤간에 외곽선을 표시 하지 않는 경우 컨트롤간의 중심 간 간격을 충분히 제공해야 한다.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        11-2 모바일 기기의 화면 크기에 관계없이 컨트롤의 가로와 세로 크기는 각각 9mm이상으로 제공하는 것이 바람직 하다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="12">이해의 용이성 (Understand-able)</td>
+                                    <td rowspan="4">12. (입력도움) 입력서식 이용시,입력오류를 방지하거나 정정 할 수 있는 방법을 제공해야 한다.</td>
+                                    <td>12-1 입력 서식에는 용도와 목적을 알 수 있는 대체 정보를 제공 해야 한다.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        12-2 별도의 입력 방식이 있는 입력 서식에는 입력 오류를 방지하기 위하여 입력 내용에 대한 설명 정보를 제공 해야
+                                        한다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        12-3 사용자 입력 값에 오류가 있는 경우 오류 내용을 이해하고 이 를 정정할 수 있도록 해당 오류 내용을 알릴 수 있는
+                                        방법을 제공 해야 한다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        12-4 입력 서식의 오류 내용을 수정하기 용이 하도록 오류가 발생된 지점으로 초점을 이동 시키는것이 바람직 하다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">13. (사용자 인터페이스의 일관성) 사용자 인터페이스 컴포넌트들은 일관성 있게 배치 되어야 한다.</td>
+                                    <td>13-1 화면에 표시되는 콘텐츠들의 배치는 일관성있게 제공 되어야 한다.</td>
+                                </tr>
+                                <tr>
+                                    <td>13-2 애플리케이션내의 유사한 기능을 가지고 있는 컨트롤은 동일하게 제공 되어야 한다.</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">14. (깜박거림의사용제한) 깜빡이거나 번쩍이는 콘텐츠를 제공 하지 않아야 한다.</td>
+                                    <td>14-1 화면상에서 깜빡임의 효과를 제공 해야 하는 콘텐츠는 3~50회의 주기는 피해서 제공하는 것이 바람직 하다.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        14-2 불가피하게 사용 할 경우, 깜빡임을 제공하는 콘텐츠는 사전에 알리고, 회피할 수 있는 방법을 제공 해야 한다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">15. (자동재생금지) 자동으로 재생되는 배경음을 사용 하지 않아야 한다.</td>
+                                    <td>15-1 자동으로 재생되는 배경음은 제공 하지 않아야한다. 단, 3초 미만의 배경음은 예외로 인정한다.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        15-2 배경음을 사용 할 경우,사용자가 손쉽게 멈춤, 일시정지, 음량 조절등과 같이 이를 제어할수 있는 수단을 제공
+                                        해야 한다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">
+                                        16. (예측가능성) 사용자가 의도하지 않은 화면 전환이나 이벤트등이 실행 되는경우 용자가 이해 할 수 있는 방법으로
+                                        제공 되어야 한다.
+                                    </td>
+                                    <td>16-1 화면이 전환되거나 팝업과 같은 이벤트가 실행 되는 경우 이를 예측 할 수 있는 방법을 제공 해야 한다.</td>
+                                </tr>
+                                <tr>
+                                    <td>16.-2 다른 애플리케이션으로 연결 및 전환 되는 경우 이를 예측 할 수 있는 방법을 제공 해야 한다.</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="5">견고성 (Robust)</td>
+                                    <td rowspan="2">
+                                        17. (폰트관련기능의 활용) 텍스트 콘텐츠는 운영체제에서 제공 하는 폰트 관련 기능을 활용 할 수 있는 방법을 제공
+                                        해야 한다.
+                                    </td>
+                                    <td>17-1 텍스트 콘텐츠는 폰트 크기의 조절이 가능 하도록 제공 되어야 한다.</td>
+                                </tr>
+                                <tr>
+                                    <td>17-2 폰트 관련 기능을 활용 할 수 있도록 범용 폰트를 활용하는것이 바람직 하다.</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3">
+                                        18. (보조기술과의 호환성) 사용자 인터페이스 컴포넌트는 보조 기술을 이용하여 사용 할 수 있도록 해야 한다.
+                                    </td>
+                                    <td>18-1 운영 체제에서 제공하는 기본 사용자 인터페이스 컴포넌트를 최대한 이용하는 것이 바람직 하다.</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        18-2 부득이 하게 기본 사용자 인터페이스 컴포넌트를 사용 할 수 없을시에는 운영체제에서 제공 하는 보조 기술을 사용
+                                        할 수 있도록 해야 한다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        18-3 기본 컴포넌트를 원래의 기능과 다른 기능으로 제공 할 경우 사용자가 컨트롤의 기능을 이해 할 수 있도록 그
+                                        기능에 대한 정보를 제공 해야 한다.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section id="g-section3" class="g-section">
+                <div class="g-section-header">
+                    <h3 class="g-h3">웹접근성 심사기준</h3>
+                </div>
+                <div class="g-section-body">
+                    <h4 class="g-h4">전문가 심사 검사 항목</h4>
+
+                    <!-- table 컴포넌트 -->
+                    <div class="table-cpnt">
+                        <table class="tb-main td-first-tac">
+                            <caption>
+                                전문가 심사 검사 항목
+                            </caption>
+                            <colgroup>
+                                <col style="width: 60px" />
+                                <col style="width: 25%" />
+                                <col />
+                                <col style="width: 25%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>세부평가항목</th>
+                                    <th>준수율 산정 방식</th>
+                                    <th>비고</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>적절한 대체 텍스트 제공</td>
+                                    <td>심사대상페이지 내의 (준수한 페이지 수 / 페이지 수 x 100)</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>자막 제공</td>
+                                    <td>심사대상페이지 내의 (준수한 콘텐츠 수 / 콘텐츠 수 x 100)</td>
+                                    <td>샘플링 페이지수 이내로 멀티미디어 제공 페이지 수집</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>색에 무관한 콘텐츠 인식</td>
+                                    <td rowspan="22">심사대상페이지 내의 (준수한 페이지 수 / 페이지 수 x 100)</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>명확한 지시사항 제공</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>텍스트 콘텐츠의 명도 대비</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>자동재생 금지</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>키보드 사용 보장</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>8-1</td>
+                                    <td>키보드 사용 보장(PC웹)</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>8-2</td>
+                                    <td>누르기 동작 지원(모바일웹)</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>초점 이동</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>조작가능</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>응답시간 조절</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>정지 기능 제공</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>깜빡임과 번쩍임 사용 제한</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td>반복영역 건너뛰기</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>제목 제공</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td>적절한 링크 텍스트</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>17</td>
+                                    <td>기본 언어 표시</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>18</td>
+                                    <td>사용자 요구에 따른 실행</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>19</td>
+                                    <td>콘텐츠의 선형화</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>20</td>
+                                    <td>표의 구성</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>21</td>
+                                    <td>레이블 제공</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td>오류 정정</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>23</td>
+                                    <td>마크업 오류 방지</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>24</td>
+                                    <td>웹 애플리케이션 접근성 준수</td>
+                                    <td>각 검사항목에서 검사</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--// table 컴포넌트 -->
+                </div>
+
+                <div class="g-section-body">
+                    <h4 class="g-h4">심사 장애 유형 및 특성</h4>
+
+                    <!-- table 컴포넌트 -->
+                    <div class="table-cpnt">
+                        <table class="tb-main">
+                            <caption>
+                                심사 장애 유형 및 특성
+                            </caption>
+                            <colgroup>
+                                <col style="width: 20%" />
+                                <col style="width: 16%" />
+                                <col style="width: 14%" />
+                                <col style="width: 20%" />
+                                <col style="width: 20%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>장애유형</th>
+                                    <th>등급 및 조건</th>
+                                    <th>구분</th>
+                                    <th>환경 및 특성</th>
+                                    <th>비고</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="txt-algn-center" rowspan="2">전맹 시각장애</td>
+                                    <td class="txt-algn-center" rowspan="6">중증 장애인에 준함</td>
+                                    <td class="txt-algn-center">PC 웹</td>
+                                    <td>PC화면 낭독프로그램 사용,키보드만 사용</td>
+                                    <td>본 가이드에서 정한 2가지 화면낭독기 중 중 하나이상 성공해야 인정</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-algn-center">모바일웹</td>
+                                    <td>모바일 스크린리더 사용,모든 손가락 사용</td>
+                                    <td>Voiceover, Talkback 등으로 임의터치방식 진행</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-algn-center" rowspan="2">저시력 시각장애</td>
+                                    <td class="txt-algn-center">PC 웹</td>
+                                    <td>확대 및 고대비 기능 사용,마우스, 키보드 사용</td>
+                                    <td rowspan="2">화면 확대, 반전, 고대비 등 사용</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-algn-center">모바일웹</td>
+                                    <td>확대 및 고대비 기능 사용,모든 손가락 사용</td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-algn-center" rowspan="2">지체(상지) 또는 뇌병변 장애</td>
+                                    <td class="txt-algn-center">PC 웹</td>
+                                    <td>키보드만 사용</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-algn-center">모바일웹</td>
+                                    <td>하나의 터치수단 사용 (예: 한 손가락만 사용)</td>
+                                    <td>터치방식으로 진행 또는 화면낭독기 환경에서 대체 수단 인정</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--// table 컴포넌트 -->
+                </div>
+
+                <div class="g-section-body">
+                    <h4 class="g-h4">사용자 심사 지표</h4>
+
+                    <!-- table 컴포넌트 -->
+                    <div class="table-cpnt">
+                        <table class="tb-main td-first-tac">
+                            <caption>
+                                사용자 심사 지표
+                            </caption>
+                            <colgroup>
+                                <col style="width: 60px" />
+                                <col style="width: 50%" />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>
+                                        과업 예시<br />
+                                        (사이트마다 특성을 고려하여 과업 설정)
+                                    </th>
+                                    <th>성공률 산정 방식</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>회원가입을 해보세요.</td>
+                                    <td rowspan="5">
+                                        (성공한과업 / 심사 대상과업 x 100)<br /><br />
+                                        3명의 사용자 심사원이 각 과업별로 정해진 시간 내에 성공
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>로그인과 로그아웃을 해보세요.</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>회원 정보를 수정해보세요.(주소, 전화번호)</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>사이트맵을 이용하여 민원업무서식을 찾아보세요.</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>자유게시판으로 이동하여 첫 번째 게시물을 읽어보세요.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--// table 컴포넌트 -->
+                </div>
+            </section>
+
+            <section id="g-section4" class="g-section">
+                <div class="g-section-header">
+                    <h3 class="g-h3">WAI Aria</h3>
+                </div>
+                <div class="g-section-body">
+                    <h4 class="g-h4">Role Tags</h4>
+
+                    <!-- table 컴포넌트 -->
+                    <div class="table-cpnt">
+                        <table class="tb-main">
+                            <caption>
+                                Role Tags
+                            </caption>
+                            <colgroup>
+                                <col style="width: 16%" />
+                                <col style="width: 22%" />
+                                <col style="width: 22%" />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>분류</th>
+                                    <th>구분</th>
+                                    <th>이름</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="8">양식</td>
+                                    <td>입력서식</td>
+                                    <td>role="form"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;form&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>자유형식 입력텍스트</td>
+                                    <td>role="textbox"</td>
+                                    <td>
+                                        동일한 HTML요소 <span class="tagBox">&lt;input type="text"&gt;</span>,
+                                        <span class="tagBox">&lt;textarea&gt;</span>, aria-multiline="" 속성으로 줄바꿈 처리 적용
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>일반형식 입력텍스트</td>
+                                    <td>role="input"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;input type="text&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>라디오</td>
+                                    <td>role="radio"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;input type="radio"&gt;</span>, "라디오그룹"으로
+                                        묶어주어야 함.</td>
+                                </tr>
+                                <tr>
+                                    <td>체크박스</td>
+                                    <td>role="checkbox"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;input type="checkbox"&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>선택목록</td>
+                                    <td>role="combobox"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;select&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>선택옵션</td>
+                                    <td>role="option"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;option&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>슬라이더</td>
+                                    <td>role="slider"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;input type="range"&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="6">표</td>
+                                    <td>표</td>
+                                    <td>role="table"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;table&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>행그룹</td>
+                                    <td>role="rowgroup"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;tbody&gt;</span>, <span
+                                            class="tagBox">&lt;thead&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>행</td>
+                                    <td>role="row"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;tr&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>제목(열)</td>
+                                    <td>role="columnheader"</td>
+                                    <td>
+                                        동일한 HTML요소 <span class="tagBox">&lt;th scope="col"&gt;</span>, 그리드인 경우
+                                        aria-colindex=""와 같이 사용됨
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>제목(행)</td>
+                                    <td>role="rowheader"</td>
+                                    <td>
+                                        동일한 HTML요소 <span class="tagBox">&lt;th scope="row"&gt;</span>, 그리드인 경우
+                                        aria-colindex=""와 같이 사용됨
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>내용</td>
+                                    <td>role="cell"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;td&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="5">HTML5</td>
+                                    <td>네비게이션</td>
+                                    <td>role="navigation"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;nav&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>일반 섹션</td>
+                                    <td>role="section"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;section&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Article</td>
+                                    <td>role="article"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;article&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>메인컨텐츠</td>
+                                    <td>role="main"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;main&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>그래픽문서</td>
+                                    <td>role="figure"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;figure&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4">기본요소</td>
+                                    <td>버튼</td>
+                                    <td>role="button"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;button&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>이미지</td>
+                                    <td>role="img"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;img /&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>링크</td>
+                                    <td>role="link"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;a&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>선</td>
+                                    <td>role="separator"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;hr&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3">목록, 정의요소</td>
+                                    <td>목록의 그룹</td>
+                                    <td>role="list"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;ul&gt;</span>, <span
+                                            class="tagBox">&lt;ol&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>목록의 단일항목</td>
+                                    <td>role="listitem"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;li&gt;</span>, <span
+                                            class="tagBox">&lt;dt&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>데이터리스트</td>
+                                    <td>role="listbox"</td>
+                                    <td>동일한 HTML요소 <span class="tagBox">&lt;datalist&gt;</span> (사파리 미지원 태그)</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="10">비슷한 HTML요소</td>
+                                    <td>주요 제목</td>
+                                    <td>role="heading"</td>
+                                    <td>비슷한 HTML요소 <span class="tagBox">&lt;h1&gt;</span>~<span
+                                            class="tagBox">&lt;h6&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>중요한 섹션</td>
+                                    <td>role="region"</td>
+                                    <td>비슷한 HTML요소 <span class="tagBox">&lt;section&gt;</span>, 중요한 내용을 포함하는 인식 가능한 섹션
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>그리드</td>
+                                    <td>role="grid"</td>
+                                    <td>비슷한 HTML요소 <span class="tagBox">&lt;table&gt;</span>, aria-colcount="" 와 같이 사용됨
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>그리드 내용</td>
+                                    <td>role="gridcell"</td>
+                                    <td>비슷한 HTML요소 <span class="tagBox">&lt;td&gt;</span>, 그리드인 경우 aria-colindex=""와 같이
+                                        사용됨</td>
+                                </tr>
+                                <tr>
+                                    <td>정의 제목</td>
+                                    <td>role="term"</td>
+                                    <td>비슷한 HTML요소 <span class="tagBox">&lt;dt&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>정의 내용</td>
+                                    <td>role="definition"</td>
+                                    <td>비슷한 HTML요소 <span class="tagBox">&lt;dd&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>슬라이더</td>
+                                    <td>role="range"</td>
+                                    <td>비슷한 HTML요소 <span class="tagBox">&lt;input type="range"&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>스핀버튼</td>
+                                    <td>role="spinbutton"</td>
+                                    <td>비슷한 HTML요소 <span class="tagBox">&lt;input type="number"&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Contentinfo</td>
+                                    <td>role="contentinfo"</td>
+                                    <td>비슷한 HTML요소 <span class="tagBox">&lt;footer&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>보완적인 랜드 마크</td>
+                                    <td>role="complementary"</td>
+                                    <td>비슷한 HTML요소 <span class="tagBox">&lt;aside&gt;</span></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4">기타</td>
+                                    <td>라디오 그룹</td>
+                                    <td>role="radiogroup"</td>
+                                    <td>"라디오그룹" 으로 역할정의</td>
+                                </tr>
+                                <tr>
+                                    <td>섹션 제목</td>
+                                    <td>role="sectionhead"</td>
+                                    <td>추상적인 역할</td>
+                                </tr>
+                                <tr>
+                                    <td>선택 목록</td>
+                                    <td>role="select"</td>
+                                    <td>추상적인 역할</td>
+                                </tr>
+                                <tr>
+                                    <td>텍스트*</td>
+                                    <td>role="text"</td>
+                                    <td>
+                                        이미지를 텍스트로만 읽도록 사용<br />
+                                        마크업에 의해 분리된 텍스트를 한번에 읽도록 사용
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--// table 컴포넌트 -->
+                </div>
+
+                <div class="g-section-body">
+                    <h4 class="g-h4">Role Wigets</h4>
+
+                    <!-- table 컴포넌트 -->
+                    <div class="table-cpnt">
+                        <table class="tb-main">
+                            <caption>
+                                Role Wigets
+                            </caption>
+                            <colgroup>
+                                <col style="width: 16%" />
+                                <col style="width: 22%" />
+                                <col style="width: 22%" />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>분류</th>
+                                    <th>구분</th>
+                                    <th>이름</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="12">기능</td>
+                                    <td>탭 메뉴그룹*</td>
+                                    <td>role="tablist"</td>
+                                    <td>ul 그룹 요소에 적용</td>
+                                </tr>
+                                <tr>
+                                    <td>탭 메뉴목록*</td>
+                                    <td>role="presentation"</td>
+                                    <td>li 목록 요소에 적용 (시맨틱 마크업의 역할을 무효화 함)</td>
+                                </tr>
+                                <tr>
+                                    <td>탭 메뉴링크*</td>
+                                    <td>role="tab"</td>
+                                    <td>a, button 이벤트 요소에 적용</td>
+                                </tr>
+                                <tr>
+                                    <td>탭 내용*</td>
+                                    <td>role="tabpanel"</td>
+                                    <td>div 컨텐츠 활성화 요소에 적용</td>
+                                </tr>
+                                <tr>
+                                    <td>Dialog*</td>
+                                    <td>role="dialog"</td>
+                                    <td>대화 상자는 사용자가 정보를 입력하거나 응답하도록하는 데 가장 자주 사용되는 모달입니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>Tooltip*</td>
+                                    <td>role="tooltip"</td>
+                                    <td>요소에 대한 설명을 표시하는 문맥 팝업</td>
+                                </tr>
+                                <tr>
+                                    <td>트리목록</td>
+                                    <td>role="tree"</td>
+                                    <td>축소 및 확장 할 수있는 하위 수준 중첩 그룹을 포함 할 수있는 유형의 목록입니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>트리의 옵션 항목</td>
+                                    <td>role="treeitem"</td>
+                                    <td>트리 항목 요소의 하위 수준 그룹이 포함되어있는 경우 확장되거나 축소 될 수있는 트리 내의 요소입니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>트리 그리드</td>
+                                    <td>role="treegrid"</td>
+                                    <td>트리와 같은 방법으로 행을 확장 및 축소 할 수있는 그리드입니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>진행표시줄</td>
+                                    <td>role="progressbar"</td>
+                                    <td>오랜 시간이 걸리는 작업의 진행 상태를 표시하는 요소입니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>스위치</td>
+                                    <td>role="switch"</td>
+                                    <td>체크 / 체크되지 않은 값과 반대로 on / off 값을 나타내는 체크 박스 유형</td>
+                                </tr>
+                                <tr>
+                                    <td>Toolbar</td>
+                                    <td>role="toolbar"</td>
+                                    <td>컴팩트 한 시각적 형태로 표현 된 일반적으로 사용되는 기능 버튼 또는 컨트롤 모음.</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="18">의미</td>
+                                    <td>메뉴바</td>
+                                    <td>role="menubar"</td>
+                                    <td>수평으로 제시되는 메뉴</td>
+                                </tr>
+                                <tr>
+                                    <td>메뉴그룹</td>
+                                    <td>role="menu"</td>
+                                    <td>선택목록 제공</td>
+                                </tr>
+                                <tr>
+                                    <td>메뉴목록</td>
+                                    <td>role="menuitem"</td>
+                                    <td>선택사항의 옵션으로만 사용되므로 선택된 상태는 적용하지 않음</td>
+                                </tr>
+                                <tr>
+                                    <td>메뉴선택</td>
+                                    <td>role="menuitemradio"</td>
+                                    <td>하나만 선택 할 수 있는 메뉴목록, aria-checked와 함께 사용됨</td>
+                                </tr>
+                                <tr>
+                                    <td>메뉴선택</td>
+                                    <td>role="menuitemcheckbox"</td>
+                                    <td>여러개 선택 할 수 있는 메뉴목록, aria-checked와 함께 사용됨</td>
+                                </tr>
+                                <tr>
+                                    <td>스크롤바</td>
+                                    <td>role="scrollbar"</td>
+                                    <td>영역 내의 내용 스크롤을 제어하는 ​​그래픽 객체입니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>상태표시줄</td>
+                                    <td>role="status"</td>
+                                    <td>
+                                        상태 역할은 경고에 대해 중요하지 않은 권고 정보를 사용자에게 제공하는 데 사용됩니다.<br />
+                                        하지만 반드시 이것이 사용자에게 발표된다는 것을 의미하지는 않습니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Timer</td>
+                                    <td>role="timer"</td>
+                                    <td>
+                                        시작 지점에서부터의 경과 시간 또는 끝 지점까지 남은 시간을 나타내는 숫자 카운터가 포함 된 라이브 영역
+                                        유형입니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Marquee</td>
+                                    <td>role="marquee"</td>
+                                    <td>중요하지 않은 정보가 자주 변경되는 라이브 영역 유형입니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>검색</td>
+                                    <td>role="search"</td>
+                                    <td>검색 기능</td>
+                                </tr>
+                                <tr>
+                                    <td>검색상자</td>
+                                    <td>role="searchbox"</td>
+                                    <td>검색 기준을 지정하기위한 텍스트 상자 유형입니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>경고 메세지</td>
+                                    <td>role="alert"</td>
+                                    <td>사용자에게 경고하기 위해 메시지를 전달하는 데 사용됩니다. 해당 요소가 활성화 될 때 전달됨.</td>
+                                </tr>
+                                <tr>
+                                    <td>경고 대화상자</td>
+                                    <td>role="alertdialog"</td>
+                                    <td>경고 메시지가 들어있는 대화 상자 유형으로, 초기 포커스는 대화 상자의 요소로 이동함.</td>
+                                </tr>
+                                <tr>
+                                    <td>배너</td>
+                                    <td>role="banner"</td>
+                                    <td>페이지 별 콘텐츠가 아닌 사이트 중심 콘텐츠가 대부분 포함 된 배너영역</td>
+                                </tr>
+                                <tr>
+                                    <td>수학 표현식</td>
+                                    <td>role="math"</td>
+                                    <td>수학 표현식을 나타내는 내용</td>
+                                </tr>
+                                <tr>
+                                    <td>정적 목차</td>
+                                    <td>role="directory"</td>
+                                    <td>정적 목차와 같이 그룹 구성원에 대한 참조 목록입니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>기사목록</td>
+                                    <td>role="feed"</td>
+                                    <td>스크롤을 통해 기사의 목록에 추가되거나 제거 될 수있는 기사의 스크롤 가능한 목록</td>
+                                </tr>
+                                <tr>
+                                    <td>문서</td>
+                                    <td>role="document"</td>
+                                    <td>보조 기술 사용자가 읽기 모드로 탐색 할 수있는 콘텐츠가 포함 된 요소입니다.</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="12">기타</td>
+                                    <td>Landmark</td>
+                                    <td>role="landmark"</td>
+                                    <td>
+                                        저자가 지정한 특정 목적과 관련이 있고 사용자가 섹션을 쉽게 탐색하고 페이지 요약에 나열 할 수 있기를 원하는만큼
+                                        중요한 내용을 포함하는 인식 가능한 섹션
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>명령</td>
+                                    <td>role="command"</td>
+                                    <td>조치를 수행하지만 입력 데이터를 수신하지 않는 위젯 형태</td>
+                                </tr>
+                                <tr>
+                                    <td>Composite</td>
+                                    <td>role="composite"</td>
+                                    <td>탐색 가능한 자손 또는 소유 된 자식요소를 포함 할 수있는 위젯</td>
+                                </tr>
+                                <tr>
+                                    <td>Log</td>
+                                    <td>role="log"</td>
+                                    <td>새 정보가 의미있는 순서로 추가되고 오래된 정보가 사라질 수있는 라이브 영역 유형입니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>Roletype</td>
+                                    <td>role="roletype"</td>
+                                    <td>인스턴스를 이해하고 작동시키는 데 사용할 수있는 개념</td>
+                                </tr>
+                                <tr>
+                                    <td>어플리케이션</td>
+                                    <td>role="application"</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>없음</td>
+                                    <td>role="none"</td>
+                                    <td>내제된 원시적 역할을 매핑시키지 않음</td>
+                                </tr>
+                                <tr>
+                                    <td>그룹</td>
+                                    <td>role="group"</td>
+                                    <td>보조 기술에 의해 페이지 요약이나 목차에 포함되지 않는 사용자 인터페이스 개체 집합입니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>노트</td>
+                                    <td>role="note"</td>
+                                    <td>내용이 소문자이거나 자원의 주요 내용을 보조하는 부분</td>
+                                </tr>
+                                <tr>
+                                    <td>구조</td>
+                                    <td>role="structure"</td>
+                                    <td>
+                                        문서 구조 요소. 구조적 역할 자체가 모두 접근성 API에 매핑되는 것은 아니지만 보조 기술에 대한 컨텐츠 적응을
+                                        지원하거나 위젯 역할을 만드는 데 사용됩니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>위젯</td>
+                                    <td>role="widget"</td>
+                                    <td>그래픽 사용자 인터페이스 (GUI)의 대화 형 구성 요소</td>
+                                </tr>
+                                <tr>
+                                    <td>Window</td>
+                                    <td>role="window"</td>
+                                    <td>브라우저 또는 응용 프로그램 창.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--// table 컴포넌트 -->
+                </div>
+
+                <div class="g-section-body">
+                    <h4 class="g-h4">Aria Properties</h4>
+
+                    <!-- table 컴포넌트 -->
+                    <div class="table-cpnt">
+                        <table class="tb-main">
+                            <caption>
+                                Aria Properties
+                            </caption>
+                            <colgroup>
+                                <col style="width: 16%" />
+                                <col style="width: 22%" />
+                                <col style="width: 22%" />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>분류</th>
+                                    <th>구분</th>
+                                    <th>이름</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="14">Global</td>
+                                    <td>변경 알림</td>
+                                    <td>aria-atomic</td>
+                                    <td>true 또는 false를 나타내는 값. 기본값은 False입니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>컨트롤*</td>
+                                    <td>aria-controls</td>
+                                    <td>"idname" : 제어할 요소의 ID 값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>서술 참조*</td>
+                                    <td>aria-describedby</td>
+                                    <td>"idname" : 참조할 요소의 ID 값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>상세 참조</td>
+                                    <td>aria-details</td>
+                                    <td>"idname" : 참조할 요소의 ID 값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>읽기흐름 참조</td>
+                                    <td>aria-flowto</td>
+                                    <td>"idname" : 다중 참조할 요소의 ID 값을 읽어줄 순서대로 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>오류메시지 참조</td>
+                                    <td>aria-errormessage</td>
+                                    <td>"idname" : 참조할 요소의 ID 값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>메뉴 또는 대화 상자 존재여부</td>
+                                    <td>aria-haspopup</td>
+                                    <td>존재하는 경우 속성과 함께 "true" 값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>단축키 설명</td>
+                                    <td>aria-keyshortcuts</td>
+                                    <td>"alt+ArrowRight Delete alt+ctrl+m" : 구현된 단축키를 입력합니다. 다중입력 가능</td>
+                                </tr>
+                                <tr>
+                                    <td>레이블*</td>
+                                    <td>aria-label</td>
+                                    <td>"대체정보" : 문자열 값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>레이블 참조*</td>
+                                    <td>aria-labelledby</td>
+                                    <td>"idname" : 참조할 요소의 ID 값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>소유</td>
+                                    <td>aria-owns</td>
+                                    <td>
+                                        현재 개체의 직계 자식이 아닌 요소를 포함하여 자식 개체의 목록을 설정하거나 검색합니다.<br />
+                                        "idname" : 참조할 요소의 ID 값을 입력합니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>업데이트 요소</td>
+                                    <td>aria-live</td>
+                                    <td>
+                                        "polite" : 현재 작업을 방해하지 않을 때만 사용자에게 업데이트를 알립니다.<br />
+                                        "off" : 현재 해당 지역에 집중되어 있을 때만 사용자에게 업데이트를 알립니다.<br />
+                                        "assertive" : 업데이트 즉시 사용자에게 알립니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>관련 설정</td>
+                                    <td>aria-relevant</td>
+                                    <td>
+                                        보조 기술로 어떤 유형의 변경이 관련되어 있으며 발표되어야하는지에 대한 힌트를 제공합니다.<br />
+                                        "additions" : 요소 노드는 라이브 영역 내의 액세스 가능성 트리에 추가됩니다.<br />
+                                        "additions text" : 값의 조합 인 "추가 텍스트"와 동일합니다.<br />
+                                        "all" : 모든 값의 조합에 해당하는 "추가 제거 텍스트"<br />
+                                        "removals" : 라이브 영역 내의 텍스트 내용, 대체 텍스트 또는 요소 노드는 액세스 가능성 트리에서 제거됩니다.<br />
+                                        "text" : 텍스트 컨텐츠 또는 대체 텍스트가 액세스 라이브러리의 모든 하위 항목에 추가됩니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>역할설명</td>
+                                    <td>aria-roledescription</td>
+                                    <td>"attachment button" : 역할설명을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="16">Widget</td>
+                                    <td>자동 완성</td>
+                                    <td>aria-autocomplete</td>
+                                    <td>
+                                        "none" : 가장 최근에 사용한 5개의 검색어를 나열하여 제안 된 값을 표시<br />
+                                        "inline" : 텍스트 입력 내에서 값 완성 예측을 표시하는 인라인 모델<br />
+                                        "list" : a에서 가능한 값 모음을 표시하는 목록 모델<br />
+                                        "both" : inline, list 입력이 두 가지 모델을 동시에 제공하는 경우
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>오류메시지 참조</td>
+                                    <td>aria-errormessage</td>
+                                    <td>"idname" : 참조할 요소의 ID 값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>메뉴 또는 대화 상자 존재여부</td>
+                                    <td>aria-haspopup</td>
+                                    <td>존재하는 경우 속성과 함께 "true" 값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>계층 수준 (h1~h6)</td>
+                                    <td>aria-level</td>
+                                    <td>"6" : 목차와 같은 단계를 입력합니다. (role="heading" 제공하는 경우 사용됨)</td>
+                                </tr>
+                                <tr>
+                                    <td>대화상자 확인*</td>
+                                    <td>aria-modal</td>
+                                    <td>모달인 경우 속성과 함께 "true" 값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>멀티라인 (textarea)</td>
+                                    <td>aria-multiline</td>
+                                    <td>여러줄인 경우 속성과 함께 "true" 값을 입력합니다. (role="textbox" 제공하는 경우 사용됨)</td>
+                                </tr>
+                                <tr>
+                                    <td>다중선택 (multiple)*</td>
+                                    <td>aria-multiselectable</td>
+                                    <td>"true" 다중 선택, "false" 하나만 선택 (role="combobox" 제공하는 경우 사용됨)</td>
+                                </tr>
+                                <tr>
+                                    <td>방향</td>
+                                    <td>aria-orientation</td>
+                                    <td>true 또는 false를 나타내는 값. 기본값은 False입니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>Plaeholder</td>
+                                    <td>aria-placeholder</td>
+                                    <td>placeholder="" 속성과 마찬가지로 값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>읽기전용</td>
+                                    <td>aria-readonly</td>
+                                    <td>읽기전용인 경우 속성과 함께 "true" 값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>필수입력</td>
+                                    <td>aria-required</td>
+                                    <td>필수입력인 경우 속성과 함께 "true" 값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>정렬</td>
+                                    <td>aria-sort</td>
+                                    <td>
+                                        표 또는 그리드의 항목의 정렬 여부를 나타냅니다.<br />
+                                        "ascending" : 오름차순으로 정렬<br />
+                                        "descending" : 내림차순으로 정렬<br />
+                                        "none" : 정렬하지 않음<br />
+                                        "other" : 다른 정렬방식이 적용됨
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>최대값</td>
+                                    <td>aria-valuemax</td>
+                                    <td>"100" : 알려진 최대 값이 있는 경우 최대값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>최소값</td>
+                                    <td>aria-valuemin</td>
+                                    <td>"-100" : 알려진 최소 값이 있는 경우 최소값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>현재값</td>
+                                    <td>aria-valuenow</td>
+                                    <td>"0" : 현재값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>텍스트값</td>
+                                    <td>aria-valuetext</td>
+                                    <td>"Sunday" : aria-valuenow를 읽을 수 있는 텍스트 대안을 정의합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3">Live Region</td>
+                                    <td>변경 알림</td>
+                                    <td>aria-atomic</td>
+                                    <td>true 또는 false를 나타내는 값. 기본값은 False입니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>업데이트 요소</td>
+                                    <td>aria-live</td>
+                                    <td>
+                                        "polite" : 현재 작업을 방해하지 않을 때만 사용자에게 업데이트를 알립니다.<br />
+                                        "off" : 현재 해당 지역에 집중되어 있을 때만 사용자에게 업데이트를 알립니다.<br />
+                                        "assertive" : 업데이트 즉시 사용자에게 알립니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>관련 설정</td>
+                                    <td>aria-relevant</td>
+                                    <td>
+                                        보조 기술로 어떤 유형의 변경이 관련되어 있으며 발표되어야하는지에 대한 힌트를 제공합니다.<br />
+                                        "additions" : 요소 노드는 라이브 영역 내의 액세스 가능성 트리에 추가됩니다.<br />
+                                        "additions text" : 값의 조합 인 "추가 텍스트"와 동일합니다.<br />
+                                        "all" : 모든 값의 조합에 해당하는 "추가 제거 텍스트"<br />
+                                        "removals" : 라이브 영역 내의 텍스트 내용, 대체 텍스트 또는 요소 노드는 액세스 가능성 트리에서 제거됩니다.<br />
+                                        "text" : 텍스트 컨텐츠 또는 대체 텍스트가 액세스 라이브러리의 모든 하위 항목에 추가됩니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="16"></td>
+                                    <td>현재 활성화 된 자손을 식별</td>
+                                    <td>aria-activedescendant</td>
+                                    <td>"idname" : 활성화된 요소의 ID 값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>총 열 개수</td>
+                                    <td>aria-colcount</td>
+                                    <td>"16" : 총 합계를 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>열 위치</td>
+                                    <td>aria-colindex</td>
+                                    <td>"2" : 열 위치를 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>열 병합</td>
+                                    <td>aria-colspan</td>
+                                    <td>"2" : 병합된 열 수를 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>컨트롤*</td>
+                                    <td>aria-controls</td>
+                                    <td>"idname" : 제어할 요소의 ID 값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>서술 참조*</td>
+                                    <td>aria-describedby</td>
+                                    <td>"idname" : 참조할 요소의 ID 값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>상세 참조</td>
+                                    <td>aria-details</td>
+                                    <td>"idname" : 참조할 요소의 ID 값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>읽기흐름 참조</td>
+                                    <td>aria-flowto</td>
+                                    <td>"idname" : 다중 참조할 요소의 ID 값을 읽어줄 순서대로 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>오류메시지 참조</td>
+                                    <td>aria-errormessage</td>
+                                    <td>"idname" : 참조할 요소의 ID 값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>레이블 참조*</td>
+                                    <td>aria-labelledby</td>
+                                    <td>"idname" : 참조할 요소의 ID 값을 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>소유</td>
+                                    <td>aria-owns</td>
+                                    <td>
+                                        현재 개체의 직계 자식이 아닌 요소를 포함하여 자식 개체의 목록을 설정하거나 검색합니다.<br />
+                                        "idname" : 참조할 요소의 ID 값을 입력합니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>번호 및 위치</td>
+                                    <td>aria-posinset</td>
+                                    <td>
+                                        현재 listitems 또는 treeitem의 집합에서 요소의 번호 또는 위치를 정의<br />
+                                        "5" : 순서에 맞는 값을 입력합니다. (순서 목록은 ol li 구조로 사용)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>총 행 수</td>
+                                    <td>aria-rowcount</td>
+                                    <td>"5" : 총 행 수를 입력합니</td>
+                                </tr>
+                                <tr>
+                                    <td>행 번호 및 위치</td>
+                                    <td>aria-rowindex</td>
+                                    <td>"5" : 행 번호 및 위치를 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>행 병합</td>
+                                    <td>aria-rowspan</td>
+                                    <td>"2" : 행을 병합한 수를 입력합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>총 항목 수</td>
+                                    <td>aria-setsize</td>
+                                    <td>"10" : listitems또는 treeitem의 전체 항목의 수를 입력합니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--// table 컴포넌트 -->
+                </div>
+
+                <div class="g-section-body">
+                    <h4 class="g-h4">Aria States</h4>
+
+                    <!-- table 컴포넌트 -->
+                    <div class="table-cpnt">
+                        <table class="tb-main">
+                            <caption>
+                                Aria States
+                            </caption>
+                            <colgroup>
+                                <col style="width: 16%" />
+                                <col style="width: 22%" />
+                                <col style="width: 22%" />
+                                <col />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>분류</th>
+                                    <th>구분</th>
+                                    <th>이름</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="8">Widget</td>
+                                    <td>양식 선택됨</td>
+                                    <td>aria-checked</td>
+                                    <td>role="checkbox", role="radio" 를 사용한 경우에 쓰여짐</td>
+                                </tr>
+                                <tr>
+                                    <td>현재항목*</td>
+                                    <td>aria-current</td>
+                                    <td>
+                                        "page" : 현재 페이지<br />
+                                        "step" : 현재 단계<br />
+                                        "location" : 현재 위치<br />
+                                        "date" : 현재 날짜<br />
+                                        "time" : 현재 시간<br />
+                                        "true" : 현재 항목<br />
+                                        "false" : 형재 항목을 나타내지 않음
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>비활성*</td>
+                                    <td>aria-disabled</td>
+                                    <td>"true" 포커스 가능하나 변경불가상태 "false" 요소의 사용 가능</td>
+                                </tr>
+                                <tr>
+                                    <td>확장/축소*</td>
+                                    <td>aria-expanded</td>
+                                    <td>"true" 확장됨 "false" 축소됨</td>
+                                </tr>
+                                <tr>
+                                    <td>숨김*</td>
+                                    <td>aria-hidden</td>
+                                    <td>"true" 접근성 API에 감춰집니다. "false" 접근성 API에 노출됩니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>무효화</td>
+                                    <td>aria-invalid</td>
+                                    <td>
+                                        "grammar" : 문법 오류인 경우<br />
+                                        "false" : 오류가 없는 경우<br />
+                                        "spelling" : 맞춤법 오류인 경우<br />
+                                        "true" : 유효성 검사 오류인 경우
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>누른상태</td>
+                                    <td>aria-pressed</td>
+                                    <td>
+                                        "false" : 요소가 눌려지지만 현재 눌려지지 않습니다.<br />
+                                        "mixed" : 혼합모드 값을 나타냅니다.<br />
+                                        "true" : 눌릷니다.<br />
+                                        "undefined" : 눌려지지 않습니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>위젯 선택됨</td>
+                                    <td>aria-selected</td>
+                                    <td>"true" 선택됩니다. "false" 선택되지 않았습니다.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Live Region</td>
+                                    <td>업데이트중</td>
+                                    <td>aria-busy</td>
+                                    <td>"true" 요소가 업데이트 중입니다. "false" 요소의 예상 업데이트가 없습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--// table 컴포넌트 -->
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

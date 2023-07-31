@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../asset/style/reset.css">
+    <link rel="stylesheet" href="../../asset/style/html-guide.css">
+
+    <link rel="stylesheet" href="../../asset/style/SyntaxHighlighter_MidnightCustom.css">
+    <script src="../../asset/js/SyntaxHighlighter-3.0.83.js"></script>
+    <script src="../../asset/js/SyntaxHighlighterCss-3.0.83.js"></script>
+    <script src="../../asset/js/SyntaxHighlighterJs-3.0.83.js"></script>
+    <script src="../../asset/js/SyntaxHighlighterXml-3.0.83.js"></script>
+
+</head>
+
+<body>
+    <script>
+        // SyntaxHighlighter 초기화
+        SyntaxHighlighter.all();
+    </script>
+
+    <div class="guide-contents">
+        <div class="gc-header">
+            <h2 class="g-h2">웹 표준</h2>
+            <ul class="g-desc">
+                <li>모든 프로젝트는 웹 표준을 준수하는 것을 원칙으로 합니다.</li>
+            </ul>
+        </div>
+
+        <div class="gc-body">
+            <section id="g-section1" class="g-section">
+                <div class="g-section-header">
+                    <h3 class="g-h3">웹 표준</h3>
+                </div>
+                <div class="g-section-body">
+                    <h4 class="g-h4">웹 표준이란?</h4>
+
+                    <ul class="g-desc">
+                        <li>
+                            사용자가 어떤 브라우저나 플랫폼을 사용하더라도 하나의 소스로 동일한 결과물을 볼 수 있도록 하는 것이며 작업, 유지보수 속도의
+                            향상을 위해 효율적인 마크업으로 작업하는 기술이자 규칙이다.
+                        </li>
+                        <li>효율적인 마크업이란? : 태그의 고유한 특성을 파악하고 태그에 쓰임에 따라 사용 한다.</li>
+                    </ul>
+                </div>
+                <div class="g-section-body">
+                    <h4 class="g-h4">웹 표준 규칙</h4>
+
+                    <ul class="g-desc">
+                        <li>
+                            특수기호는 Entity name을 사용하여 entity 코드로 변환한다.
+                            <a href="https://oinam.github.io/entities/"
+                                target="_blank">https://oinam.github.io/entities/</a>
+                        </li>
+                        <li>CSS는 HTML 문서내에 작성 하는 것은 지양한다.</li>
+                        <li>
+                            웹사이트가 W3C에 지정한 웹표준을 준수하였는지 유효성 검사도구를 사용하여 검증 하여야 한다.<br />
+                            - HTML : <a href="https://validator.w3.org/unicorn/"
+                                target="_blank">https://validator.w3.org/unicorn/</a><br />
+                            - CSS : <a href="http://jigsaw.w3.org/css-validator/"
+                                target="_blank">http://jigsaw.w3.org/css-validator/</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="g-section-body">
+                    <h4 class="g-h4">크로스 브라우징</h4>
+
+                    <ul class="g-desc">
+                        <li>
+                            브라우저의 종류에 관계없이 동일한 내용이 보이도록 크로스 브라우징이 가능하도록 작성한다.<br />
+                            - 크롬 : -webkit-<br />
+                            - 사파리 : -webkit-<br />
+                            - 파이어폭스 : -moz-<br />
+                            - 오페라 : -o-, -webkit-<br />
+                            - 익스플로러 : -ms-
+                        </li>
+                        <pre class="brush: css;">
+                            /* 예시 코드 */
+                            select {
+                                -ms-animation-delay:1s;
+                                -moz-animation-delay:1s;
+                                -webkit-animation-delay:1s;
+                                animation-delay:1s;
+                            }
+                        </pre>
+                    </ul>
+                </div>
+            </section>
+            <section id="g-section2" class="g-section">
+                <div class="g-section-header">
+                    <h3 class="g-h3">시멘틱 태그</h3>
+                </div>
+                <div class="g-section-body">
+                    <h4 class="g-h4">시멘틱태그</h4>
+                </div>
+                <div class="table-cpnt">
+                    <table class="tb-main">
+                        <caption>
+                            시멘틱 태그
+                        </caption>
+                        <colgroup>
+                            <col style="width: 10%" />
+                            <col />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>태그</th>
+                                <th>설명</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&lt;a&gt;</td>
+                                <td>
+                                    href 특성을 통해 다른 페이지나 같은 페이지의 어느 위치, 파일, 이메일 주소와 그 외 다른 URL로 연결할 수 있는
+                                    하이퍼링크를 만듭니다. &lt;a&gt; 안의 콘텐츠는 링크 목적지의 설명을 나타내야 합니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;abbr&gt;</td>
+                                <td>
+                                    준말 또는 머리글자를 나타냅니다. 선택 속성인 title을 사용하면 준말의 전체 뜻이나 설명을 제공할 수 있습니다. title
+                                    속성은 전체 설명만을 가져야 하며 다른건 포함할 수 없습니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;address&gt;</td>
+                                <td>가까운 HTML 요소의 사람, 단체, 조직 등에 대한 연락처 정보를 나타냅니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;area&gt;</td>
+                                <td>
+                                    이미지의 핫스팟 영역을 정의하고 하이퍼링크 (en-US)를 추가할 수 있습니다. &lt;map&gt; 요소 안에서만 사용할 수
+                                    있습니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;article&gt;</td>
+                                <td>
+                                    문서, 페이지, 애플리케이션, 또는 사이트 안에서 독립적으로 구분해 배포하거나 재사용할 수 있는 구획을 나타냅니다. 사용
+                                    예제로 게시판과 블로그 글, 매거진이나 뉴스 기사 등이 있습니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;aside&gt;</td>
+                                <td>문서의 주요 내용과 간접적으로만 연관된 부분을 나타냅니다. 주로 사이드바 혹은 콜아웃 박스로 표현합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;audio&gt;</td>
+                                <td>
+                                    문서에 소리 콘텐츠를 포함할 때 사용합니다. src 특성 또는&lt;source&gt; (en-US) 요소를 사용해 한 개 이상의 오디오
+                                    소스를 지정할 수 있으며, 다수를 지정한 경우 가장 적절한 소스를 브라우저가 고릅니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;b&gt;</td>
+                                <td>
+                                    원래는 "굵은 글씨 요소"로 불렸으며, 대부분의 브라우저도 여전히 텍스트를 굵은 글씨체로 강조합니다. 그러나 &lt;b&gt;를
+                                    사용해 텍스트를 꾸미면 안됩니다. 대신 CSS font-weight를 사용해 굵은 글씨체를 적용하거나, &lt;strong&gt; 요소를
+                                    사용해 특별히 중요한 텍스트를 나타내세요.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;base&gt;</td>
+                                <td>문서 안의 모든 상대 URL이 사용할 기준 URL을 지정합니다. 문서에는 하나의 &lt;base&gt; 요소만 존재할 수 있습니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;blockquote&gt;</td>
+                                <td>안쪽의 텍스트가 긴 인용문임을 나타냅니다. 주로 들여쓰기를 한 것으로 그려집니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;body&gt;</td>
+                                <td>HTML 문서의 내용을 나타냅니다. 한 문서에 하나의 &lt;body&gt; 요소만 존재할 수 있습니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;br /&gt;</td>
+                                <td>텍스트 안에 줄바꿈(캐리지 리턴)을 생성합니다. 주소나 시조 등 줄의 구분이 중요한 내용을 작성할 때 유용합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;button&gt;</td>
+                                <td>
+                                    클릭 가능한 버튼을 나타냅니다. 버튼은 양식 내부는 물론 간단한 표준 버튼 기능이 필요한 곳이라면 문서 어디에나 배치할
+                                    수 있습니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;canvas&gt;</td>
+                                <td>캔버스 스크립팅 API 또는 WebGL API와 함께 사용해 그래픽과 애니메이션을 그릴 수 있습니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;caption&gt;</td>
+                                <td>표의 설명 또는 제목을 나타냅니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;cite&gt;</td>
+                                <td>
+                                    저작물의 출처를 표기할 때 사용하며, 제목을 반드시 포함해야 합니다. 적절한 맥락 아래에서는 출처를 축약해서 표기할 수
+                                    있습니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;code&gt;</td>
+                                <td>
+                                    짧은 코드 조각을 나타내는 스타일을 사용해 자신의 콘텐츠를 표시합니다. 기본 스타일은 사용자 에이전트의 고정폭
+                                    글씨체입니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;data&gt;</td>
+                                <td>
+                                    주어진 콘텐츠를 기계가 읽을 수 있는 해석본과 연결합니다. 콘텐츠가 시간 혹은 날짜 관련 정보라면 대신 &lt;time&gt;
+                                    요소를 사용하세요.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;datalist&gt;</td>
+                                <td>다른 컨트롤에서 고를 수 있는 가능한, 혹은 추천하는 선택지를 나타내는 &lt;option&gt; 요소 여럿을 담습니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;dd&gt;</td>
+                                <td>정의 목록 요소(&lt;dl&gt;)에서 앞선 용어(&lt;dt&gt;)에 대한 설명, 정의, 또는 값을 제공합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;del&gt;</td>
+                                <td>
+                                    문서에서 제거된 텍스트의 범위를 나타냅니다. 문서나 소스 코드의 변경점 추적 등에 사용할 수 있습니다. &lt;ins&gt;
+                                    요소를 추가된 텍스트의 범위를 나타낼 수 있습니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;details&gt;</td>
+                                <td>
+                                    "열림" 상태일 때만 내부 정보를 보여주는 정보 공개 위젯을 생성합니다. 요약이나 레이블은 &lt;summary&gt; 요소를 통해
+                                    제공할 수 있습니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;dfn&gt;</td>
+                                <td>
+                                    현재 맥락이나 문장에서 정의하고 있는 용어를 나타냅니다. &lt;dfn&gt;에서 가장 가까운 &lt;p&gt;,
+                                    &lt;dt&gt;/&lt;dd&gt;
+                                    쌍, &lt;section&gt; 조상 요소를 용어 정의로 간주합니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;dialog&gt;</td>
+                                <td>닫을 수 있는 경고, 검사기, 창 등 대화 상자 및 기타 다른 상호작용 가능한 컴포넌트를 나타냅니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;div&gt;</td>
+                                <td>플로우 콘텐츠를 위한 통용 컨테이너입니다. CSS로 꾸미기 전에는 콘텐츠나 레이아웃에 어떤 영향도 주지 않습니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;dl&gt;</td>
+                                <td>
+                                    설명 목록을 나타냅니다. &lt;dl&gt;은 &lt;dt&gt;로 표기한 용어와 &lt;dd&gt; 요소로 표기한 설명 그룹의 목록을 감싸서
+                                    설명 목록을 생성합니다. 주로 용어사전 구현이나 메타데이터(키-값 쌍 목록)를 표시할 때 사용합니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;dt&gt;</td>
+                                <td>
+                                    설명 혹은 정의 리스트에서 용어를 나타냅니다. &lt;dl&gt; 요소 안에 위치해야 합니다. 보통 &lt;dd&gt; 요소가
+                                    뒤따르지만, 여러 개의 &lt;dt&gt; 요소를 연속해 배치하면 바로 다음 &lt;dd&gt; 요소로 한꺼번에 서술할 수 있습니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;em&gt;</td>
+                                <td>텍스트의 강세를 나타냅니다. &lt;em&gt; 요소를 중첩하면 더 큰 강세를 뜻하게 됩니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;embed&gt;</td>
+                                <td>외부 어플리케이션이나 대화형 컨텐츠와의 통합점을 나타냅니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;fieldset&gt;</td>
+                                <td>웹 양식의 여러 컨트롤과 레이블(&lt;label&gt;)을 묶을 때 사용합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;figcaption&gt;</td>
+                                <td>부모 &lt;figure&gt; 요소가 포함하는 다른 콘텐츠에 대한 설명 혹은 범례를 나타냅니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;figure&gt;</td>
+                                <td>
+                                    독립적인 콘텐츠를 표현합니다. &lt;figcaption&gt; 요소를 사용해 설명을 붙일 수 있습니다. 피규어, 설명, 콘텐츠는
+                                    하나의 단위로 참조됩니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;footer&gt;</td>
+                                <td>푸터는 일반적으로 구획의 작성자, 저작권 정보, 관련 문서 등의 내용을 담습니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;form&gt;</td>
+                                <td>정보를 제출하기 위한 대화형 컨트롤을 포함하는 문서 구획을 나타냅니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;h1-h6&gt;</td>
+                                <td>6단계의 구획 제목을 나타냅니다. 구획 단계는 &lt;h1&gt;이 가장 높고 &lt;h6&gt;은 가장 낮습니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;head&gt;</td>
+                                <td>
+                                    기계가 식별할 수 있는 문서 정보(메타데이터)를 담습니다. 정보로는 문서가 사용할 제목, 스크립트, 스타일 시트 등이
+                                    있습니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;header&gt;</td>
+                                <td>
+                                    소개 및 탐색에 도움을 주는 콘텐츠를 나타냅니다. 제목, 로고, 검색 폼, 작성자 이름 등의 요소도 포함할 수 있습니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;hr&gt;</td>
+                                <td>이야기 장면 전환, 구획 내 주제 변경 등, 문단 레벨 요소에서 주제의 분리를 나타냅니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;html&gt;</td>
+                                <td>
+                                    HTML 문서의 루트(최상단 요소)를 나타내며, "루트 요소"라고도 부릅니다. 모든 다른 요소는 &lt;html&gt; 요소의
+                                    후손이어야 합니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;i&gt;</td>
+                                <td>
+                                    텍스트에서 어떤 이유로 주위와 구분해야 하는 부분을 나타냅니다. 기술 용어, 외국어 구절, 등장인물의 생각 등을 예시로
+                                    들 수 있습니다. 보통 기울임꼴로 표시합니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;iframe&gt;</td>
+                                <td>중첩 브라우징 맥락을 나타내는 요소로, 현재 문서 안에 다른 HTML 페이지를 삽입합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;img&gt;</td>
+                                <td>문서에 이미지를 넣습니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;input&gt;</td>
+                                <td>
+                                    웹 기반 양식에서 사용자의 데이터를 받을 수 있는 대화형 컨트롤을 생성합니다. 사용자 에이전트에 따라서 다양한 종류의
+                                    입력 데이터 유형과 컨트롤 위젯이 존재합니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;ins&gt;</td>
+                                <td>
+                                    문서에 추가된 텍스트의 범위를 나타냅니다. &lt;del&gt; 요소를 사용하면 삭제된 텍스트의 범위를 나타낼 수 있습니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;label&gt;</td>
+                                <td>사용자 인터페이스 항목의 설명을 나타냅니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;legend&gt;</td>
+                                <td>부모 &lt;fieldset&gt; 콘텐츠의 설명을 나타냅니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;li&gt;</td>
+                                <td>
+                                    목록의 항목을 나타냅니다. 반드시 정렬 목록(&lt;ol&gt;), 비정렬 목록(&lt;ul&gt;, 혹은 메뉴(&lt;menu&gt;) 안에
+                                    위치해야 합니다. 메뉴와 비정렬 목록에서는 보통 불릿으로 항목을 나타내고, 정렬 목록에서는 숫자나 문자를 사용한
+                                    오름차순 카운터로 나타냅니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;link&gt;</td>
+                                <td>
+                                    현재 문서와 외부 리소스의 관계를 명시합니다. &lt;link&gt;는 스타일 시트를 연결할 때 제일 많이 사용하지만, 사이트
+                                    아이콘("파비콘"과 홈 화면 아이콘) 연결 등 여러가지로 쓰일 수 있습니다
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;main&gt;</td>
+                                <td>
+                                    문서 &lt;body&gt;의 주요 콘텐츠를 나타냅니다. 주요 콘텐츠 영역은 문서의 핵심 주제나 앱의 핵심 기능에 직접적으로
+                                    연결됐거나 확장하는 콘텐츠로 이루어집니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;map&gt;</td>
+                                <td>&lt;area&gt; 요소와 함께 이미지 맵(클릭 가능한 링크 영역)을 정의할 때 사용합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;mark&gt;</td>
+                                <td>현재 맥락에 관련이 깊거나 중요해 표시 또는 하이라이트한 부분을 나타냅니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;menu&gt;</td>
+                                <td>
+                                    사용자가 수행하거나 하는 명령 묶음을 말합니다. 이것은 스크린 위에 나오는 목록 메뉴와 눌려진 버튼 아래에 나오는 것과
+                                    같은 맥락 메뉴를 포함합니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;meta&gt;</td>
+                                <td>
+                                    &lt;base&gt;, &lt;link&gt;, &lt;script&gt;, &lt;style&gt;, &lt;title&gt;과 같은 다른 메타관련
+                                    요소로 나타낼 수 없는
+                                    메타데이터를 나타냅니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;meter&gt;</td>
+                                <td>특정 범위 내에서의 스칼라 값, 또는 백분율 값을 나타냅니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;nav&gt;</td>
+                                <td>
+                                    문서의 부분 중 현재 페이지 내, 또는 다른 페이지로의 링크를 보여주는 구획을 나타냅니다. 자주 쓰이는 예제는 메뉴,
+                                    목차, 색인입니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;noscript&gt;</td>
+                                <td>페이지의 스크립트 유형을 지원하지 않거나, 브라우저가 스크립트를 비활성화한 경우 보여줄 HTML 구획을 정의합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;object&gt;</td>
+                                <td>이미지나, 중첩된 브라우저 컨텍스트, 플러그인에 의해 다뤄질수 있는 리소스와 같은 외부 리소스를 나타냅니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;ol&gt;</td>
+                                <td>정렬된 목록을 나타냅니다. 보통 숫자 목록으로 표현합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;optgroup&gt;</td>
+                                <td>&lt;select&gt; 요소의 옵션을 묶을 수 있습니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;option&gt;</td>
+                                <td>
+                                    &lt;select&gt;, &lt;optgroup&gt;, &lt;datalist&gt; 요소의 항목을 정의합니다. 그러므로,
+                                    &lt;option&gt;을 사용해 팝업
+                                    메뉴 등 목록에서 하나의 항목을 나타낼 수 있습니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;output&gt;</td>
+                                <td>웹 사이트나 앱에서 계산이나 사용자 행동의 결과를 삽입할 수 있는 컨테이너 요소입니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;p&gt;</td>
+                                <td>
+                                    하나의 문단을 나타냅니다. 시각적인 매체에서, 문단은 보통 인접 블록과의 여백과 첫 줄의 들여쓰기로 구분하지만,
+                                    HTML에서 문단은 이미지나 입력 폼 등 서로 관련있는 콘텐츠 무엇이나 될 수 있습니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;param&gt;</td>
+                                <td>&lt;object&gt; 요소의 매개변수를 정의합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;pre&gt;</td>
+                                <td>
+                                    미리 서식을 지정한 텍스트를 나타내며, HTML에 작성한 내용 그대로 표현합니다. 텍스트는 보통 고정폭 글꼴을 사용해
+                                    렌더링하고, 요소 내 공백문자를 그대로 유지합니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;progress&gt;</td>
+                                <td>어느 작업의 완료 정도를 나타내며, 주로 진행 표시줄의 형태를 띕니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;q&gt;</td>
+                                <td>
+                                    둘러싼 텍스트가 짧은 인라인 인용문이라는것을 나타냅니다. 대부분의 브라우저에서는 앞과 뒤에 따옴표를 붙여 표현합니다.
+                                    &lt;q&gt;는 줄 바꿈이 없는 짧은 경우에 적합합니다. 긴 인용문은 &lt;blockquote&gt; 요소를 사용하세요.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;script&gt;</td>
+                                <td>
+                                    데이터와 실행 가능한 코드를 문서에 포함할 때 사용하며 보통 JavaScript 코드와 함께 씁니다. WebGL의 GLSL 셰이더
+                                    프로그래밍 언어, JSON 등 다른 언어와도 사용할 수 있습니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;section&gt;</td>
+                                <td>
+                                    HTML 문서의 독립적인 구획을 나타내며, 더 적합한 의미를 가진 요소가 없을 때 사용합니다. 보통 &lt;section&gt;은 제목을
+                                    포함하지만, 항상 그런 것은 아닙니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;select&gt;</td>
+                                <td>옵션 메뉴를 제공하는 컨트롤을 나타냅니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;span&gt;</td>
+                                <td>구문 콘텐츠를 위한 통용 인라인 컨테이너로, 본질적으로는 아무것도 나타내지 않습니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;strong&gt;</td>
+                                <td>중대하거나 긴급한 콘텐츠를 나타냅니다. 보통 브라우저는 굵은 글씨로 표시합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;style&gt;</td>
+                                <td>문서나 문서 일부에 대한 스타일 정보를 포함합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;sub&gt;</td>
+                                <td>
+                                    활자 배치를 아래 첨자로 해야 하는 인라인 텍스트를 지정합니다. 아래 첨자는 보통 더 작은 글씨 크기를 가지고, 기준선을
+                                    아래로 내려 렌더링 합니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;summary&gt;</td>
+                                <td>("상세") 요소의 공개 상자에 대한 요약, 캡션 또는 범례를 지정한다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;table&gt;</td>
+                                <td>행과 열로 이루어진 표를 나타냅니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;tbody&gt;</td>
+                                <td>표의 여러 행( &lt;tr&gt; )을 묶어서 표 본문을 구성합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;td&gt;</td>
+                                <td>데이터를 포함하는 표의 셀을 정의합니다. 이것은 표 모델에 참여합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;template&gt;</td>
+                                <td>
+                                    페이지를 불러온 순간 즉시 그려지지는 않지만, 이후 JavaScript를 사용해 인스턴스를 생성할 수 있는 HTML 코드를 담을
+                                    방법을 제공합니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;textarea&gt;</td>
+                                <td>멀티라인 일반 텍스트 편집 컨트롤을 나타냅니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;tfoot&gt;</td>
+                                <td>테이블의 열을 요약하는 행들의 집합입니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;th&gt;</td>
+                                <td>셀을 테이블 셀 그룹의 헤더로 정의합니다. 이 그룹의 정확한 특성은 scope및 headers속성으로 정의됩니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;thead&gt;</td>
+                                <td>테이블의 열의 머리글인 행들의 집합입니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;time&gt;</td>
+                                <td>
+                                    시간의 특정 지점 또는 구간을 나타냅니다. datetime 특성의 값을 지정해 보다 적절한 검색 결과나, 알림 같은 특정 기능을
+                                    구현할 때 사용할 수 있습니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;title&gt;</td>
+                                <td>
+                                    브라우저의 제목 표시줄이나 페이지 탭에 보이는 문서 제목을 정의합니다. 텍스트만 포함할 수 있으며 태그를 포함하더라도
+                                    무시합니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;tr&gt;</td>
+                                <td>테이블 의 &lt;tr&gt;셀 행을 정의합니다. &lt;td&gt;및 &lt;th&gt;요소 가 혼합될 수 있습니다</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;track&gt;</td>
+                                <td>
+                                    미디어 요소(&lt;audio&gt;, &lt;video&gt;)의 자식으로서, 자막 등 시간별 텍스트 트랙(시간 기반 데이터)를 지정할 때
+                                    사용합니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;ul&gt;</td>
+                                <td>정렬되지 않은 목록을 나타냅니다. 보통 불릿으로 표현합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;var&gt;</td>
+                                <td>
+                                    수학 표현 또는 프로그래밍에서 변수의 이름을 나타냅니다. 보통 현재 글씨체의 기울임꼴로 표시하지만, 브라우저마다 다를
+                                    수 있습니다.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;video&gt;</td>
+                                <td>
+                                    비디오 플레이백을 지원하는 미디어 플레이어를 문서에 삽입합니다. 오디오 콘텐츠에도 사용할 수 있으나, &lt;audio&gt;
+                                    요소가 사용자 경험에 좀 더 적합합니다.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
